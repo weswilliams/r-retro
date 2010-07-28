@@ -1,4 +1,9 @@
 RRetro::Application.routes.draw do
+
+  resources :retrospectives  do
+    resources :sections  
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

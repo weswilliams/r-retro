@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Retrospective:</b>
+  <%= @section.retrospective_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @section.title %>
+</p>
+
+<%= link_to 'Edit', [@retrospective, @section] %> |
+<%= link_to 'Back', retrospective_sections_path %>
+

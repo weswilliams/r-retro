@@ -1,0 +1,89 @@
+class SectionsController < ApplicationController
+  # GET /sections
+  # GET /sections.xml
+  def index
+    @retrospective = Retrospective.find(params[:retrospective_id])    
+    @sections = Section.find_all_by_retrospective_id(params[:retrospective_id])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @sections }
+    end
+  end
+
+  # GET /sections/1
+  # GET /sections/1.xml
+  def show
+    @retrospective = Retrospective.find(params[:retrospective_id])
+    @section = Section.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @section }
+    end
+  end
+
+  # GET /sections/new
+  # GET /sections/new.xml
+  def new
+    @retrospective = Retrospective.find(params[:retrospective_id])
+    @section = Section.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @section }
+    end
+  end
+
+  # GET /sections/1/edit
+  def edit
+    @retrospective = Retrospective.find(params[:retrospective_id])
+    @section = Section.find(params[:id])
+  end
+
+  # POST /sections
+  # POST /sections.xml
+  def create
+    @retrospective = Retrospective.find(params[:retrospective_id])
+    @section = Section.new(params[:section])
+
+    respond_to do |format|
+      if @section.save
+        format.html { redirect_to([@retrospective, @section], :notice => 'Section was successfully created.') }
+        format.xml  { render :xml => @section, :status => :created, :location => @section }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @section.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /sections/1
+  # PUT /sections/1.xml
+  def update
+    @retrospective = Retrospective.find(params[:retrospective_id])
+    @section = Section.find(params[:id])
+
+    respond_to do |format|
+      if @section.update_attributes(params[:section])
+        format.html { redirect_to([@retrospective, @section], :notice => 'Section was successfully updated.') }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @section.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /sections/1
+  # DELETE /sections/1.xml
+  def destroy
+    @section = Section.find(params[:id])
+    @section.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(retrospective_sections_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

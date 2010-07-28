@@ -1,0 +1,23 @@
+<h1><%= @retrospective.title %> sections</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sections.each do |section| %>
+  <tr>
+    <td><%= section.title %></td>
+    <td><%= link_to 'Show', [@retrospective, section] %></td>
+    <td><%= link_to 'Edit', [@retrospective, section], :action => :edit  %></td>
+    <td><%= link_to 'Destroy', [@retrospective, section], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Section', new_retrospective_section_path %>
