@@ -12,7 +12,7 @@
   <tr>
     <td><span class="title"><%= section.title %></span></td>
     <td><%= link_to 'Show', [section.retrospective, section] %></td>
-    <td><%= link_to 'Edit', [section.retrospective, section], :action => :edit  %></td>
+    <td><%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section)  %></td>
     <td><%= link_to 'Destroy', [section.retrospective, section], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

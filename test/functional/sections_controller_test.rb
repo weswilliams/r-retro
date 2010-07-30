@@ -23,35 +23,36 @@ class SectionsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-#  test "should create section" do
-#    assert_difference('Section.count') do
-#
-#      post :create, :retrospective_id => @retrospective, :section => @section.attributes
-#    end
-#
-#    assert_redirected_to section_path(assigns(:section))
-#  end
-#
-#  test "should show section" do
-#    get :show, :id => @section.to_param
-#    assert_response :success
-#  end
-#
-#  test "should get edit" do
-#    get :edit, :id => @section.to_param
-#    assert_response :success
-#  end
-#
-#  test "should update section" do
-#    put :update, :id => @section.to_param, :section => @section.attributes
-#    assert_redirected_to section_path(assigns(:section))
-#  end
-#
-#  test "should destroy section" do
-#    assert_difference('Section.count', -1) do
-#      delete :destroy, :id => @section.to_param
-#    end
-#
-#    assert_redirected_to sections_path
-#  end
+  test "should create section" do
+    retrospective_id = @section[:retrospective_id]
+    assert_difference('Section.count') do
+      post :create, {:retrospective_id => retrospective_id, :section => @section.attributes}
+    end
+
+    assert_redirected_to retrospective_section_path(retrospective_id, assigns(:section))
+  end
+
+  test "should show section" do
+    get :show, {:id => @section.to_param, :retrospective_id => @retrospective.id}
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, {:id => @section.to_param, :retrospective_id => @retrospective.id}
+    assert_response :success
+  end
+
+  test "should update section" do
+    retrospective_id = @section[:retrospective_id]
+    put :update, :id => @section.to_param, :section => @section.attributes, :retrospective_id => retrospective_id
+    assert_redirected_to retrospective_section_path(retrospective_id, assigns(:section))
+  end
+
+  test "should destroy section" do
+    assert_difference('Section.count', -1) do
+      delete :destroy, {:id => @section.to_param, :retrospective_id => @retrospective.id}
+    end
+
+    assert_redirected_to retrospective_sections_path
+  end
 end
