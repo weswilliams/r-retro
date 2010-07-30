@@ -1,7 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  title: MyString
+retrospective_1:
+  title: retro1
 
-two:
-  title: MyString
+retrospective_2:
+  title: retro2

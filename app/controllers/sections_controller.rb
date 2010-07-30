@@ -1,8 +1,8 @@
 class SectionsController < ApplicationController
+
   # GET /sections
   # GET /sections.xml
   def index
-    @retrospective = Retrospective.find(params[:retrospective_id])    
     @sections = Section.find_all_by_retrospective_id(params[:retrospective_id])
 
     respond_to do |format|
@@ -14,7 +14,6 @@ class SectionsController < ApplicationController
   # GET /sections/1
   # GET /sections/1.xml
   def show
-    @retrospective = Retrospective.find(params[:retrospective_id])
     @section = Section.find(params[:id])
 
     respond_to do |format|
@@ -26,8 +25,8 @@ class SectionsController < ApplicationController
   # GET /sections/new
   # GET /sections/new.xml
   def new
-    @retrospective = Retrospective.find(params[:retrospective_id])
     @section = Section.new
+    @section.retrospective = Retrospective.find(params[:retrospective_id])
 
     respond_to do |format|
       format.html # new.html.erb
@@ -37,19 +36,17 @@ class SectionsController < ApplicationController
 
   # GET /sections/1/edit
   def edit
-    @retrospective = Retrospective.find(params[:retrospective_id])
     @section = Section.find(params[:id])
   end
 
   # POST /sections
   # POST /sections.xml
   def create
-    @retrospective = Retrospective.find(params[:retrospective_id])
     @section = Section.new(params[:section])
 
     respond_to do |format|
       if @section.save
-        format.html { redirect_to([@retrospective, @section], :notice => 'Section was successfully created.') }
+        format.html { redirect_to([@section.retrospective, @section], :notice => 'Section was successfully created.') }
         format.xml  { render :xml => @section, :status => :created, :location => @section }
       else
         format.html { render :action => "new" }
@@ -61,12 +58,11 @@ class SectionsController < ApplicationController
   # PUT /sections/1
   # PUT /sections/1.xml
   def update
-    @retrospective = Retrospective.find(params[:retrospective_id])
     @section = Section.find(params[:id])
 
     respond_to do |format|
       if @section.update_attributes(params[:section])
-        format.html { redirect_to([@retrospective, @section], :notice => 'Section was successfully updated.') }
+        format.html { redirect_to([@section.retrospective, @section], :notice => 'Section was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -86,4 +82,6 @@ class SectionsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+
 end

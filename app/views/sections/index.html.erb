@@ -1,4 +1,4 @@
-<h1><%= @retrospective.title %> sections</h1>
+<h1><%= @sections[0].retrospective.title %> sections</h1>
 
 <table>
   <tr>
@@ -10,10 +10,10 @@
 
 <% @sections.each do |section| %>
   <tr>
-    <td><%= section.title %></td>
-    <td><%= link_to 'Show', [@retrospective, section] %></td>
-    <td><%= link_to 'Edit', [@retrospective, section], :action => :edit  %></td>
-    <td><%= link_to 'Destroy', [@retrospective, section], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><span class="title"><%= section.title %></span></td>
+    <td><%= link_to 'Show', [section.retrospective, section] %></td>
+    <td><%= link_to 'Edit', [section.retrospective, section], :action => :edit  %></td>
+    <td><%= link_to 'Destroy', [section.retrospective, section], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

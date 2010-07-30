@@ -2,7 +2,7 @@ require 'test_helper'
 
 class RetrospectivesControllerTest < ActionController::TestCase
   setup do
-    @retrospective = retrospectives(:one)
+    @retrospective = retrospectives(:retrospective_1)
   end
 
   test "should get index" do

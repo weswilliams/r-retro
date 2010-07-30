@@ -1,9 +1,9 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  retrospective_id: 1
-  title: MyString
+section_1:
+  title: section1
+  retrospective_id: <%= Fixtures.identify(:retrospective_2) %>
 
-two:
-  retrospective_id: 1
-  title: MyString
+section_2:
+  title: section2
+  retrospective_id: <%= Fixtures.identify(:retrospective_1) %>
