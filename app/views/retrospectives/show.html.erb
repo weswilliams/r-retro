@@ -10,9 +10,9 @@
 <table>
     <% @retrospective.sections.each_index do |index| %>
       <% section = @retrospective.sections[index] %>
-      <% if is_starting_row(index, @retrospective) %><tr class="section-row"><% end %>
+      <% if is_starting_row(index) %><tr class="section-row"><% end %>
         <td class="title"><%= section.title %></td>
-      <% if is_ending_row(index, @retrospective) %></tr><% end %>
+      <% if is_ending_row(index) %></tr><% end %>
     <% end %>
 </table>
 
