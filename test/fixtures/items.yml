@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+item_1:
+  value: blah blah 1
+  section: section_1
+
+item_2:
+  value: blah blah 2
+  section: section_2
