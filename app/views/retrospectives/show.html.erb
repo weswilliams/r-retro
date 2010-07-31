@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Title:</b>
-  <%= @retrospective.title %>
-  <%= link_to 'rename', edit_retrospective_path(@retrospective) %>
-  <%= link_to 'home', retrospectives_path %>
+  <span class="retro_title"><%= @retrospective.title %></span>
+  <%= link_to 'rename', edit_retrospective_path(@retrospective), :class => 'inline_link' %>
+  <%= link_to 'home', retrospectives_path, :class => 'inline_link' %>
 </p>
 
 <table class="sections">
@@ -12,7 +11,8 @@
       <% if is_starting_row(index) %>
           <tr class="section_row">
           <% end %>
-      <td class="title"><%= section.title %> <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section) %></td>
+      <td class="title"><%= section.title %>
+        <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %></td>
       <% if is_ending_row(index) %></tr>
       <% end %>
   <% end %>
