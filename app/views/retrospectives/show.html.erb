@@ -14,7 +14,13 @@
     <% end %>
     <td class="title"><%= section.title %>
       <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %></td>
-    <% if is_ending_row(index) %></tr>
+    <% if is_ending_row(index) %>
+      </tr>
+      <tr>
+        <% calculate_section_per_row.times do %>
+          <td class="section_items"> * (new item) </td>
+        <% end %>
+      </tr>
     <% end %>
   <% end %>
 </table>
