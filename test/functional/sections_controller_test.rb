@@ -29,7 +29,7 @@ class SectionsControllerTest < ActionController::TestCase
       post :create, {:retrospective_id => retrospective_id, :section => @section.attributes}
     end
 
-    assert_redirected_to retrospective_section_path(retrospective_id, assigns(:section))
+    assert_redirected_to retrospective_path(retrospective_id)
   end
 
   test "should show section" do

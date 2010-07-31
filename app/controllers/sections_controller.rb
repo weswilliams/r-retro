@@ -46,7 +46,7 @@ class SectionsController < ApplicationController
 
     respond_to do |format|
       if @section.save
-        format.html { redirect_to([@section.retrospective, @section], :notice => 'Section was successfully created.') }
+        format.html { redirect_to([@section.retrospective], :notice => 'Section was successfully created.') }
         format.xml  { render :xml => @section, :status => :created, :location => @section }
       else
         format.html { render :action => "new" }
