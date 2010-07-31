@@ -17,7 +17,7 @@
     <% if is_ending_row(index) %>
       </tr>
       <tr>
-        <% calculate_section_per_row.times do %>
+        <% number_of_item_columns_for(index).times do %>
           <td class="section_items"> * (new item) </td>
         <% end %>
       </tr>

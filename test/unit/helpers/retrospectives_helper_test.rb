@@ -2,6 +2,13 @@ require 'test_helper'
 
 class RetrospectivesHelperTest < ActionView::TestCase
 
+  test "should calculate single items column for last row with odd number of sections" do
+    create_retro_with_5_sections
+    assert_equal 2, number_of_item_columns_for(1)
+    assert_equal 2, number_of_item_columns_for(3)
+    assert_equal 1, number_of_item_columns_for(4)
+  end
+
   test "sections per row" do
     create_retro_with_1_section
     assert_equal 3, calculate_section_per_row
