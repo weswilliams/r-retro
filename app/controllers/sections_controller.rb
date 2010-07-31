@@ -62,7 +62,7 @@ class SectionsController < ApplicationController
 
     respond_to do |format|
       if @section.update_attributes(params[:section])
-        format.html { redirect_to([@section.retrospective, @section], :notice => 'Section was successfully updated.') }
+        format.html { redirect_to([@section.retrospective], :notice => 'Section was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

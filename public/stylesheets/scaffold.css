@@ -30,6 +30,16 @@ div.field, div.actions {
   display: table;
 }
 
+table.sections {
+  width: 100%
+}
+
+td.title {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 #error_explanation {
   width: 450px;
   border: 2px solid red;

@@ -45,7 +45,7 @@ class SectionsControllerTest < ActionController::TestCase
   test "should update section" do
     retrospective_id = @section[:retrospective_id]
     put :update, :id => @section.to_param, :section => @section.attributes, :retrospective_id => retrospective_id
-    assert_redirected_to retrospective_section_path(retrospective_id, assigns(:section))
+    assert_redirected_to retrospective_path(retrospective_id)
   end
 
   test "should destroy section" do

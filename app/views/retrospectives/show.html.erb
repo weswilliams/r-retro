@@ -2,17 +2,19 @@
 
 <p>
   <b>Title:</b>
-  <%= @retrospective.title %> |
-  <%= link_to 'Edit', edit_retrospective_path(@retrospective) %> |
-  <%= link_to 'Home', retrospectives_path %>
+  <%= @retrospective.title %>
+  <%= link_to 'rename', edit_retrospective_path(@retrospective) %>
+  <%= link_to 'home', retrospectives_path %>
 </p>
 
-<table>
-    <% @retrospective.sections.each_index do |index| %>
-      <% section = @retrospective.sections[index] %>
-      <% if is_starting_row(index) %><tr class="section-row"><% end %>
-        <td class="title"><%= section.title %></td>
-      <% if is_ending_row(index) %></tr><% end %>
-    <% end %>
+<table class="sections">
+  <% @retrospective.sections.each_with_index do |section, index| %>
+      <% if is_starting_row(index) %>
+          <tr class="section_row">
+          <% end %>
+      <td class="title"><%= section.title %> <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section) %></td>
+      <% if is_ending_row(index) %></tr>
+      <% end %>
+  <% end %>
 </table>
 

@@ -10,6 +10,6 @@
   <%= @section.title %>
 </p>
 
-<%= link_to 'Edit', [@section.retrospective, @section] %> |
-<%= link_to 'Back', retrospective_sections_path %>
+<%= link_to 'Edit', edit_retrospective_section_path(@section.retrospective, @section)  %> |
+<%= link_to 'Back', retrospective_path %>
 

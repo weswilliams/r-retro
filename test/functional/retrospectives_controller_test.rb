@@ -25,7 +25,7 @@ class RetrospectivesControllerTest < ActionController::TestCase
   def show_with_sections_and_expect_rows(sections, expected_rows)
     (2..sections).each {|cnt| create_section(cnt.to_s) }
     get :show, :id => @retrospective.to_param
-    assert_select 'tr.section-row', expected_rows
+    assert_select 'tr.section_row', expected_rows
     assert_select 'td.title', sections
   end
 
