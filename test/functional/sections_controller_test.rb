@@ -24,7 +24,7 @@ class SectionsControllerTest < ActionController::TestCase
   end
 
   test "should create section" do
-    retrospective_id = @section[:retrospective_id]
+    retrospective_id = @section.retrospective.to_param
     assert_difference('Section.count') do
       post :create, {:retrospective_id => retrospective_id, :section => @section.attributes}
     end
@@ -43,7 +43,7 @@ class SectionsControllerTest < ActionController::TestCase
   end
 
   test "should update section" do
-    retrospective_id = @section[:retrospective_id]
+    retrospective_id = @section.retrospective.to_param
     put :update, :id => @section.to_param, :section => @section.attributes, :retrospective_id => retrospective_id
     assert_redirected_to retrospective_path(retrospective_id)
   end

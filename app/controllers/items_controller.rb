@@ -81,7 +81,7 @@ class ItemsController < ApplicationController
     @item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(items_url) }
+      format.html { redirect_to(retrospective_section_items_url) }
       format.xml  { head :ok }
     end
   end

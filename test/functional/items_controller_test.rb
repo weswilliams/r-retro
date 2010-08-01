@@ -11,44 +11,48 @@ class ItemsControllerTest < ActionController::TestCase
   end
 
   test "should get index" do
-    get :index, {:retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id}
+    get :index, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id
     assert_response :success
     assert_not_nil assigns(:items)
   end
 
   test "should get new" do
-    get :new, {:retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id}
+    get :new, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id
     assert_response :success
   end
 
   test "should create item" do
+    retrospective_id = @item.section.retrospective.to_param
+    section_id = @item.section.to_param
     assert_difference('Item.count') do
-      post :create, :item => @item.attributes
+      post :create, :retrospective_id => retrospective_id, :section_id => section_id, :item => @item.attributes
     end
 
-    assert_redirected_to item_path(assigns(:item))
+    assert_redirected_to retrospective_section_item_path(retrospective_id, section_id, assigns(:item))
   end
 
-#  test "should show item" do
-#    get :show, :id => @item.to_param
-#    assert_response :success
-#  end
-#
-#  test "should get edit" do
-#    get :edit, :id => @item.to_param
-#    assert_response :success
-#  end
-#
-#  test "should update item" do
-#    put :update, :id => @item.to_param, :item => @item.attributes
-#    assert_redirected_to item_path(assigns(:item))
-#  end
-#
-#  test "should destroy item" do
-#    assert_difference('Item.count', -1) do
-#      delete :destroy, :id => @item.to_param
-#    end
-#
-#    assert_redirected_to items_path
-#  end
+  test "should show item" do
+    get :show, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get :edit, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
+    assert_response :success
+  end
+
+  test "should update item" do
+    retrospective_id = @item.section.retrospective.to_param
+    section_id = @item.section.id
+    put :update, :retrospective_id => retrospective_id, :section_id => section_id, :id => @item.to_param, :item => @item.attributes
+    assert_redirected_to retrospective_section_item_path(retrospective_id, section_id, assigns(:item))
+  end
+
+  test "should destroy item" do
+    assert_difference('Item.count', -1) do
+      delete :destroy, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
+    end
+
+    assert_redirected_to retrospective_section_items_path
+  end
 end
