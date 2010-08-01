@@ -45,7 +45,7 @@ class ItemsControllerTest < ActionController::TestCase
     retrospective_id = @item.section.retrospective.to_param
     section_id = @item.section.id
     put :update, :retrospective_id => retrospective_id, :section_id => section_id, :id => @item.to_param, :item => @item.attributes
-    assert_redirected_to retrospective_section_item_path(retrospective_id, section_id, assigns(:item))
+    assert_redirected_to retrospective_path(retrospective_id)
   end
 
   test "should destroy item" do

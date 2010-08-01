@@ -32,7 +32,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="49" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-14.384615">
+            <state line="6" column="21" selection-start="322" selection-end="322" vertical-scroll-proportion="-1.9615384">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="items_controller_test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/functional/items_controller_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="5" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+            <state line="47" column="61" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,16 @@
       <file leaf-file-name="items_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="49" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.48300537">
+            <state line="42" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.42218247">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="8" selection-start="349" selection-end="456" vertical-scroll-proportion="-11.692307">
               <folding />
             </state>
           </provider>
@@ -575,7 +584,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added items to retrospective page&#10;- fixed issue with single row retrospective, caused by error in find beginning index &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- implemented new item link on retrospective page&#10;- new item changed to redirect back to retrospective page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -601,6 +610,7 @@
     <MESSAGE value="- all items functional test are passing but minimal&#10;- changed to_param on Retrospective to have a nicer looking url&#10;" />
     <MESSAGE value="- added some helper methods to determine which section index items belong to&#10;- refactored names and methods in RetrospectiveHelper" />
     <MESSAGE value="- added items to retrospective page&#10;- fixed issue with single row retrospective, caused by error in find beginning index &#10;" />
+    <MESSAGE value="- implemented new item link on retrospective page&#10;- new item changed to redirect back to retrospective page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -692,28 +702,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="635" selection-end="697" vertical-scroll-proportion="-17.653847">
+        <state line="19" column="8" selection-start="349" selection-end="456" vertical-scroll-proportion="-11.692307">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="49" selection-start="1062" selection-end="1062" vertical-scroll-proportion="-14.384615">
+        <state line="6" column="21" selection-start="322" selection-end="322" vertical-scroll-proportion="-1.9615384">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/functional/items_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+        <state line="47" column="61" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="49" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.48300537">
+        <state line="42" column="0" selection-start="876" selection-end="876" vertical-scroll-proportion="0.42218247">
           <folding />
         </state>
       </provider>

@@ -65,7 +65,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.update_attributes(params[:item])
-        format.html { redirect_to([@item.section.retrospective, @item.section, @item], :notice => 'Item was successfully updated.') }
+        format.html { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'Item was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
