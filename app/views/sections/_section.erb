@@ -1,22 +1,15 @@
-
 <% if is_starting_row(section_counter) %>
   <tr class="section_row">
 <% end %>
-    <td class="title"><%= section.title %>
-      <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %>
-    </td>
+<td class="title"><%= section.title %>
+  <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %>
+</td>
 <% if is_ending_row(section_counter) %>
   </tr>
   <tr>
     <% beginning_row_index_for_ending_index(section_counter).upto(section_counter) do |items_section_index| %>
-      <td class="section_items">
-        <ul class="items">
-          <li class="new_item">
-            <%= link_to '(new item)', new_retrospective_section_item_path(@retrospective, @retrospective.sections[items_section_index]), :class => 'inline_link' %>
-          </li>
-          <%= render @retrospective.sections[items_section_index].items %>
-        </ul>
-      </td>
+      <% current_section = @retrospective.sections[items_section_index] %>
+      <%= render :partial => 'section_items', :locals => {:current_section => current_section} %>
     <% end %>
   </tr>
 <% end %>

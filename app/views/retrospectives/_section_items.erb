@@ -1,0 +1,8 @@
+  <td id="section_items" class="section_items">
+    <ul class="items">
+      <li class="new_item">
+        <%= link_to '(new item)', new_retrospective_section_item_path(current_section.retrospective, current_section), :class => 'inline_link' %>
+      </li>
+      <%= render current_section.items %>
+    </ul>
+  </td>
