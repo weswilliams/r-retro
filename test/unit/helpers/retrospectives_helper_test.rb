@@ -3,6 +3,9 @@ require 'test_helper'
 class RetrospectivesHelperTest < ActionView::TestCase
 
   test "should calculate beginning row index based on ending row index" do
+    create_retro_with_1_section
+    assert_equal 0, beginning_row_index_for_ending_index(0)
+    
     create_retro_with_3_sections
     assert_equal 0, beginning_row_index_for_ending_index(2)
 

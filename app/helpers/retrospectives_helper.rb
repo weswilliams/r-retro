@@ -1,6 +1,7 @@
 module RetrospectivesHelper
 
   def beginning_row_index_for_ending_index(ending_row_index)
+    return 0 if is_in_first_row(ending_row_index)
     is_single_continuing_row_and_last_section(ending_row_index) ?
             ending_row_index :
             ending_row_index - (calculate_sections_per_row - 1)
