@@ -23,12 +23,7 @@
               <li class="new_item">
                 <%= link_to '(new item)', new_retrospective_section_item_path(@retrospective, @retrospective.sections[items_section_index]), :class => 'inline_link' %>
               </li>
-              <% @retrospective.sections[items_section_index].items.each do |item| %>
-                <li class="item">
-                  <%= item.value %>
-                  <%= link_to '(edit)', edit_retrospective_section_item_path(item.section.retrospective, item.section, item), :class => 'inline_link' %>
-                </li>
-              <% end %>
+              <%= render @retrospective.sections[items_section_index].items %>
             </ul>
           </td>
         <% end %>
