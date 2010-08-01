@@ -2,6 +2,8 @@ RRetro::Application.routes.draw do
 
 
   resources :retrospectives  do
+    get :refresh, :on => :member
+    
     resources :sections do
       resources :items
     end

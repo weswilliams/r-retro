@@ -1,0 +1,3 @@
+puts "in refresh.js"
+page.replace_html("section_items_#{@section.id}",
+  render('section_items', :current_section => @section))

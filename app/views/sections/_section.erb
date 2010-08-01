@@ -2,14 +2,17 @@
   <tr class="section_row">
 <% end %>
 <td class="title"><%= section.title %>
-  <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %>
+  <%= link_to '(edit)', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %>
+  <%= link_to '(refresh)', refresh_retrospective_path(:section_id => section), :remote => true, :class => 'inline_link' %>
 </td>
 <% if is_ending_row(section_counter) %>
   </tr>
   <tr>
     <% beginning_row_index_for_ending_index(section_counter).upto(section_counter) do |items_section_index| %>
       <% current_section = @retrospective.sections[items_section_index] %>
-      <%= render :partial => 'section_items', :locals => {:current_section => current_section} %>
+      <td id="<%= "section_items_#{current_section.id}" %>" class="section_items">
+        <%= render :partial => 'section_items', :locals => {:current_section => current_section} %>
+      </td>
     <% end %>
   </tr>
 <% end %>

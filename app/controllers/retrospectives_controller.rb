@@ -1,4 +1,19 @@
 class RetrospectivesController < ApplicationController
+
+  # GET /retrospectives/1/refresh
+  def refresh
+    @retrospective = Retrospective.find(params[:id])
+    @section = Section.find(params[:section_id])
+    puts "refresh #{@retrospective.title}-#{@section.title}"
+    respond_to do |format|
+      puts "format - #{format}"
+#      format.html { redirect_to @retrospective }
+      format.js
+#      format.xml  { render :xml => @retrospective }
+    end
+
+  end
+  
   # GET /retrospectives
   # GET /retrospectives.xml
   def index
