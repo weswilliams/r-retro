@@ -8,26 +8,5 @@
 </p>
 
 <table class="sections">
-  <% @retrospective.sections.each_with_index do |section, current_section_index| %>
-    <% if is_starting_row(current_section_index) %>
-      <tr class="section_row">
-    <% end %>
-    <td class="title"><%= section.title %>
-      <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %></td>
-    <% if is_ending_row(current_section_index) %>
-      </tr>
-      <tr>
-        <% beginning_row_index_for_ending_index(current_section_index).upto(current_section_index) do |items_section_index| %>
-          <td class="section_items">
-            <ul class="items">
-              <li class="new_item">
-                <%= link_to '(new item)', new_retrospective_section_item_path(@retrospective, @retrospective.sections[items_section_index]), :class => 'inline_link' %>
-              </li>
-              <%= render @retrospective.sections[items_section_index].items %>
-            </ul>
-          </td>
-        <% end %>
-      </tr>
-    <% end %>
-  <% end %>
+  <%= render @retrospective.sections %>
 </table>
