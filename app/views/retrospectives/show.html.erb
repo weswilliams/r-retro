@@ -20,7 +20,7 @@
         <% beginning_row_index_for_ending_index(current_section_index).upto(current_section_index) do |items_section_index| %>
           <td class="section_items">
             <ul class="items">
-              <li class="new_item">(new item)</li>
+              <li class="new_item"><%= link_to '(new item)', new_retrospective_section_item_path(@retrospective, @retrospective.sections[items_section_index]), :class => 'inline_link' %></li>
               <% @retrospective.sections[items_section_index].items.each do |item| %>
               <li class="item"><%= item.value %></li>
               <% end %>

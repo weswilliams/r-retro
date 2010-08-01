@@ -28,7 +28,7 @@ class ItemsControllerTest < ActionController::TestCase
       post :create, :retrospective_id => retrospective_id, :section_id => section_id, :item => @item.attributes
     end
 
-    assert_redirected_to retrospective_section_item_path(retrospective_id, section_id, assigns(:item))
+    assert_redirected_to retrospective_path(retrospective_id)
   end
 
   test "should show item" do
