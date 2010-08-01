@@ -10,6 +10,12 @@ class RetrospectivesControllerTest < ActionController::TestCase
     super
   end
 
+  test "should display section 1 items" do
+    show_with_1_section_and_expect_1_row
+    assert_select 'ul.items', 1
+#    assert_select 'li.item', 1
+  end
+
   test "should display sections on show retrospective page" do
     show_with_1_section_and_expect_1_row
   end

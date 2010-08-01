@@ -2,6 +2,16 @@ require 'test_helper'
 
 class RetrospectivesHelperTest < ActionView::TestCase
 
+  test "should calculate beginning row index based on ending row index" do
+    create_retro_with_3_sections
+    assert_equal 0, beginning_row_index_for_ending_index(2)
+
+    create_retro_with_5_sections
+    assert_equal 0, beginning_row_index_for_ending_index(1)
+    assert_equal 2, beginning_row_index_for_ending_index(3)
+    assert_equal 4, beginning_row_index_for_ending_index(4)
+  end
+
   test "should calculate single items column for last row with odd number of sections" do
     create_retro_with_5_sections
     assert_equal 2, number_of_item_columns_for(1)
@@ -11,16 +21,16 @@ class RetrospectivesHelperTest < ActionView::TestCase
 
   test "sections per row" do
     create_retro_with_1_section
-    assert_equal 3, calculate_section_per_row
+    assert_equal 3, calculate_sections_per_row
 
     create_retro_with_2_sections
-    assert_equal 3, calculate_section_per_row
+    assert_equal 3, calculate_sections_per_row
 
     create_retro_with_3_sections
-    assert_equal 3, calculate_section_per_row
+    assert_equal 3, calculate_sections_per_row
 
     create_retro_with_4_sections
-    assert_equal 2, calculate_section_per_row
+    assert_equal 2, calculate_sections_per_row
   end
 
   test "section 0 is beginning row with 1 section" do

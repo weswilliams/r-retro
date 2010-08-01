@@ -8,20 +8,23 @@
 </p>
 
 <table class="sections">
-  <% @retrospective.sections.each_with_index do |section, index| %>
-    <% if is_starting_row(index) %>
+  <% @retrospective.sections.each_with_index do |section, section_index| %>
+    <% if is_starting_row(section_index) %>
       <tr class="section_row">
     <% end %>
     <td class="title"><%= section.title %>
       <%= link_to 'Edit', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %></td>
-    <% if is_ending_row(index) %>
+    <% if is_ending_row(section_index) %>
       </tr>
       <tr>
-        <% number_of_item_columns_for(index).times do %>
-          <td class="section_items"> * (new item) </td>
+        <% number_of_item_columns_for(section_index).times do %>
+          <td class="section_items">
+            <ul class="items">
+              <li class="new_item">(new item)</li>               
+            </ul>
+          </td>
         <% end %>
       </tr>
     <% end %>
   <% end %>
 </table>
-
