@@ -66,6 +66,7 @@ td.title {
 td.section_items {
   text-indent: 7px;
   font-size: 12px;
+  vertical-align: top;
 }
 
 #error_explanation {
