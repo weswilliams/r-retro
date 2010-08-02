@@ -53,6 +53,6 @@ class ItemsControllerTest < ActionController::TestCase
       delete :destroy, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
     end
 
-    assert_redirected_to retrospective_section_items_path
+    assert_redirected_to retrospective_path(@item.section.retrospective)
   end
 end
