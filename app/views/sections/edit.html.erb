@@ -2,5 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', [@section.retrospective, @section] %> |
-<%= link_to 'Back', retrospective_section_path %>
+<%= link_to 'Back', retrospective_path(@section.retrospective) %>
