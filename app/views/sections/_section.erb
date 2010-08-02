@@ -11,7 +11,7 @@
     <% beginning_row_index_for_ending_index(section_counter).upto(section_counter) do |items_section_index| %>
       <% current_section = @retrospective.sections[items_section_index] %>
       <td id="<%= "section_items_#{current_section.id}" %>" class="section_items">
-        <%= render :partial => 'section_items', :locals => {:current_section => current_section} %>
+        <%= render :partial => 'sections/section_items', :locals => {:current_section => current_section} %>
       </td>
     <% end %>
   </tr>
