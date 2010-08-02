@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/items/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/retrospectives/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/sections/edit.html.erb" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="r_retro.iws" />
@@ -46,19 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sections/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="-2.6153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/items/edit.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.15977444">
+            <state line="5" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15977444">
               <folding />
             </state>
           </provider>
@@ -83,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/_items.erb" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
@@ -99,6 +88,7 @@
         <option value="$PROJECT_DIR$/app/views/items/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/items/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/retrospectives/edit.html.erb" />
       </list>
     </option>
   </component>
@@ -573,7 +563,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- corrected back behaviour for new item to return to the retrospective page" />
+    <option name="LAST_COMMIT_MESSAGE" value="- corrected back behaviour for edit section to return to the retrospective page&#10;- removed show path from section and item edit pages" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -608,16 +598,12 @@
     <MESSAGE value="- method to click a link periodically" />
     <MESSAGE value="- corrected back behaviour for item edit to return to the retrospective page" />
     <MESSAGE value="- corrected back behaviour for new item to return to the retrospective page" />
+    <MESSAGE value="- corrected back behaviour for edit section to return to the retrospective page&#10;- removed show path from section and item edit pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="43" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0609319" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="13" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" />
@@ -706,7 +692,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.15977444">
+        <state line="2" column="20" selection-start="43" selection-end="43" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15977444">
           <folding />
         </state>
       </provider>
