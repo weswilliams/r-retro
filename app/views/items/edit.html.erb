@@ -3,4 +3,4 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', [@item.section.retrospective, @item.section, @item] %> |
-<%= link_to 'Back', retrospective_section_items_path %>
+<%= link_to 'Back', retrospective_path(@item.section.retrospective) %>
