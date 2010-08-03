@@ -2,7 +2,7 @@ RRetro::Application.routes.draw do
 
 
   resources :retrospectives  do
-    get :refresh, :on => :member
+    post :refresh, :on => :member
     
     resources :sections do
       resources :items

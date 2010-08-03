@@ -3,7 +3,6 @@
 <% end %>
 <td class="title"><%= section.title %>
   <%= link_to '(edit)', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %>
-  <%= link_to '(refresh)', refresh_retrospective_path(:section_id => section), :remote => true, :class => 'inline_link' %>
 </td>
 <% if is_ending_row(section_counter) %>
   </tr>
@@ -13,6 +12,7 @@
       <td id="<%= "section_items_#{current_section.id}" %>" class="section_items">
         <%= render :partial => 'sections/section_items', :locals => {:current_section => current_section} %>
       </td>
+      <%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section), :frequency => 20) %>
     <% end %>
   </tr>
 <% end %>

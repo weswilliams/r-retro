@@ -1,13 +1,12 @@
 module RetrospectivesHelper
 
-#  <%= periodically_click_link(:link_to_click => "section_items_#{current_section.id}") %>
-  
-  def periodically_click_link(options = {})
-    frequency = options[:frequency] || 10 # every ten seconds by default
-    link_to_click = options[:link_to_click]
-    code = "new PeriodicalExecuter(function() {document.getElementById('#{link_to_click}').click()}, #{frequency})"
-    javascript_tag(code)
-  end
+#  <%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section)) %>
+
+  def periodically_call_remote(options = {})
+     frequency = options[:frequency] || 10 # every ten seconds by default
+     code = "new PeriodicalExecuter(function() {#{remote_function(options)}}, #{frequency})"
+     javascript_tag(code)
+   end
 
   def beginning_row_index_for_ending_index(ending_row_index)
     return 0 if is_in_first_row(ending_row_index)
