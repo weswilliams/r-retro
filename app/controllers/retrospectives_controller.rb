@@ -32,6 +32,7 @@ class RetrospectivesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
+      format.text { render :content_type => 'text/plain', :action => 'text' }
       format.xml  { render :xml => @retrospective }
     end
   end
