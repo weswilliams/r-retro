@@ -36,6 +36,13 @@ div.field, div.actions {
   color: green;
 }
 
+.refresh {
+  display: inline;
+  font-size: x-small;
+  font-weight: normal;
+  float: right;
+}
+
 .inline_link {
   display: inline;
   font-size: x-small;

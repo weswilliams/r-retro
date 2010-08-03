@@ -6,6 +6,7 @@
   <%= link_to '(text)', retrospective_path(@retrospective, :format => :text), :class => 'inline_link' %>
   <%= link_to '(new section)', new_retrospective_section_path(@retrospective), :class => 'inline_link' %>
   <%= link_to '(home)', retrospectives_path, :class => 'inline_link' %>
+  <%= check_box_tag 'enable_auto_refresh', 'auto refresh', false, :class => 'refresh'  %> <span class="refresh">auto refresh</span>
 </p>
 
 <table class="sections">

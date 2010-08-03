@@ -1,10 +1,11 @@
 module RetrospectivesHelper
 
   # could not find this method in rails 3 prototype helper, not sure why, cannot find a reason
-  #<%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section)) %>
+  #<%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section), :frequency => 20) %>
   def periodically_call_remote(options = {})
      frequency = options[:frequency] || 10 # every ten seconds by default
-     code = "new PeriodicalExecuter(function() {#{remote_function(options)}}, #{frequency})"
+     condition = options[:condition] || true
+     code = "new PeriodicalExecuter(function() {if (#{condition}) #{remote_function(options)}}, #{frequency})"
      javascript_tag(code)
    end
 
