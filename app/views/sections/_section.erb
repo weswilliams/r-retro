@@ -12,7 +12,7 @@
       <td id="<%= "section_items_#{current_section.id}" %>" class="section_items">
         <%= render :partial => 'sections/section_items', :locals => {:current_section => current_section} %>
       </td>
-      <%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section), :frequency => 20, :condition => "document.getElementById('enable_auto_refresh').checked") %>
+      <%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section), :frequency => 20, :condition => "$('enable_auto_refresh').checked") %>
     <% end %>
   </tr>
 <% end %>
