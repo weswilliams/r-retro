@@ -9,7 +9,7 @@ class ItemsControllerTest < ActionController::TestCase
     assert_difference('Item.count', -1) do
       xhr :post, :destroy, :method => :delete, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
     end
-    
+    assert_response :success
   end
 
   test "ajax add should create item" do
