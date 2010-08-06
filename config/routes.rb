@@ -5,7 +5,9 @@ RRetro::Application.routes.draw do
     post :refresh, :on => :member
     
     resources :sections do
-      resources :items
+      resources :items do
+        post :add, :on => :collection
+      end
     end
   end
 

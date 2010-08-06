@@ -41,6 +41,21 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 
+  def add
+    @section = Section.find(params[:section_id])
+    @item = Item.new
+    @item.section = @section
+    @item.value = params[:value]
+
+    respond_to do |format|
+      if @item.save
+        format.js {render :inline => "" }
+      else
+        format.js { redirect_to(retrospective_path(@section.retrospective), :notice => 'failed to add item!') }
+      end
+    end
+  end
+
   # POST /items
   # POST /items.xml
   def create

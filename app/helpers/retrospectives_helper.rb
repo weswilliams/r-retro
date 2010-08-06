@@ -1,5 +1,26 @@
 module RetrospectivesHelper
 
+  def inline_add_item_with_remote_update(options = [])
+    section_id = options[:section_id]
+    add_url = options[:add_url]
+    refresh_url = options[:refresh_url]
+
+    code = <<-eos
+    var my_text_editor#{section_id} = new Ajax.InPlaceEditor('inline_add_item_#{section_id}',
+            '#{add_url}', {
+      externalControl:"my_text_edit_#{section_id}",
+      highlightcolor: 'transparent',
+      clickToEditText: '',
+      onComplete: function(transport, element) {#{remote_function(:url => refresh_url)};}
+    });
+    $("my_text_edit_#{section_id}").onclick = function() {
+      my_text_editor#{section_id}.enterEditMode();
+    }
+    my_text_editor#{section_id}.dispose();
+    eos
+    javascript_tag(code)
+  end
+
   # could not find this method in rails 3 prototype helper, not sure why, cannot find a reason
   #<%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section), :frequency => 20) %>
   def periodically_call_remote(options = {})
