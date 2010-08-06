@@ -10,6 +10,7 @@ class ItemsControllerTest < ActionController::TestCase
     assert_difference('Item.count') do
       xhr :post, :add, :controller => 'items', :retrospective_id => section.retrospective.id, :section_id => section.id, :value => 'blah'
     end
+    assert_response :success
   end
 
   test "test should route items of sections of retrospective" do
