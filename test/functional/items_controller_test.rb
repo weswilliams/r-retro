@@ -5,11 +5,12 @@ class ItemsControllerTest < ActionController::TestCase
     @item = items(:item_1)
   end
 
-  test "ajax destroy should delete item and remove li" do
+  test "ajax destroy should delete item" do
     assert_difference('Item.count', -1) do
       xhr :post, :destroy, :method => :delete, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
     end
     assert_response :success
+    assert_select_rjs :remove, "item_#{@item.id}"
   end
 
   test "ajax add should create item" do
