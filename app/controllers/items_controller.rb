@@ -49,7 +49,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
-        format.js {render :inline => "" }
+        format.js {render :inline => '' }
       else
         format.js { redirect_to(retrospective_path(@section.retrospective), :notice => 'failed to add item!') }
       end

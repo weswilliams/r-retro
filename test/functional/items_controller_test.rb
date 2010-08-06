@@ -5,6 +5,12 @@ class ItemsControllerTest < ActionController::TestCase
     @item = items(:item_1)
   end
 
+  test "add should create item" do
+    assert_difference('Item.count') do
+      post :action => :add, :section_id => sections(:section_1).id, :value => 'blah'
+    end
+  end
+
   test "test should route items of sections of retrospective" do
     options = {:controller => 'items', :action => 'index', :retrospective_id => '1', :section_id => '2'}
     assert_routing('retrospectives/1/sections/2/items', options)
