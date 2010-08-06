@@ -1,7 +1,7 @@
-
+<span id="item_<%= item.id %>">
 <li class="item">
   <%= item.value %>
   <%= link_to '(edit)', edit_retrospective_section_item_path(item.section.retrospective, item.section, item), :class => 'inline_link' %>
-  <%= link_to '(remove)', [item.section.retrospective, item.section, item], :confirm => 'Are you sure?', :method => :delete, :class => 'inline_link' %>
+  <%= link_to '(remove)', [item.section.retrospective, item.section, item], :remote => true, :class => 'inline_link', :method => :delete %>
 </li>
-
+</span>
