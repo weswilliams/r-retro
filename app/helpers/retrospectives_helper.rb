@@ -1,22 +1,23 @@
 module RetrospectivesHelper
 
   def inline_add_item_with_remote_update(options = [])
-    section_id = options[:section_id]
+    id = options[:id]
     add_url = options[:add_url]
     refresh_url = options[:refresh_url]
-
+    element_id = options[:element_id] || 'add_item'
+    on_complete = options[:on_complete] || "function(transport, element) {#{remote_function(:url => refresh_url)};}"
     code = <<-eos
-    var my_text_editor#{section_id} = new Ajax.InPlaceEditor('inline_add_item_#{section_id}',
+    var #{element_id}_editor#{id} = new Ajax.InPlaceEditor('inline_#{element_id}_#{id}',
             '#{add_url}', {
-      externalControl:"my_text_edit_#{section_id}",
+      externalControl:"#{element_id}_#{id}",
       highlightcolor: 'transparent',
       clickToEditText: '',
-      onComplete: function(transport, element) {#{remote_function(:url => refresh_url)};}
+      onComplete: #{on_complete}
     });
-    $("my_text_edit_#{section_id}").onclick = function() {
-      my_text_editor#{section_id}.enterEditMode();
+    $("#{element_id}_#{id}").onclick = function() {
+      #{element_id}_editor#{id}.enterEditMode();
     }
-    my_text_editor#{section_id}.dispose();
+    #{element_id}_editor#{id}.dispose();
     eos
     javascript_tag(code)
   end
