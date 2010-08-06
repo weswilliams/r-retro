@@ -3,9 +3,10 @@ module RetrospectivesHelper
   def inline_add_item_with_remote_update(options = [])
     id = options[:id]
     add_url = options[:add_url]
-    refresh_url = options[:refresh_url]
+    refresh_url = options[:refresh_url] || ''
     element_id = options[:element_id] || 'add_item'
     on_complete = options[:on_complete] || "function(transport, element) {#{remote_function(:url => refresh_url)};}"
+    
     code = <<-eos
     var #{element_id}_editor#{id} = new Ajax.InPlaceEditor('inline_#{element_id}_#{id}',
             '#{add_url}', {
