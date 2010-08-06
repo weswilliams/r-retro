@@ -8,7 +8,7 @@ class ItemsControllerTest < ActionController::TestCase
   test "add should create item" do
     section = sections(:section_1)
     assert_difference('Item.count') do
-      post :add, :controller => 'items', :retrospective_id => section.retrospective.id, :section_id => section.id, :value => 'blah'
+      xhr :post, :add, :controller => 'items', :retrospective_id => section.retrospective.id, :section_id => section.id, :value => 'blah'
     end
   end
 
