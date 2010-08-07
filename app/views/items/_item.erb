@@ -3,6 +3,6 @@
   <span id="inline_item_value_<%= item.id %>"><%= item.value %></span>
   <a href="javascript:void(0);" id="item_value_<%= item.id %>" class="inline_link">(edit)</a>
   <%= link_to '(remove)', [item.section.retrospective, item.section, item], :remote => true, :class => 'inline_link', :method => :delete %>
-  <%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "item_value", :add_url => update_value_retrospective_section_item_url(item.section.retrospective, item.section, item), :on_complete => '' ) %>
+  <%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "item_value", :url => update_value_retrospective_section_item_url(item.section.retrospective, item.section, item), :on_complete => '' ) %>
 </li>
 </span>

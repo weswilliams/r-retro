@@ -2,14 +2,14 @@ module RetrospectivesHelper
 
   def inline_edit_item_with_remote_update(options = [])
     id = options[:id]
-    add_url = options[:add_url]
+    url = options[:url]
     refresh_url = options[:refresh_url] || ''
     element_id = options[:element_id] || 'add_item'
     on_complete = options[:on_complete] || ", onComplete: function(transport, element) {#{remote_function(:url => refresh_url)};}"
     
     code = <<-eos
     var #{element_id}_editor#{id} = new Ajax.InPlaceEditor('inline_#{element_id}_#{id}',
-            '#{add_url}', {
+            '#{url}', {
       externalControl:"#{element_id}_#{id}",
       highlightcolor: 'transparent',
       clickToEditText: ''#{on_complete}
