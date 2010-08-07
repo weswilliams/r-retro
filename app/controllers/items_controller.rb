@@ -73,6 +73,19 @@ class ItemsController < ApplicationController
     end
   end
 
+  def update_value
+    @item = Item.find(params[:id])
+    @item.value = params[:value]
+
+    respond_to do |format|
+      if @item.save
+        format.js { render :inline => @item.value }
+      else
+        format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to add item!') }
+      end
+    end
+  end
+  
   # PUT /items/1
   # PUT /items/1.xml
   def update
