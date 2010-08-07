@@ -1,7 +1,7 @@
 <% if is_starting_row(section_counter) %>
   <tr class="section_row">
 <% end %>
-<td class="title"><%= section.title %>
+<td class="title" colspan="<%= section_column_span(section_counter) %>"><%= section.title %>
   <%= link_to '(edit)', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %>
   <a href="javascript:void(0);" id="add_item_<%= section.id %>" class="inline_link">(new item)</a>
   <span id="inline_add_item_<%= section.id %>"></span>
@@ -12,7 +12,7 @@
   <tr>
     <% beginning_row_index_for_ending_index(section_counter).upto(section_counter) do |items_section_index| %>
       <% current_section = @retrospective.sections[items_section_index] %>
-      <td id="<%= "section_items_#{current_section.id}" %>" class="section_items">
+      <td id="<%= "section_items_#{current_section.id}" %>" class="section_items" colspan="<%= section_column_span(items_section_index) %>">
         <%= render :partial => 'sections/section_items', :locals => {:current_section => current_section} %>
       </td>
       <%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section), :frequency => 20, :condition => "$('enable_auto_refresh').checked") %>

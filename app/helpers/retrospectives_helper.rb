@@ -50,6 +50,10 @@ module RetrospectivesHelper
     @retrospective.sections.length <= 3 ? 3 : 2
   end
 
+  def section_column_span(index)
+    (is_starting_row(index) && is_last_section(index)) ? calculate_sections_per_row : 1
+  end
+
   def is_starting_row(index)
     index == 0 || (index % calculate_sections_per_row == 0)
   end
