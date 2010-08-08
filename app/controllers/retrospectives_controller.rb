@@ -8,7 +8,7 @@ class RetrospectivesController < ApplicationController
       format.js
     end
   end
-  
+
   # GET /retrospectives
   # GET /retrospectives.xml
   def index
@@ -16,19 +16,24 @@ class RetrospectivesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @retrospectives }
+      format.xml { render :xml => @retrospectives }
     end
   end
 
   # GET /retrospectives/1
   # GET /retrospectives/1.xml
   def show
-    @retrospective = Retrospective.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.text { render :content_type => 'text/plain', :action => 'text' }
-      format.xml  { render :xml => @retrospective }
+    begin
+      @retrospective = Retrospective.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error "attempt to access invalid retrospective #{params[:id]}"
+      redirect_to retrospectives_url, :notice => 'The retrospective you requested in no longer available.'
+    else
+      respond_to do |format|
+        format.html # show.html.erb
+        format.text { render :content_type => 'text/plain', :action => 'text' }
+        format.xml { render :xml => @retrospective }
+      end
     end
   end
 
@@ -39,7 +44,7 @@ class RetrospectivesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @retrospective }
+      format.xml { render :xml => @retrospective }
     end
   end
 
@@ -56,10 +61,10 @@ class RetrospectivesController < ApplicationController
     respond_to do |format|
       if @retrospective.save
         format.html { redirect_to(@retrospective, :notice => 'Retrospective was successfully created.') }
-        format.xml  { render :xml => @retrospective, :status => :created, :location => @retrospective }
+        format.xml { render :xml => @retrospective, :status => :created, :location => @retrospective }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @retrospective.errors, :status => :unprocessable_entity }
+        format.xml { render :xml => @retrospective.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -72,10 +77,10 @@ class RetrospectivesController < ApplicationController
     respond_to do |format|
       if @retrospective.update_attributes(params[:retrospective])
         format.html { redirect_to(@retrospective, :notice => 'Retrospective was successfully updated.') }
-        format.xml  { head :ok }
+        format.xml { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @retrospective.errors, :status => :unprocessable_entity }
+        format.xml { render :xml => @retrospective.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -88,7 +93,7 @@ class RetrospectivesController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to(retrospectives_url) }
-      format.xml  { head :ok }
+      format.xml { head :ok }
     end
   end
 end
