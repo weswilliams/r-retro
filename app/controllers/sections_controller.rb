@@ -89,6 +89,18 @@ class SectionsController < ApplicationController
     end
   end
 
+  def update_title
+    @section = Section.find(params[:id])
+    @section.title = params[:value]
+    respond_to do |format|
+      if @section.save
+        format.js { render :inline => @section.title }
+      else
+        format.js { redirect_to(retrospective_path(@section.retrospective), :notice => 'failed to update title!') }
+      end
+    end
+
+  end
   private
 
   def is_request_for_valid_retrospective(options = {})

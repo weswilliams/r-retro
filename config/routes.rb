@@ -5,6 +5,7 @@ RRetro::Application.routes.draw do
     post :refresh, :on => :member
     
     resources :sections do
+      post :update_title, :on => :member
       resources :items do
         post :add, :on => :collection
         post :update_value, :on => :member
