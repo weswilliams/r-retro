@@ -3,12 +3,7 @@ class SectionsController < ApplicationController
   # GET /sections
   # GET /sections.xml
   def index
-    begin
-      Retrospective.find(params[:retrospective_id])
-    rescue ActiveRecord::RecordNotFound
-      logger.error "attempted to access section information for invalid retrospective #{params[:retrospective_id]}"
-      redirect_to retrospectives_url, :notice => "The retrospective or section you requested is no longer available."
-    else
+    if is_request_for_valid_retrospective
       @sections = Section.find_all_by_retrospective_id(params[:retrospective_id])
 
       respond_to do |format|
@@ -23,12 +18,7 @@ class SectionsController < ApplicationController
   # GET /sections/1.xml
   def show
 
-    begin
-      @section = Section.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
-      logger.error "Attempt to access invalid section #{params[:id]}"
-      redirect_to retrospective_url, :notice => "The section you requested is no longer available."
-    else
+    if is_request_for_valid_retrospective(:redirect_url => retrospective_url(params[:retrospective_id]))
       respond_to do |format|
         format.html # show.html.erb
         format.xml { render :xml => @section }
@@ -39,18 +29,20 @@ class SectionsController < ApplicationController
   # GET /sections/new
   # GET /sections/new.xml
   def new
-    @section = Section.new
-    @section.retrospective = Retrospective.find(params[:retrospective_id])
+    if is_request_for_valid_retrospective
+      @section = Section.new
+      @section.retrospective = Retrospective.find(params[:retrospective_id])
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml { render :xml => @section }
+      respond_to do |format|
+        format.html # new.html.erb
+        format.xml { render :xml => @section }
+      end
     end
   end
 
   # GET /sections/1/edit
   def edit
-    @section = Section.find(params[:id])
+    is_request_for_valid_retrospective(:redirect_url => retrospectives_url)    
   end
 
   # POST /sections
@@ -97,5 +89,22 @@ class SectionsController < ApplicationController
     end
   end
 
+  private
 
+  def is_request_for_valid_retrospective(options = {})
+
+    puts "redirect to #{options[:redirect_url]}"
+    redirect_url = options[:redirect_url] || retrospectives_url
+
+    begin
+      @retrospective = Retrospective.find(params[:retrospective_id])
+      @section = Section.find(params[:id]) if (params[:id])  
+    rescue ActiveRecord::RecordNotFound
+      logger.error "attempted to access section information for invalid retrospective #{params[:retrospective_id]}"
+      redirect_to redirect_url, :notice => "The retrospective or section you requested is no longer available."
+      false
+    else
+      true
+    end
+  end
 end
