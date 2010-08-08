@@ -3,7 +3,7 @@
 <% end %>
 <td class="title" colspan="<%= section_column_span(section_counter) %>"><%= section.title %>
   <%= link_to '(edit)', edit_retrospective_section_path(section.retrospective, section), :class => 'inline_link' %>
-  <a href="javascript:void(0);" id="add_item_<%= section.id %>" class="inline_link">(new item)</a>
+  <%= link_to '(new item)', '', :href => 'javascript:void(0);', :id => "add_item_#{section.id}", :class => 'inline_link' %>
   <span id="inline_add_item_<%= section.id %>"></span>
   <%= inline_edit_item_with_remote_update(:id => section.id, :url => add_retrospective_section_items_url(section.retrospective, section), :refresh_url => refresh_retrospective_url(:section_id => section) ) %>
 </td>
