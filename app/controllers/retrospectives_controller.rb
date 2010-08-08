@@ -23,12 +23,7 @@ class RetrospectivesController < ApplicationController
   # GET /retrospectives/1
   # GET /retrospectives/1.xml
   def show
-    begin
-      @retrospective = Retrospective.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
-      logger.error "attempt to access invalid retrospective #{params[:id]}"
-      redirect_to retrospectives_url, :notice => 'The retrospective you requested in no longer available.'
-    else
+    if is_request_for_valid_retrospective
       respond_to do |format|
         format.html # show.html.erb
         format.text { render :content_type => 'text/plain', :action => 'text' }
@@ -50,7 +45,7 @@ class RetrospectivesController < ApplicationController
 
   # GET /retrospectives/1/edit
   def edit
-    @retrospective = Retrospective.find(params[:id])
+    is_request_for_valid_retrospective
   end
 
   # POST /retrospectives
@@ -72,15 +67,16 @@ class RetrospectivesController < ApplicationController
   # PUT /retrospectives/1
   # PUT /retrospectives/1.xml
   def update
-    @retrospective = Retrospective.find(params[:id])
+    if is_request_for_valid_retrospective
 
-    respond_to do |format|
-      if @retrospective.update_attributes(params[:retrospective])
-        format.html { redirect_to(@retrospective, :notice => 'Retrospective was successfully updated.') }
-        format.xml { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml { render :xml => @retrospective.errors, :status => :unprocessable_entity }
+      respond_to do |format|
+        if @retrospective.update_attributes(params[:retrospective])
+          format.html { redirect_to(@retrospective, :notice => 'Retrospective was successfully updated.') }
+          format.xml { head :ok }
+        else
+          format.html { render :action => "edit" }
+          format.xml { render :xml => @retrospective.errors, :status => :unprocessable_entity }
+        end
       end
     end
   end
@@ -96,4 +92,20 @@ class RetrospectivesController < ApplicationController
       format.xml { head :ok }
     end
   end
+
+  private
+
+  def is_request_for_valid_retrospective()
+
+    begin
+      @retrospective = Retrospective.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error "attempt to access invalid retrospective #{params[:id]}"
+      redirect_to retrospectives_url, :notice => 'The retrospective you requested in no longer available.'
+      false
+    else
+      true
+    end
+  end
+
 end
