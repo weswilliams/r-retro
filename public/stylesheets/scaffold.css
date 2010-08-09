@@ -36,6 +36,42 @@ div.field, div.actions {
   color: green;
 }
 
+.site_header {
+  background-color: #66F;
+  font-weight: normal;
+  font-size: small;
+  height: 20px;
+  width: 100%;
+  padding-top: 2px;
+  padding-left: 5px;
+  border-left:#8b008b solid 1px;
+}
+
+.site_footer {
+  background-color: #66F;
+  font-weight: normal;
+  font-size: small;
+  height: 20px;
+  width: 100%;
+  padding-top: 2px;
+  padding-left: 5px;
+  border-left:#8b008b solid 1px;
+  border-top:#8b008b solid 1px;
+}
+
+.retro_title {
+  background-color: #99F;
+  font-size: 24px;
+  font-weight: bold;
+  height: 35px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 5px;
+  border-top:#8b008b solid 1px;
+  border-bottom:#8b008b solid 1px;
+  border-left:#8b008b solid 1px;
+}
+
 .refresh {
   display: inline;
   font-size: x-small;
@@ -55,25 +91,25 @@ div.field, div.actions {
   display: table;
 }
 
-.retro_title {
-  font-size: 24px;
-  font-weight: bold;
-}
-
 table.sections {
-  width: 100%
+  width: 100%;
+  border-spacing:0px;
 }
 
 td.title {
+  background-color: #CCF; 
   text-align: left;
   font-size: 14px;
   font-weight: bold;
+  border-top:#8b008b solid 1px;
+  border-left:#8b008b solid 1px;
 }
 
 td.section_items {
   text-indent: 7px;
   font-size: 12px;
   vertical-align: top;
+  border-left:#8b008b solid 1px;
 }
 
 #error_explanation {
