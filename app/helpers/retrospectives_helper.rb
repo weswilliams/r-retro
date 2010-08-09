@@ -12,6 +12,8 @@ module RetrospectivesHelper
             '#{url}', {
       externalControl:"#{element_id}_#{id}",
       highlightcolor: 'transparent',
+      cancelText: '(cancel)',
+      okText: '(ok)',
       clickToEditText: ''#{on_complete}
     });
     $("#{element_id}_#{id}").onclick = function() {
