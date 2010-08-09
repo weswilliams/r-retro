@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" afterPath="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" afterPath="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/show.html.erb" afterPath="$PROJECT_DIR$/app/views/sections/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/show.html.erb" afterPath="$PROJECT_DIR$/app/views/items/show.html.erb" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +57,7 @@
       <file leaf-file-name="scaffold.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="23" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.35738832">
+            <state line="100" column="12" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.6494845">
               <folding />
             </state>
           </provider>
@@ -550,6 +545,7 @@
     <frame x="-4" y="-4" width="1688" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -562,7 +558,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -581,7 +576,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- worked on the styling to make the site have some type of look and feel even if it is  bad" />
+    <option name="LAST_COMMIT_MESSAGE" value="- more styling around the notices, moved to site header and fixed font so it was a good size and readable but not too obnoxious" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -594,7 +589,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="- added intermittent updates for section items" />
     <MESSAGE value="- added a comment around the helper method that i took from an earlier rails version" />
     <MESSAGE value="- checkbbox to disable and enable auto refresh" />
     <MESSAGE value="- small change to use prototype short cut instead of document.find..." />
@@ -619,6 +613,7 @@
     <MESSAGE value="- additional error handling for RetrospectiveController&#10;" />
     <MESSAGE value="- changed section title to inline edit" />
     <MESSAGE value="- worked on the styling to make the site have some type of look and feel even if it is  bad" />
+    <MESSAGE value="- more styling around the notices, moved to site header and fixed font so it was a good size and readable but not too obnoxious" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -711,7 +706,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="23" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.35738832">
+        <state line="100" column="12" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.6494845">
           <folding />
         </state>
       </provider>
