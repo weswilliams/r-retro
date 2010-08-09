@@ -7,7 +7,9 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div class="site_header">R-Retro - The Distrubuted Retrospective Tool</div>
+  <div class="site_header">
+    <span id="site_title">R-Retro - The Distrubuted Retrospective Tool</span>
+    <span id="notice"><%= notice %></span></div>
   <%= yield %>
   <div class="site_footer">R-Retro - The Distrubuted Retrospective Tool</div>
 </body>

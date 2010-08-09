@@ -33,7 +33,10 @@ div.field, div.actions {
 }
 
 #notice {
-  color: green;
+  color: #adff2f;
+  font-size: small;
+  font-weight: bold;
+  float: right;
 }
 
 .site_header {
@@ -136,3 +139,8 @@ td.section_items {
   font-size: 12px;
   list-style: square;
 }
+
+/*.editor_cancel*/
+/*.editor_cancel_link*/
+/*.editor_field*/
+/*.editor_ok_button*/
