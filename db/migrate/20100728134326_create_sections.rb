@@ -1,8 +1,8 @@
 class CreateSections < ActiveRecord::Migration
   def self.up
     create_table :sections do |t|
-      t.integer :retrospective_id
       t.string :title
+      t.belongs_to :retrospective
 
       t.timestamps
     end

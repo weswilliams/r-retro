@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(:version => 20100731114023) do
   end
 
   create_table "sections", :force => true do |t|
-    t.integer  "retrospective_id"
     t.string   "title"
+    t.integer  "retrospective_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
