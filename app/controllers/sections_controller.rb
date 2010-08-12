@@ -89,6 +89,21 @@ class SectionsController < ApplicationController
     end
   end
 
+  def move_item_to
+    @section = Section.find(params[:id])
+    @item = Item.find(/^li_item_(\d+)/.match(params[:item_id])[1].to_i)
+    @from_section = @item.section
+    @section.items << @item
+    respond_to do |format|
+      if @section.save
+        format.js
+      else
+        format.js { redirect_to(retrospective_path(@section.retrospective), :notice => 'failed to move item!') }
+      end
+    end
+
+  end
+
   def update_title
     @section = Section.find(params[:id])
     @section.title = params[:value]

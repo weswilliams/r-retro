@@ -16,6 +16,7 @@
       <td id="<%= "section_items_#{current_section.id}" %>" class="section_items" colspan="<%= section_column_span(items_section_index) %>">
         <%= render :partial => 'sections/section_items', :locals => {:current_section => current_section} %>
       </td>
+      <%= drop_receiving_element("section_items_#{current_section.id}", :url => move_item_to_retrospective_section_path(current_section.retrospective, current_section), :with => "'item_id=' + encodeURIComponent(element.id)") %>      
       <%= periodically_call_remote(:url => refresh_retrospective_url(:section_id => section), :frequency => 20, :condition => "$('enable_auto_refresh').checked") %>
     <% end %>
   </tr>
