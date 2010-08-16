@@ -2,8 +2,8 @@
   <tr class="section_row">
 <% end %>
 <td class="title" colspan="<%= section_column_span(section_counter) %>"><span id="inline_section_title_<%= section.id %>"><%= section.title %></span>
-  <%= link_to '(edit)', '', :href => 'javascript:void(0);', :id => "section_title_#{section.id}", :class => 'inline_link' %>
-  <%= link_to '(new item)', '', :href => 'javascript:void(0);', :id => "add_item_#{section.id}", :class => 'inline_link' %>
+  <%= link_to image_tag("edit.png", :width => "18px", :height => "18px", :alt => "(edit)"), '', :href => 'javascript:void(0);', :id => "section_title_#{section.id}", :class => 'inline_link' %>
+  <%= link_to image_tag("new-item.png", :width => "18px", :height => "18px", :alt => "(+1)"), '', :href => 'javascript:void(0);', :id => "add_item_#{section.id}", :class => 'inline_link' %>
   <span id="inline_add_item_<%= section.id %>"></span>
   <%= inline_edit_item_with_remote_update(:id => section.id, :element_id => "section_title", :url => update_title_retrospective_section_url(section.retrospective, section), :on_complete => '' ) %>
   <%= inline_edit_item_with_remote_update(:id => section.id, :url => add_retrospective_section_items_url(section.retrospective, section), :refresh_url => refresh_retrospective_url(:section_id => section) ) %>
