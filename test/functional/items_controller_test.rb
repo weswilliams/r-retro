@@ -34,6 +34,14 @@ class ItemsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should remove vote for item" do
+    item = items :item_1
+    assert_difference('item.item_votes.size', -1) do
+      xhr :post, :remove_vote, :controller => 'items', :retrospective_id => item.section.retrospective.id, :section_id => item.section.id, :id => item.id
+    end
+    assert_response :success
+  end
+
   test "test should route add item of sections of retrospective" do
     options = {:controller => 'items', :action => 'add', :retrospective_id => '1', :section_id => '2'}
     assert_routing({:method => 'post', :path => 'retrospectives/1/sections/2/items/add'}, options)

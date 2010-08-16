@@ -66,7 +66,18 @@ class ItemsController < ApplicationController
         format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to add item vote!') }
       end
     end
+  end
 
+  def remove_vote
+    @item = Item.find(params[:id])
+    item_vote = @item.item_votes.pop
+    respond_to do |format|
+      if item_vote.destroy
+        format.js { render :action => :vote_for }
+      else
+        format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to remove item vote!') }
+      end
+    end
   end
 
   # POST /items
