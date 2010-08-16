@@ -25,6 +25,19 @@ class ItemsControllerTest < ActionController::TestCase
     options = {:controller => 'items', :action => 'index', :retrospective_id => '1', :section_id => '2'}
     assert_routing('retrospectives/1/sections/2/items', options)
   end
+  
+  test "should create vote for item" do
+    item = items :item_1
+    assert_difference('item.item_votes.size') do
+      xhr :post, :vote_for, :controller => 'items', :retrospective_id => item.section.retrospective.id, :section_id => item.section.id, :id => item.id
+    end
+    assert_response :success
+  end
+
+  test "test should route add item of sections of retrospective" do
+    options = {:controller => 'items', :action => 'add', :retrospective_id => '1', :section_id => '2'}
+    assert_routing({:method => 'post', :path => 'retrospectives/1/sections/2/items/add'}, options)
+  end
 
   test "should get index" do
     get :index, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id

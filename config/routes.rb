@@ -1,6 +1,5 @@
 RRetro::Application.routes.draw do
 
-
   resources :retrospectives  do
     post :refresh, :on => :member
     
@@ -10,6 +9,7 @@ RRetro::Application.routes.draw do
       resources :items do
         post :add, :on => :collection
         post :update_value, :on => :member
+        post :vote_for, :on => :member
       end
     end
   end

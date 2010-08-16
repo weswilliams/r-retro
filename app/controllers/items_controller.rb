@@ -56,6 +56,19 @@ class ItemsController < ApplicationController
     end
   end
 
+  def vote_for
+    @item = Item.find(params[:id])
+    @item.item_votes << ItemVote.new
+    respond_to do |format|
+      if @item.save
+        format.js
+      else
+        format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to add item vote!') }
+      end
+    end
+
+  end
+
   # POST /items
   # POST /items.xml
   def create
