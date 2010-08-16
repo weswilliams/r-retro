@@ -72,7 +72,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     item_vote = @item.item_votes.pop
     respond_to do |format|
-      if item_vote.destroy
+      if item_vote != nil && item_vote.destroy
         format.js { render :action => :vote_for }
       else
         format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to remove item vote!') }
