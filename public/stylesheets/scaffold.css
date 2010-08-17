@@ -75,6 +75,10 @@ div.field, div.actions {
   border-left: #8b008b solid 1px;
 }
 
+.retro_list {
+  font-size: 24px;
+  font-weight: bold;
+}
 .refresh {
   display: inline;
   font-size: x-small;
@@ -125,6 +129,20 @@ input:focus {
 table.sections {
   width: 100%;
   border-spacing: 0px;
+}
+
+table.retrospectives {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+th.title {
+  background-color: #CCF;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  border-top: #8b008b solid 1px;
+  border-left: #8b008b solid 1px;
 }
 
 td.title {

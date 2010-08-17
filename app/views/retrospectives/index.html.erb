@@ -1,23 +1,23 @@
 <div class="retro_title">
   <span>Available Retrospectives</span>
 </div>
-<table>
+<table class="retrospectives">
   <tr>
-    <th>Title</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th class="title">Title</th>
+    <th class="title"></th>
   </tr>
-<% @retrospectives.each do |retrospective| %>
-  <tr>
-    <td><%= retrospective.title %></td>
-    <td><%= link_to image_tag("show-retro.png", :width => "18px", :height => "18px", :alt => "(+1)"), retrospective, :title => 'show retrospective' %></td>
-    <td><%= link_to image_tag("edit.png", :width => "18px", :height => "18px", :alt => "(edit)"), edit_retrospective_path(retrospective), :title => 'rename retrospective' %></td>
-    <td><%= link_to image_tag("delete.png", :width => "18px", :height => "18px", :alt => "(+1)"), retrospective, :confirm => 'Are you sure?', :method => :delete, :title => 'delete retrospective' %></td>
-  </tr>
-<% end %>
+  <% @retrospectives.each do |retrospective| %>
+    <tr>
+      <td class="retro_list"><%= link_to retrospective.title, retrospective, :title => 'show retrospective' %></td>
+      <td>
+        <%= link_to image_tag("show-retro.png", :width => "18px", :height => "18px", :alt => "(+1)"), retrospective, :title => 'show retrospective' %>
+        <%= link_to image_tag("edit.png", :width => "18px", :height => "18px", :alt => "(edit)"), edit_retrospective_path(retrospective), :title => 'rename retrospective' %>
+        <%= link_to image_tag("delete.png", :width => "18px", :height => "18px", :alt => "(+1)"), retrospective, :confirm => 'Are you sure?', :method => :delete, :title => 'delete retrospective' %>
+      </td>
+    </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <%= link_to image_tag("new-retro.png", :width => "18px", :height => "18px", :alt => "(new retrospective)"), new_retrospective_path, :title => 'new retrospective' %>
