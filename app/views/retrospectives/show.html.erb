@@ -1,10 +1,10 @@
 
 <div class="retro_title">
   <span><%= @retrospective.title %></span>
-  <%= link_to image_tag("edit.png", :width => "18px", :height => "18px", :alt => "(rename)"), edit_retrospective_path(@retrospective), :class => 'inline_link', :title => 'rename' %>
-  <%= link_to image_tag("text.png", :width => "18px", :height => "18px", :alt => "(text)"), retrospective_path(@retrospective, :format => :text), :class => 'inline_link', :title => 'text version' %>
-  <%= link_to image_tag("new-section.png", :width => "18px", :height => "18px", :alt => "(new section)"), new_retrospective_section_path(@retrospective), :class => 'inline_link', :title => 'new section' %>
-  <%= link_to image_tag("home.png", :width => "18px", :height => "18px", :alt => "(home)"), retrospectives_path, :class => 'inline_link', :title => 'home' %>
+  <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(rename)"), edit_retrospective_path(@retrospective), :class => 'inline_link', :title => 'rename' %>
+  <%= link_to image_tag("text.png", :class => 'nav_image', :alt => "(text)"), retrospective_path(@retrospective, :format => :text), :class => 'inline_link', :title => 'text version' %>
+  <%= link_to image_tag("new-section.png", :class => 'nav_image', :alt => "(new section)"), new_retrospective_section_path(@retrospective), :class => 'inline_link', :title => 'new section' %>
+  <%= link_to image_tag("home.png", :class => 'nav_image', :alt => "(home)"), retrospectives_path, :class => 'inline_link', :title => 'home' %>
   <%= check_box_tag 'enable_auto_refresh', 'auto refresh', false, :class => 'refresh'  %> <span class="refresh">auto refresh</span>
 </div>
 

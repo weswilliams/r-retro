@@ -79,6 +79,11 @@ div.field, div.actions {
   font-size: 24px;
   font-weight: bold;
 }
+
+a.retro_list {
+  text-decoration: none;
+}
+
 .refresh {
   display: inline;
   font-size: x-small;
@@ -90,6 +95,13 @@ div.field, div.actions {
   display: inline;
   font-size: x-small;
   font-weight: normal;
+  border: none;
+}
+
+.nav_image {
+  width: 18px;
+  height: 18px;
+  border: none;
 }
 
 .editor_cancel_link {
