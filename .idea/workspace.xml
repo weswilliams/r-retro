@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
+    <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="- add images for retrospective action links&#10;- added title text for all images">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" afterPath="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/new-retro.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="r_retro.iws" />
@@ -26,10 +28,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_item.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_item.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="43" selection-start="268" selection-end="268" vertical-scroll-proportion="0.16267942">
+            <state line="4" column="93" selection-start="239" selection-end="318" vertical-scroll-proportion="-2.6153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="148" selection-end="148" vertical-scroll-proportion="0.32535884">
               <folding />
             </state>
           </provider>
@@ -84,10 +95,10 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/test/functional/items_controller_test.rb" />
         <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
         <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
+        <option value="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
       </list>
     </option>
   </component>
@@ -619,13 +630,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="320" selection-end="326" vertical-scroll-proportion="0.5522042">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0.rc/lib/action_view/helpers/asset_tag_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="615" column="10" selection-start="34799" selection-end="34799" vertical-scroll-proportion="0.7927928">
@@ -656,7 +660,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="268" selection-end="268" vertical-scroll-proportion="0.16267942">
+        <state line="4" column="93" selection-start="239" selection-end="318" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="148" selection-end="148" vertical-scroll-proportion="0.32535884">
           <folding />
         </state>
       </provider>
