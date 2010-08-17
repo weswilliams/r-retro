@@ -97,15 +97,15 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" lib="false" git="false" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" lib="false" git="false" />
+      </requirement>
+      <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
@@ -169,15 +169,15 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" lib="sqlite3" git="false" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" git="false" />
       </requirement>
       <source from="config/database.yml" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" lib="sqlite3" git="false" />
+      </requirement>
+      <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
@@ -231,6 +231,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.22, C:/jruby-1.5.1/lib/ruby/gems/1.8/gems/tzinfo-0.3.22)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord-jdbc-adapter (v0.9.7, C:/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.7-java)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord-jdbcsqlite3-adapter (v0.9.7, C:/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-jdbcsqlite3-adapter-0.9.7-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.0.rc.5, C:/jruby-1.5.1/lib/ruby/gems/1.8/gems/bundler-1.0.0.rc.5)" level="application" />
   </component>
 </module>
 
