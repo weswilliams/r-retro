@@ -136,6 +136,11 @@ table.retrospectives {
   border-spacing: 0px;
 }
 
+table.groups {
+  width: 100%;
+  border-spacing: 0px;
+}
+
 th.title {
   background-color: #CCF;
   text-align: left;
@@ -159,6 +164,16 @@ td.section_items {
   font-size: 12px;
   vertical-align: top;
   border-left: #8b008b solid 1px;
+}
+
+th.group_header {
+  background-color: #CCF;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  border-top: #8b008b solid 1px;
+  border-left: #8b008b solid 1px;
+  width: 100%;
 }
 
 #error_explanation {
