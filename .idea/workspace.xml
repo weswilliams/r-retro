@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="" />
+    <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/SG0899445.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/SG0899445.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/r_retro.iml" afterPath="$PROJECT_DIR$/.idea/r_retro.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+    </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="r_retro.iws" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,38 +31,22 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/index.html.erb">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="264" selection-end="264" vertical-scroll-proportion="0.3448276">
+            <state line="9" column="39" selection-start="243" selection-end="243" vertical-scroll-proportion="0.18567961">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffold.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+      <file leaf-file-name="boot.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/boot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="8" selection-start="2033" selection-end="2038" vertical-scroll-proportion="-6.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_section.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sections/_section.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="82" selection-end="96" vertical-scroll-proportion="-1.9615384">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-4.576923">
-              <folding />
+            <state line="13" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1280231015328" expanded="true" signature="111:301" placeholder="begin ... end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/item_vote.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/item_votes.yml" />
         <option value="$PROJECT_DIR$/app/views/item_vote/vote_for.html.erb" />
         <option value="$PROJECT_DIR$/app/models/item.rb" />
@@ -95,6 +85,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -159,25 +150,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r_retro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r_retro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="script" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,7 +184,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="140" />
-    <property name="options.lastSelected" value="preferences.sourceCode.General" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -500,21 +473,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="19" width="1174" height="976" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32549942" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2062937" sideWeight="0.65687424" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2062937" sideWeight="0.5663925" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34312573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43360752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32549942" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -576,46 +549,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0.rc/lib/action_controller/metal/mime_responds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="10" selection-start="9657" selection-end="9657" vertical-scroll-proportion="0.22149123" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0.rc/lib/action_controller/metal/rendering.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="447" selection-end="447" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby191/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0.rc/lib/active_support/testing/assertions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="10" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.44517544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/item_votes.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/items_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="7" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.rjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="19" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.48245615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/500.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby191/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0.rc/lib/action_view/helpers/asset_tag_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="615" column="10" selection-start="34799" selection-end="34799" vertical-scroll-proportion="0.7927928" />
@@ -642,28 +575,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sections/_section.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="82" selection-end="96" vertical-scroll-proportion="-1.9615384">
-          <folding />
+        <state line="3" column="3" selection-start="82" selection-end="96" vertical-scroll-proportion="0.1009901">
+          <folding>
+            <marker date="1282006858687" expanded="true" signature="3:75" placeholder="if ... end" />
+            <marker date="1282006858687" expanded="true" signature="150:1127" placeholder="..." />
+            <marker date="1282006858687" expanded="true" signature="1132:2059" placeholder="if ... end" />
+            <marker date="1282006858687" expanded="true" signature="1182:2051" placeholder="..." />
+            <marker date="1282006858687" expanded="true" signature="1267:2041" placeholder="do ... end" />
+            <marker date="1282006858687" expanded="true" signature="1509:1630" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="-4.576923">
-          <folding />
+        <state line="7" column="0" selection-start="815" selection-end="815" vertical-scroll-proportion="0.23564357">
+          <folding>
+            <marker date="1282006751390" expanded="true" signature="25:952" placeholder="..." />
+            <marker date="1282006751390" expanded="true" signature="979:1028" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="8" selection-start="2033" selection-end="2038" vertical-scroll-proportion="-6.0">
+        <state line="138" column="8" selection-start="2033" selection-end="2038" vertical-scroll-proportion="0.28901735">
+          <folding>
+            <marker date="1282055416768" expanded="true" signature="5:49" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="71:168" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="174:239" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="243:261" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="273:291" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="301:345" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="370:396" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="406:484" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="499:677" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="692:903" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="918:1163" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1177:1220" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1230:1313" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1328:1395" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1417:1484" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1504:1672" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1688:1781" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1795:1823" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1844:1906" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1923:1964" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="1987:2028" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="2039:2195" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="2206:2362" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="2381:2480" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="2501:2634" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="2658:2829" placeholder="{...}" />
+            <marker date="1282055416768" expanded="true" signature="2856:2900" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="264" selection-end="264" vertical-scroll-proportion="0.3448276">
+        <state line="10" column="27" selection-start="264" selection-end="264" vertical-scroll-proportion="0.35416666">
+          <folding>
+            <marker date="1282055593686" expanded="true" signature="24:71" placeholder="..." />
+            <marker date="1282055593686" expanded="true" signature="102:928" placeholder="..." />
+            <marker date="1282055593686" expanded="true" signature="109:178" placeholder="..." />
+            <marker date="1282055593686" expanded="true" signature="206:917" placeholder="do ... end" />
+            <marker date="1282055593686" expanded="true" signature="235:907" placeholder="..." />
+            <marker date="1282055593686" expanded="true" signature="362:897" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/jruby-1.5.1/lib/ruby/gems/1.8/gems/bundler-1.0.0.rc.5/lib/bundler/definition.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.33186814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="16" selection-start="37" selection-end="37" vertical-scroll-proportion="0.039534885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1280231015328" expanded="true" signature="111:301" placeholder="begin ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="243" selection-end="243" vertical-scroll-proportion="0.18567961">
           <folding />
         </state>
       </provider>
