@@ -33,45 +33,4 @@ module RetrospectivesHelper
      javascript_tag(code)
    end
 
-  def calculate_sections_per_row()
-    @retrospective.sections.length <= 3 ? 3 : 2
-  end
-
-  def section_column_span(index)
-    (is_starting_row(index) && is_last_section(index)) ? calculate_sections_per_row : 1
-  end
-
-  def is_starting_row(index)
-    index == 0 || (index % calculate_sections_per_row == 0)
-  end
-
-  def is_last_section(index)
-    index == @retrospective.sections.length - 1
-  end
-
-  def is_in_first_row(index)
-    index < calculate_sections_per_row
-  end
-
-  def is_first_ending_row(index)
-    is_in_first_row(index) && calculate_sections_per_row - index == 1
-  end
-
-  def is_not_in_first_row(index)
-    index > calculate_sections_per_row
-  end
-
-  def is_continuing_ending_row(index)
-    sections_per_row = calculate_sections_per_row
-    is_not_in_first_row(index) && index % sections_per_row == 1
-  end
-
-  def is_ending_row(index)
-    sections_per_row = calculate_sections_per_row
-    is_last_section(index) ||
-            is_first_ending_row(index) ||
-            is_continuing_ending_row(index)
-  end
-
-
 end
