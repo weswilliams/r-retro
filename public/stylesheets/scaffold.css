@@ -1,215 +1,194 @@
 body {
-  background-color: #fff;
-  color: #333;
+    background-color: #fff;
+    color: #333;
 }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
 }
 
 a {
-  color: #000;
+    color: #000;
 }
 
 a:visited {
-  color: #666;
+    color: #666;
 }
 
 a:hover {
-  color: #fff;
-  background-color: #000;
+    color: #fff;
+    background-color: #000;
 }
 
 div.field, div.actions {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #notice {
-  color: #adff2f;
-  font-size: small;
-  font-weight: bold;
-  float: right;
+    color: #adff2f;
+    font-size: small;
+    font-weight: bold;
+    float: right;
 }
 
 .site_header {
-  background-color: #66F;
-  font-weight: normal;
-  font-size: small;
-  height: 20px;
-  width: 100%;
-  padding-top: 2px;
-  padding-left: 5px;
-  border-left: #8b008b solid 1px;
+    background-color: #66F;
+    font-weight: normal;
+    font-size: small;
+    height: 20px;
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 5px;
+    border-left: #8b008b solid 1px;
 }
 
 .site_footer {
-  background-color: #66F;
-  font-weight: normal;
-  font-size: small;
-  height: 20px;
-  width: 100%;
-  padding-top: 2px;
-  padding-left: 5px;
-  border-left: #8b008b solid 1px;
-  border-top: #8b008b solid 1px;
+    background-color: #66F;
+    font-weight: normal;
+    font-size: small;
+    height: 20px;
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 5px;
+    border-left: #8b008b solid 1px;
+    border-top: #8b008b solid 1px;
 }
 
 .retro_title {
-  background-color: #99F;
-  font-size: 24px;
-  font-weight: bold;
-  height: 35px;
-  width: 100%;
-  padding-top: 10px;
-  padding-left: 5px;
-  border-top: #8b008b solid 1px;
-  border-bottom: #8b008b solid 1px;
-  border-left: #8b008b solid 1px;
+    background-color: #99F;
+    font-size: 24px;
+    font-weight: bold;
+    height: 35px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-top: #8b008b solid 1px;
+    border-bottom: #8b008b solid 1px;
+    border-left: #8b008b solid 1px;
 }
 
 .retro_list {
-  font-size: 24px;
-  font-weight: bold;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 a.retro_list {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .refresh {
-  display: inline;
-  font-size: x-small;
-  font-weight: normal;
-  float: right;
+    display: inline;
+    font-size: x-small;
+    font-weight: normal;
+    float: right;
 }
 
 .inline_link {
-  display: inline;
-  font-size: x-small;
-  font-weight: normal;
-  border: none;
+    display: inline;
+    font-size: x-small;
+    font-weight: normal;
+    border: none;
 }
 
 .nav_image {
-  width: 18px;
-  height: 18px;
-  border: none;
+    width: 18px;
+    height: 18px;
+    border: none;
 }
 
 .editor_cancel_link {
-  display: inline;
-  font-size: x-small;
-  font-weight: normal;
+    display: inline;
+    font-size: x-small;
+    font-weight: normal;
 }
 
 .editor_ok_button {
-  font-size: x-small;
-  font-weight: normal;
-  padding: 5px;
-  background: none;
-  border: none;
-  display: inline;
-  text-decoration: underline;
-  cursor: pointer;
+    font-size: x-small;
+    font-weight: normal;
+    padding: 5px;
+    background: none;
+    border: none;
+    display: inline;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .editor_field {
-  border: #8b008b solid 1px;
-  background-color: inherit;
-  cursor: auto;
-  outline:none;
+    border: #8b008b solid 1px;
+    background-color: inherit;
+    cursor: auto;
+    outline: none;
 }
 
 input:focus {
-  border-color: #8b008b;
+    border-color: #8b008b;
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+    padding: 2px;
+    background-color: red;
+    display: table;
 }
 
-table.sections {
-  width: 100%;
-  border-spacing: 0px;
+.section {
+    top: inherit;
+    float: left;
+    width: 80%;
 }
 
-table.retrospectives {
-  width: 100%;
-  border-spacing: 0px;
+.groups {
+    top: inherit;
+    float: right;
+    width: 20%;
 }
 
-table.groups {
-  width: 100%;
-  border-spacing: 0px;
+.title {
+    vertical-align: top;
+    background-color: #CCF;
+    text-align: left;
+    text-indent: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: #8b008b solid 1px;
+    border-left: #8b008b solid 1px;
 }
 
-th.title {
-  background-color: #CCF;
-  text-align: left;
-  font-size: 14px;
-  font-weight: bold;
-  border-top: #8b008b solid 1px;
-  border-left: #8b008b solid 1px;
-}
-
-td.title {
-  background-color: #CCF;
-  text-align: left;
-  font-size: 14px;
-  font-weight: bold;
-  border-top: #8b008b solid 1px;
-  border-left: #8b008b solid 1px;
-}
-
-td.section_items {
-  text-indent: 7px;
-  font-size: 12px;
-  vertical-align: top;
-  border-left: #8b008b solid 1px;
-}
-
-th.group_header {
-  background-color: #CCF;
-  text-align: left;
-  font-size: 14px;
-  font-weight: bold;
-  border-top: #8b008b solid 1px;
-  border-left: #8b008b solid 1px;
-  width: 100%;
+.section_items {
+    text-indent: 7px;
+    font-size: 12px;
+    vertical-align: top;
 }
 
 #error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
 }
 
 #error_explanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  margin-bottom: 0px;
-  background-color: #c00;
-  color: #fff;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
 }
 
 #error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
+    font-size: 12px;
+    list-style: square;
 }
 

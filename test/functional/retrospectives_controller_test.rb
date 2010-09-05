@@ -6,7 +6,7 @@ class RetrospectivesControllerTest < ActionController::TestCase
   end
 
   def method_missing(id, *args, &block)
-    return show_with_sections_and_expect_rows($1.to_i, $2.to_i) if id.to_s =~ /^show_with_(\d+)_section[s]?_and_expect_(\d+)_row[s]?/
+    return show_with_sections($1.to_i) if id.to_s =~ /^show_with_(\d+)_section[s]?/
     super
   end
 
@@ -17,22 +17,23 @@ class RetrospectivesControllerTest < ActionController::TestCase
   end
 
   test "should display sections on show retrospective page" do
-    show_with_1_section_and_expect_1_row
+    show_with_1_section
   end
 
   test "should display 1 to 3 sections in a single row" do
-    show_with_3_sections_and_expect_1_row
+    show_with_3_sections
   end
 
   test "should display 2 sections per row when more than 3 sections" do
-    show_with_4_sections_and_expect_2_rows
+    show_with_4_sections
   end
 
-  def show_with_sections_and_expect_rows(sections, expected_rows)
+  def show_with_sections(sections)
     (2..sections).each {|cnt| create_section(cnt.to_s) }
+    group_titles = 1
     get :show, :id => @retrospective.to_param
-    assert_select 'tr.section_row', expected_rows
-    assert_select 'td.title', sections
+    assert_select 'div.section', sections
+    assert_select 'div.title', sections + group_titles
   end
 
   def create_section(title_appendix)
