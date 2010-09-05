@@ -139,14 +139,14 @@ input:focus {
 }
 
 .section_row {
-    display: table;
+    overflow: hidden;
     width: 80%;
 }
 
 .section {
     top: inherit;
     float: left;
-    width: 40%;
+    width: 50%;
 }
 
 .groups {
