@@ -1,5 +1,11 @@
 module RetrospectivesHelper
 
+  def section_rows(sections_per_row = 2)
+    rows = []
+    @retrospective.sections.each_slice(sections_per_row) {|row| rows.push row}
+    rows
+  end
+
   def inline_edit_item_with_remote_update(options = [])
     id = options[:id]
     url = options[:url]

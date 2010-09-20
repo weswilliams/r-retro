@@ -12,5 +12,5 @@
   <div class="title">Groups</div>
   <div>New Group</div>
 </div>
-<%= render @retrospective.sections %>
+<%= render :partial => "sections/section_row", :collection => section_rows, :as => :row %>
 <br/>
