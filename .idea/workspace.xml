@@ -46,19 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_section_row.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/sections/_section_row.erb">
+      <file leaf-file-name="sections_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/sections_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="34" selection-start="60" selection-end="60" vertical-scroll-proportion="0.02293578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="8" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.04587156">
               <folding />
             </state>
           </provider>
@@ -111,13 +102,13 @@
         <option value="$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb" />
         <option value="$PROJECT_DIR$/../../temp/float-sections.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-        <option value="$PROJECT_DIR$/app/helpers/sections_helper.rb" />
         <option value="$PROJECT_DIR$/test/unit/helpers/sections_helper_test.rb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section_rows.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section_row.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/sections_helper.rb" />
       </list>
     </option>
   </component>
@@ -782,30 +773,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sections_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="134" selection-end="134" vertical-scroll-proportion="0.18897638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/helpers/sections_helper_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.09174312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/retrospectives_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="5" selection-start="612" selection-end="612" vertical-scroll-proportion="0.33228347">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="953" selection-end="953" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
@@ -827,6 +797,27 @@
     <entry file="file://$PROJECT_DIR$/app/views/sections/_section_row.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="34" selection-start="60" selection-end="60" vertical-scroll-proportion="0.02293578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/helpers/sections_helper_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.09174312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="953" selection-end="953" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/sections_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.04587156">
           <folding />
         </state>
       </provider>
