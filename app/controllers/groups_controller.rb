@@ -4,7 +4,9 @@ class GroupsController < ApplicationController
       @retrospective = Retrospective.find(params[:retrospective_id])
       @group = Group.new
       @group.retrospective_id = @retrospective.id
-      @group.title = params[:title]
+      @group.title = params[:title] == nil ?
+              "Group#{Group.where("retrospective_id = ?", @retrospective.id).size + 1}" :
+              params[:title]
 
       respond_to do |format|
         if @group.save
