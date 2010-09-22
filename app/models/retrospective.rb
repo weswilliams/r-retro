@@ -2,6 +2,8 @@ class Retrospective < ActiveRecord::Base
 
   has_many :sections, :dependent => :destroy
 
+  has_many :groups, :dependent => :destroy
+
   validates :title, :presence => true
 
   def to_param

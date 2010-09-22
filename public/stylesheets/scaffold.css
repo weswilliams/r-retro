@@ -155,7 +155,7 @@ input:focus {
     width: 20%;
 }
 
-.title {
+.title, .group_title {
     vertical-align: top;
     background-color: #CCF;
     text-align: left;
