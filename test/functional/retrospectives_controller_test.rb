@@ -12,7 +12,9 @@ class RetrospectivesControllerTest < ActionController::TestCase
 
   test "should display section 1 items" do
     show_with_1_section_and_expect_1_row
-    assert_select 'ul.items', 1
+    assert_select 'div.section_items' do
+      assert_select 'ul.items', 1
+    end
     assert_select 'li.item', 1
   end
 

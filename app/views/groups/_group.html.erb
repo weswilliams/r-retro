@@ -5,7 +5,9 @@
     <span id="inline_group_title_<%= group.id %>"><%= group.title %></span>
   </div>
 
-  <div id="group_items" class="group_items">
 
+  <div id="<%= "group_items_#{group.id}" %>" class="group_items">
+    <%= render :partial => 'groups/group_items', :locals => {:current_group => group} %>
   </div>
+
 </div>

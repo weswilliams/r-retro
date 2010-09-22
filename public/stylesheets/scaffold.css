@@ -166,7 +166,7 @@ input:focus {
     border-left: #8b008b solid 1px;
 }
 
-.section_items {
+.section_items, .group_items {
     text-indent: 7px;
     font-size: 12px;
     vertical-align: top;
