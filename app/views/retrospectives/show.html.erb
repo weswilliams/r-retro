@@ -11,7 +11,7 @@
 <div class="groups">
   <div class="title">
     Groups
-    <%= link_to image_tag("new-group.png", :class => 'nav_image', :alt => "(new group)"), ".", :class => 'inline_link', :title => 'new group' %>
+    <%= link_to image_tag("new-group.png", :class => 'nav_image', :alt => "(add group)"), add_retrospective_groups_url(@retrospective), :remote => true, :method => :add, :class => 'inline_link', :title => 'add group' %>
   </div>
   <div class="new_group_drop">Drop here to create new group</div>
   <%= render @retrospective.groups %>

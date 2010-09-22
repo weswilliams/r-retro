@@ -2,6 +2,11 @@ require 'test_helper'
 
 class GroupsControllerTest < ActionController::TestCase
 
+  test "test should route groups of retrospective" do
+    options = {:controller => 'groups', :action => 'add', :retrospective_id => '1'}
+    assert_routing({:method => 'post', :path => 'retrospectives/1/groups/add'}, options)
+  end
+
   test "ajax add should create group" do
     retrospective = retrospectives(:retrospective_1)
     assert_difference('Group.count') do
