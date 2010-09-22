@@ -14,7 +14,9 @@
     <%= link_to image_tag("new-group.png", :class => 'nav_image', :alt => "(add group)"), add_retrospective_groups_url(@retrospective), :remote => true, :method => :add, :class => 'inline_link', :title => 'add group' %>
   </div>
   <div class="new_group_drop">Drop here to create new group</div>
-  <%= render @retrospective.groups %>
+  <span id="groups">
+    <%= render @retrospective.groups %>
+  </span>
 </div>
 <%= render :partial => "sections/section_row", :collection => section_rows, :as => :row %>
 <br/>
