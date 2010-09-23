@@ -1,5 +1,6 @@
 <div class="retro_title">
   <span>Available Retrospectives</span>
+  <%= link_to image_tag("new-retro.png", :class => 'nav_image', :alt => "(new retrospective)"), new_retrospective_path, :title => 'new retrospective' %>
 </div>
 <table class="retrospectives">
   <tr>
@@ -20,4 +21,3 @@
 
 <br/>
 
-<%= link_to image_tag("new-retro.png", :class => 'nav_image', :alt => "(new retrospective)"), new_retrospective_path, :title => 'new retrospective' %>
