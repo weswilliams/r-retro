@@ -1,0 +1,6 @@
+
+page.replace_html("group_items_#{@group.id}", render('groups/group_items', :current_group => @group))
+
+if @original_item_group
+  page.replace_html("group_items_#{@original_item_group.id}", render('groups/group_items', :current_group => @original_item_group))
+end

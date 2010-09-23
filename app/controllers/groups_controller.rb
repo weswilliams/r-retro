@@ -36,7 +36,8 @@ class GroupsController < ApplicationController
   def add_item
     @retrospective = Retrospective.find(params[:retrospective_id].to_i)
     @group = Group.find(params[:id].to_i)
-    @item = Item.find(params[:item_id].to_i)
+    @item = Item.find(/^li_item_(\d+)/.match(params[:item_id])[1].to_i)
+    @original_item_group = @item.group
     @group.items << @item
 
     respond_to do |format|

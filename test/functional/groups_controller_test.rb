@@ -36,7 +36,7 @@ class GroupsControllerTest < ActionController::TestCase
     group = groups(:group_1)
     item = items(:item_2)
     assert_difference('group.items(:reload).size') do
-      xhr :post, :add_item, :controller => 'groups', :id => group.id, :retrospective_id => group.retrospective_id, :item_id => item.id
+      xhr :post, :add_item, :controller => 'groups', :id => group.id, :retrospective_id => group.retrospective_id, :item_id => "li_item_#{item.id}"
     end
     assert_response :success
   end

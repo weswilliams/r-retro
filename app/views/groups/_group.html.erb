@@ -13,4 +13,6 @@
     <%= render :partial => 'groups/group_items', :locals => {:current_group => group} %>
   </div>
 
+  <%= drop_receiving_element("group_items_#{group.id}", :url => add_item_retrospective_group_path(@retrospective, group), :with => "'item_id=' + encodeURIComponent(element.id)") %>
+
 </div>

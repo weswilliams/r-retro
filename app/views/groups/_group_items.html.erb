@@ -1,3 +1,7 @@
 <ul class="items">
-  <%= render current_group.items %>
+  <% if current_group.items.empty?  %>
+    <span class="drop_to_add">Drop to add item</span>
+  <% else %>
+    <%= render current_group.items %>
+  <% end %>
 </ul>
