@@ -2,6 +2,6 @@
   <% if current_group.items.empty?  %>
     <span class="drop_to_add">Drop to add item</span>
   <% else %>
-    <%= render current_group.items %>
+    <%= render :partial => 'items/item', :collection => current_group.items, :locals => {:context => 'group'} %>
   <% end %>
 </ul>

@@ -1,1 +1,1 @@
-page.replace_html("item_votes_#{@item.id}", "#{@item.item_votes.size}")
+page.replace_html("section_item_votes_#{@item.id}", "#{@item.item_votes.size}")
