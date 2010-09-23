@@ -91,7 +91,7 @@ class SectionsController < ApplicationController
 
   def move_item_to
     @section = Section.find(params[:id])
-    @item = Item.find(/^li_item_(\d+)/.match(params[:item_id])[1].to_i)
+    @item = Item.find(/^.*li_item_(\d+)/.match(params[:item_id])[1].to_i)
     @from_section = @item.section
     @section.items << @item
     respond_to do |format|
