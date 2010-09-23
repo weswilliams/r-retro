@@ -15,7 +15,7 @@ class GroupsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "ajax add should create simple name if one is not passed in parameters" do
+  test "ajax add should create simple title if one is not passed in parameters" do
     retrospective = retrospectives(:retrospective_1)
     assert_difference('Group.count') do
       xhr :post, :add, :controller => 'groups', :retrospective_id => retrospective.id
@@ -23,4 +23,13 @@ class GroupsControllerTest < ActionController::TestCase
     assert_response :success
     assert_equal "Group#{Retrospective.find(:all).size}", assigns("group").title
   end
+
+  test "should be able to update title via ajax" do
+    group = groups(:group_1)
+    title = "updated title"
+    xhr :post, :update_title, :controller => 'groups', :id => group.id, :retrospective_id => group.retrospective_id, :title => title
+    assert_response :success
+    assert_equal title, assigns("group").title
+  end
+
 end
