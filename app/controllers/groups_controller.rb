@@ -33,4 +33,19 @@ class GroupsController < ApplicationController
 
   end
 
+  def add_item
+    @retrospective = Retrospective.find(params[:retrospective_id].to_i)
+    @group = Group.find(params[:id].to_i)
+    @item = Item.find(params[:item_id].to_i)
+    @group.items << @item
+
+    respond_to do |format|
+      if @group.save
+        format.js
+      else
+        format.js { redirect_to(retrospective_path(@retrospective), :notice => 'failed to update title!') }
+      end
+    end
+  end
+
 end

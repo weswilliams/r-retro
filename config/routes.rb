@@ -20,6 +20,7 @@ RRetro::Application.routes.draw do
     resources :groups do
       post :add, :on => :collection
       post :update_title, :on => :member
+      post :add_item, :on => :member
     end
   end
 

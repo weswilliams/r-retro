@@ -32,4 +32,13 @@ class GroupsControllerTest < ActionController::TestCase
     assert_equal title, assigns("group").title
   end
 
+  test "should be able to add item to a group via ajax" do
+    group = groups(:group_1)
+    item = items(:item_2)
+    assert_difference('group.items(:reload).size') do
+      xhr :post, :add_item, :controller => 'groups', :id => group.id, :retrospective_id => group.retrospective_id, :item_id => item.id
+    end
+    assert_response :success
+  end
+
 end
