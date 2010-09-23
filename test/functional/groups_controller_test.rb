@@ -27,7 +27,7 @@ class GroupsControllerTest < ActionController::TestCase
   test "should be able to update title via ajax" do
     group = groups(:group_1)
     title = "updated title"
-    xhr :post, :update_title, :controller => 'groups', :id => group.id, :retrospective_id => group.retrospective_id, :title => title
+    xhr :post, :update_title, :controller => 'groups', :id => group.id, :retrospective_id => group.retrospective_id, :value => title
     assert_response :success
     assert_equal title, assigns("group").title
   end

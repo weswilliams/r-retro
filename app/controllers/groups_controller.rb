@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
 
   def add
-      @retrospective = Retrospective.find(params[:retrospective_id])
+      @retrospective = Retrospective.find(params[:retrospective_id].to_i)
       @group = Group.new
       @group.retrospective_id = @retrospective.id
       @group.title = params[:title] == nil ?
@@ -19,9 +19,9 @@ class GroupsController < ApplicationController
   end
 
   def update_title
-    @retrospective = Retrospective.find(params[:retrospective_id])
-    @group = Group.find(params[:id])
-    @group.title= params[:title]
+    @retrospective = Retrospective.find(params[:retrospective_id].to_i)
+    @group = Group.find(params[:id].to_i)
+    @group.title= params[:value]
 
     respond_to do |format|
       if @group.save
