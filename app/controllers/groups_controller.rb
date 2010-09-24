@@ -1,5 +1,16 @@
 class GroupsController < ApplicationController
 
+  def destroy
+    @group = Group.find(params[:id])
+    @group.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(retrospective_url(@group.retrospective)) }
+      format.js
+      format.xml { head :ok }
+    end
+  end
+
   def add
       @retrospective = Retrospective.find(params[:retrospective_id].to_i)
       @group = Group.new

@@ -1,8 +1,9 @@
-<div class="group">
+<div id="<%= "group_#{group.id}" %>" class="group">
 
   <div class="group_title">
     <span id="inline_group_title_<%= group.id %>"><%= group.title %></span>
     <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(rename)"), '', :href => 'javascript:void(0);', :id => "group_title_#{group.id}", :class => 'inline_link', :title => 'rename' %>
+    <%= link_to image_tag("delete.png", :class => 'nav_image', :alt => "(remove)"), [@retrospective, group], :remote => true, :class => 'inline_link', :method => :delete, :confirm => 'Remove group?', :title => 'remove group' %>
     <%= inline_edit_item_with_remote_update(:id => group.id, :element_id => "group_title", :url => update_title_retrospective_group_url(@retrospective, group), :on_complete => '') %>
   </div>
 
