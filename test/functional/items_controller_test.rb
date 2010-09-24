@@ -10,7 +10,7 @@ class ItemsControllerTest < ActionController::TestCase
       xhr :post, :destroy, :method => :delete, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
     end
     assert_response :success
-    assert_select_rjs :remove, "item_#{@item.id}"
+    assert_select_rjs :remove, "section_item_#{@item.id}"
   end
 
   test "ajax add should create item" do
@@ -91,5 +91,10 @@ class ItemsControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to retrospective_path(@item.section.retrospective)
+  end
+
+  test "should remove group from item" do
+    item = items :item_1
+    xhr :post, :remove_from_group, :controller => 'items', :retrospective_id => item.section.retrospective.id, :section_id => item.section.id, :id => item.id
   end
 end

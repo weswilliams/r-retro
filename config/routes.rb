@@ -13,6 +13,7 @@ RRetro::Application.routes.draw do
         post :refresh_value, :on => :member
         post :vote_for, :on => :member
         post :remove_vote, :on => :member
+        post :remove_from_group, :on => :member
       end
 
     end

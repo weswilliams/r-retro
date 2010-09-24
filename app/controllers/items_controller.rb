@@ -4,12 +4,13 @@ class ItemsController < ApplicationController
   def index
     section_id = params[:section_id]
     @items = Item.find_all_by_section_id(section_id)
-    
+
     @section = Section.find section_id
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @items }
+      format.html
+      # index.html.erb
+      format.xml { render :xml => @items }
     end
   end
 
@@ -19,8 +20,9 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @item }
+      format.html
+      # show.html.erb
+      format.xml { render :xml => @item }
     end
   end
 
@@ -29,10 +31,11 @@ class ItemsController < ApplicationController
   def new
     @item = Item.new
     @item.section = Section.find(params[:section_id])
-    
+
     respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @item }
+      format.html
+      # new.html.erb
+      format.xml { render :xml => @item }
     end
   end
 
@@ -49,7 +52,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
-        format.js {render :inline => '' }
+        format.js { render :inline => '' }
       else
         format.js { redirect_to(retrospective_path(@section.retrospective), :notice => 'failed to add item!') }
       end
@@ -85,14 +88,14 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(params[:item])
     @item.section = Section.find(params[:section_id])
-    
+
     respond_to do |format|
       if @item.save
         format.html { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'Item was successfully created.') }
-        format.xml  { render :xml => @item, :status => :created, :location => @item }
+        format.xml { render :xml => @item, :status => :created, :location => @item }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }
+        format.xml { render :xml => @item.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -116,7 +119,19 @@ class ItemsController < ApplicationController
       format.js
     end
   end
-  
+
+  def remove_from_group
+    @item = Item.find(params[:id])
+    @item.group = nil
+    respond_to do |format|
+      if @item.save
+        format.js
+      else
+        format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to remove item from group!') }
+      end
+    end
+  end
+
   # PUT /items/1
   # PUT /items/1.xml
   def update
@@ -125,10 +140,10 @@ class ItemsController < ApplicationController
     respond_to do |format|
       if @item.update_attributes(params[:item])
         format.html { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'Item was successfully updated.') }
-        format.xml  { head :ok }
+        format.xml { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }
+        format.xml { render :xml => @item.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -142,7 +157,7 @@ class ItemsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(retrospective_url(@item.section.retrospective)) }
       format.js
-      format.xml  { head :ok }
+      format.xml { head :ok }
     end
   end
 end

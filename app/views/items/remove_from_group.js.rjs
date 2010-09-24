@@ -1,0 +1,1 @@
+page.remove "group_item_#{@item.id}" 

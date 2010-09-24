@@ -1,1 +1,2 @@
-page.remove "item_#{@item.id}"
+page.remove "section_item_#{@item.id}"
+page.remove "group_item_#{@item.id}" if (@item.group)
