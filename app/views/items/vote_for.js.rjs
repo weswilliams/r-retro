@@ -1,1 +1,5 @@
+
 page.replace_html("section_item_votes_#{@item.id}", "#{@item.item_votes.size}")
+if (@item.group)
+  page.replace_html("group_item_votes_#{@item.id}", "#{@item.item_votes.size}")
+end
