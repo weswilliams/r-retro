@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/_item.erb" afterPath="$PROJECT_DIR$/app/views/items/_item.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/items_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="r_retro.iws" />
@@ -27,46 +30,37 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" nonProjectFilesColor="ffffe4" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_item.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_item.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="69" selection-start="892" selection-end="892" vertical-scroll-proportion="-2.7">
+            <state line="3" column="36" selection-start="351" selection-end="352" vertical-scroll-proportion="0.0877193">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vote_for.js.rjs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.rjs">
+      <file leaf-file-name="refresh_value.js.rjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/items/refresh_value.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="124" selection-end="124" vertical-scroll-proportion="0.07340946">
+            <state line="2" column="73" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prototype_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../jruby-1.5.2/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/helpers/prototype_helper.rb">
+      <file leaf-file-name="items_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="330" column="14" selection-start="15489" selection-end="15489" vertical-scroll-proportion="0.0">
+            <state line="112" column="19" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_group_item_actions.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_section_item_actions.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
+            <state line="12" column="27" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,11 +105,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/groups/add.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
         <option value="$PROJECT_DIR$/app/models/group.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/test/functional/groups_controller_test.rb" />
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
@@ -125,8 +116,11 @@
         <option value="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" />
-        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
       </list>
     </option>
   </component>
@@ -163,8 +157,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
@@ -201,50 +193,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r_retro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r_retro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r_retro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r_retro" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="groups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -262,6 +210,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,16 +229,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../temp" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="808" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="815" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="808" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="137" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="140" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="140" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -584,16 +534,16 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.323043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272293" sideWeight="0.7067255" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272293" sideWeight="0.6372657" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29327452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627343" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.323043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32706767" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -657,36 +607,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/functional/groups_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="147" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.7330097" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/add.js.rjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="59" vertical-scroll-proportion="0.025041737" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="112" selection-start="50" selection-end="112" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="897" selection-end="897" vertical-scroll-proportion="0.20869565" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/add_item.js.rjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.09803922" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sections_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="73" selection-start="2560" selection-end="2560" vertical-scroll-proportion="0.4502447" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="423" selection-end="423" vertical-scroll-proportion="0.26916802" />
@@ -702,14 +622,16 @@
         <state line="4" column="4" selection-start="129" selection-end="237" vertical-scroll-proportion="-2.5" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="185" selection-end="185" vertical-scroll-proportion="0.19575857" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sections/_section_items.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.025466893" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="540" selection-end="540" vertical-scroll-proportion="0.034642033">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
@@ -717,28 +639,72 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
+    <entry file="file://$PROJECT_DIR$/../../../jruby-1.5.2/lib/ruby/gems/1.8/gems/activesupport-3.0.0/lib/active_support/basic_object.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../jruby-1.5.2/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/helpers/prototype_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="14" selection-start="15489" selection-end="15489" vertical-scroll-proportion="0.0">
+        <state line="14" column="10" selection-start="418" selection-end="418" vertical-scroll-proportion="0.34201956">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
+    <entry file="file://$PROJECT_DIR$/../../../jruby-1.5.2/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/helpers/javascript_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="69" selection-start="892" selection-end="892" vertical-scroll-proportion="-2.7">
+        <state line="111" column="27" selection-start="4756" selection-end="4769" vertical-scroll-proportion="-31.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../jruby-1.5.2/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/helpers/prototype_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="511" column="34" selection-start="22305" selection-end="22318" vertical-scroll-proportion="-171.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="307" selection-end="319" vertical-scroll-proportion="0.26872963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="19" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../jruby-1.5.2/lib/ruby/gems/1.8/gems/actionpack-3.0.0/lib/action_view/helpers/scriptaculous_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="856" selection-end="856" vertical-scroll-proportion="0.09771987">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="124" selection-end="124" vertical-scroll-proportion="0.07340946">
+        <state line="4" column="3" selection-start="198" selection-end="198" vertical-scroll-proportion="0.1910828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/refresh_value.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="73" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="36" selection-start="351" selection-end="352" vertical-scroll-proportion="0.0877193">
           <folding />
         </state>
       </provider>

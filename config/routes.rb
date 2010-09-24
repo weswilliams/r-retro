@@ -10,6 +10,7 @@ RRetro::Application.routes.draw do
       resources :items do
         post :add, :on => :collection
         post :update_value, :on => :member
+        post :refresh_value, :on => :member
         post :vote_for, :on => :member
         post :remove_vote, :on => :member
       end

@@ -105,8 +105,15 @@ class ItemsController < ApplicationController
       if @item.save
         format.js { render :inline => @item.value }
       else
-        format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to add item!') }
+        format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to update value!') }
       end
+    end
+  end
+
+  def refresh_value
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.js
     end
   end
   
