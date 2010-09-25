@@ -1,1 +1,2 @@
-page.remove "group_item_#{@item.id}" 
+page.remove "group_item_#{@item.id}"
+page.replace_html("group_empty_#{@group.id}", rendgiter(:partial => 'groups/group_drop', :locals => {:current_group => @group}))

@@ -95,6 +95,8 @@ class ItemsControllerTest < ActionController::TestCase
 
   test "should remove group from item" do
     item = items :item_1
+    item.group = groups :group_1
+    item.save
     xhr :post, :remove_from_group, :controller => 'items', :retrospective_id => item.section.retrospective.id, :section_id => item.section.id, :id => item.id
   end
 end

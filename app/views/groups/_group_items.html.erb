@@ -1,7 +1,5 @@
-<% if current_group.items.empty? %>
-    <span class="drop_to_add">Drop to add item</span>
-<% else %>
-    <div>
-      <%= render :partial => 'items/item', :collection => current_group.items, :locals => {:context => 'group'} %>
-    </div>
-<% end %>
+<span id="group_empty_<%= current_group.id %>" class="drop_to_add">
+<%= render :partial => 'groups/group_drop', :locals => {:current_group => current_group} %>
+</span>
+<%= render :partial => 'items/item', :collection => current_group.items, :locals => {:context => 'group'} %>
+

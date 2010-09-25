@@ -122,6 +122,7 @@ class ItemsController < ApplicationController
 
   def remove_from_group
     @item = Item.find(params[:id])
+    @group = @item.group
     @item.group = nil
     respond_to do |format|
       if @item.save
