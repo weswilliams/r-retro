@@ -1,2 +1,3 @@
 page.remove "section_item_#{@item.id}"
 page.remove "group_item_#{@item.id}" if (@item.group)
+page.replace_html("section_empty_#{@section.id}", render(:partial => 'sections/section_drop', :locals => {:current_section => @section}))

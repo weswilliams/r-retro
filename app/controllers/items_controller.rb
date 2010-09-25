@@ -153,6 +153,7 @@ class ItemsController < ApplicationController
   # DELETE /items/1.xml
   def destroy
     @item = Item.find(params[:id])
+    @section = @item.section
     @item.destroy
 
     respond_to do |format|

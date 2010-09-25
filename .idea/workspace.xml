@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/groups/_group_drop.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sections/_section_drop.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/items_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" afterPath="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/items_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/items_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/_section_items.erb" afterPath="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -31,19 +31,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" nonProjectFilesColor="ffffe4" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="remove_from_group.js.rjs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs">
+      <file leaf-file-name="_section_items.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sections/_section_items.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="53" selection-start="90" selection-end="90" vertical-scroll-proportion="0.024390243">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items_controller_test.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/functional/items_controller_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="13" selection-start="3741" selection-end="3741" vertical-scroll-proportion="0.0">
+            <state line="0" column="10" selection-start="10" selection-end="24" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -52,25 +43,34 @@
       <file leaf-file-name="items_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="24" selection-start="3061" selection-end="3061" vertical-scroll-proportion="0.0">
+            <state line="136" column="20" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_group_items.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/_group_items.html.erb">
+      <file leaf-file-name="remove_from_group.js.rjs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="22" vertical-scroll-proportion="-0.0">
+            <state line="1" column="50" selection-start="87" selection-end="87" vertical-scroll-proportion="0.024390243">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_group_drop.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/_group_drop.html.erb">
+      <file leaf-file-name="destroy.js.rjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/items/destroy.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+            <state line="2" column="33" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_section_drop.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sections/_section_drop.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="3" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,8 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/groups/_group_item_actions.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/_group.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
@@ -124,12 +122,14 @@
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
         <option value="$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb" />
-        <option value="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/_group_drop.html.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" />
-        <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" />
         <option value="$PROJECT_DIR$/test/functional/items_controller_test.rb" />
+        <option value="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sections/_section_drop.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
+        <option value="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" />
       </list>
     </option>
@@ -684,41 +684,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.51039696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/_group.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="775" selection-end="775" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="1" selection-start="1634" selection-end="1634" vertical-scroll-proportion="-3.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="65" selection-start="1077" selection-end="1077" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="475" selection-end="475" vertical-scroll-proportion="0.46112117">
@@ -747,34 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_drop.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_items.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="33" selection-start="71" selection-end="91" vertical-scroll-proportion="0.04054054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_items.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="22" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="24" selection-start="3061" selection-end="3061" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/groups.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="7" selection-start="74" selection-end="81" vertical-scroll-proportion="0.048780486">
@@ -789,9 +726,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_items.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="22" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_drop.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_drop.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="3" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/add_item.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/destroy.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="33" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_items.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="10" selection-end="24" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="20" selection-start="3353" selection-end="3353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="53" selection-start="90" selection-end="90" vertical-scroll-proportion="0.024390243">
+        <state line="1" column="50" selection-start="87" selection-end="87" vertical-scroll-proportion="0.024390243">
           <folding />
         </state>
       </provider>
