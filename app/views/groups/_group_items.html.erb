@@ -1,7 +1,7 @@
-<ul class="items">
-  <% if current_group.items.empty?  %>
+<% if current_group.items.empty? %>
     <span class="drop_to_add">Drop to add item</span>
-  <% else %>
-    <%= render :partial => 'items/item', :collection => current_group.items, :locals => {:context => 'group'} %>
-  <% end %>
-</ul>
+<% else %>
+    <div>
+      <%= render :partial => 'items/item', :collection => current_group.items, :locals => {:context => 'group'} %>
+    </div>
+<% end %>

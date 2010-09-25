@@ -1,7 +1,7 @@
-<% if current_section.items.size > 0 %>
-    <ul class="items">
-      <%= render :partial => 'items/item', :collection => current_section.items, :locals => {:context => 'section'} %>
-    </ul>
+<% if current_section.items.empty? %>
+    <span id="section_item_empty" class="drop_to_add">Add item or drop item from a different section.</span>
 <% else %>
-    Add item or drop item from a different section.
+    <div id="section_item">
+      <%= render :partial => 'items/item', :collection => current_section.items, :locals => {:context => 'section'} %>
+    </div>
 <% end %>
