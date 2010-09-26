@@ -172,6 +172,17 @@ input:focus {
     vertical-align: top;
 }
 
+.item_vote {
+    font-style: normal;
+    font-size:10px;
+}
+
+.item {
+    font-style:italic;
+    font-size: 13px;
+    font-family:cursive;
+}
+
 #error_explanation {
     width: 450px;
     border: 2px solid red;
