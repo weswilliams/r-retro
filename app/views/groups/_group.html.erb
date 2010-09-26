@@ -4,13 +4,18 @@
     <span id="inline_group_title_<%= group.id %>"><%= group.title %></span>
     <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(rename)"), '', :href => 'javascript:void(0);', :id => "group_title_#{group.id}", :class => 'inline_link', :title => 'rename' %>
     <%= link_to image_tag("delete.png", :class => 'nav_image', :alt => "(remove)"), [@retrospective, group], :remote => true, :class => 'inline_link', :method => :delete, :confirm => 'Remove group?', :title => 'remove group' %>
+    <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)"), visual_effect(:toggle_blind, "collapse_group_#{group.id}") %>
     <%= inline_edit_item_with_remote_update(:id => group.id, :element_id => "group_title", :url => update_title_retrospective_group_url(@retrospective, group), :on_complete => '') %>
   </div>
+
+<span id="collapse_group_<%= group.id %>">
 
   <div id="<%= "group_items_#{group.id}" %>" class="group_items">
     <%= render :partial => 'groups/group_items', :locals => {:current_group => group} %>
   </div>
 
   <%= drop_receiving_element("group_items_#{group.id}", :url => add_item_retrospective_group_path(@retrospective, group), :with => "'item_id=' + encodeURIComponent(element.id)") %>
+
+</span>
 
 </div>
