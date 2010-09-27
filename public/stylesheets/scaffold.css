@@ -178,9 +178,11 @@ input:focus {
     background-color: #f8f291;
     float:left;
     width:47%;
-    min-height:100px;
+    height:100px;
     margin-right:5px;
     margin-bottom:5px;
+    vertical-align: top;
+    overflow: hidden;
 }
 
 
@@ -188,6 +190,10 @@ input:focus {
     border:black solid 1px;
     padding:1px;
     background-color: #f8f291;
+}
+
+.item_actions {
+    text-align:right;
 }
 
 .section_drop_to_add {
@@ -212,7 +218,7 @@ input:focus {
 
 .item {
     font-style:italic;
-    font-size: 16px;
+    font-size: 12px;
     font-family:cursive;
 }
 

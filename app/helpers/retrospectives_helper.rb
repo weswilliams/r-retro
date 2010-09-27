@@ -12,12 +12,14 @@ module RetrospectivesHelper
     refresh_url = options[:refresh_url] || ''
     element_id = options[:element_id] || 'add_item'
     on_complete = options[:on_complete] || ", onComplete: function(transport, element) {#{remote_function(:url => refresh_url)};}"
-    
+    rows = options[:rows] || '1'
+
     code = <<-eos
     var #{element_id}_editor#{id} = new Ajax.InPlaceEditor('inline_#{element_id}_#{id}',
             '#{url}', {
       externalControl:"#{element_id}_#{id}",
       highlightcolor: 'transparent',
+      rows: #{rows},
       cancelText: '(cancel)',
       okText: '(ok)',
       clickToEditText: ''#{on_complete}
