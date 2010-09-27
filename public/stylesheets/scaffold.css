@@ -170,6 +170,13 @@ input:focus {
     text-indent: 7px;
     font-size: 12px;
     vertical-align: top;
+    border:#a9a9a9 dashed 1px;
+    height:100%;
+}
+
+.drop_to_add {
+    color:#a9a9a9;
+    vertical-align:bottom;
 }
 
 .item_vote {
@@ -179,7 +186,7 @@ input:focus {
 
 .item {
     font-style:italic;
-    font-size: 13px;
+    font-size: 16px;
     font-family:cursive;
 }
 
