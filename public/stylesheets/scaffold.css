@@ -171,7 +171,12 @@ input:focus {
     font-size: 12px;
     vertical-align: top;
     border:#a9a9a9 dashed 1px;
-    height:100%;
+}
+
+.section_item {
+    border:black solid 1px;
+    padding:1px;
+    background-color: #f8f291;
 }
 
 .drop_to_add {
