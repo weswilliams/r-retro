@@ -175,13 +175,34 @@ input:focus {
 
 .section_item {
     border:black solid 1px;
+    background-color: #f8f291;
+    float:left;
+    width:47%;
+    min-height:100px;
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+
+.group_item {
+    border:black solid 1px;
     padding:1px;
     background-color: #f8f291;
 }
 
-.drop_to_add {
+.section_drop_to_add {
     color:#a9a9a9;
     vertical-align:bottom;
+    min-height:20px;
+    width:100%;
+    /*float:left;*/
+}
+
+.group_drop_to_add {
+    color:#a9a9a9;
+    vertical-align:bottom;
+    min-height:20px;
+    width:100%;
 }
 
 .item_vote {

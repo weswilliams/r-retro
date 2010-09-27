@@ -1,6 +1,8 @@
+<span id="section_item_drop_target_<%= current_section.id %>">
 <div id="section_item">
   <%= render :partial => 'items/item', :collection => current_section.items, :locals => {:context => 'section'} %>
 </div>
-<div id="section_empty_<%= current_section.id %>" class="drop_to_add">
+<div id="section_empty_<%= current_section.id %>" class="section_drop_to_add">
   <%= render :partial => 'sections/section_drop', :locals => {:current_section => current_section} %>
 </div>
+</span>

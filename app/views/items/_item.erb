@@ -1,10 +1,7 @@
-<div id="<%= context %>_item_<%= item.id %>" class="section_item">
+<div id="<%= context %>_item_<%= item.id %>" class="<%= context %>_item">
   <div style="float:right">
     <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(edit)"), '', :href => 'javascript:void(0);', :id => "#{context}_item_value_#{item.id}", :class => 'inline_link', :title => 'edit item' %>
     <%= render :partial => "#{context}s/#{context}_item_actions", :locals => {:item => item} %>
-    <%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "#{context}_item_value",
-                                            :url => update_value_retrospective_section_item_url(item.section.retrospective, item.section, item),
-                                            :refresh_url => refresh_value_retrospective_section_item_url(item.section.retrospective, item.section, item)) %>
   </div>
 
 <div style="padding-bottom: 10px">
@@ -16,4 +13,7 @@
 
 </div>
 
+<%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "#{context}_item_value",
+                                        :url => update_value_retrospective_section_item_url(item.section.retrospective, item.section, item),
+                                        :refresh_url => refresh_value_retrospective_section_item_url(item.section.retrospective, item.section, item)) %>
 <%= draggable_element("#{context}_item_#{item.id}", :revert => true) %>

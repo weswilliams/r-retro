@@ -1,5 +1,6 @@
+<span id="group_item_drop_target_<%= current_group.id %>">
 <%= render :partial => 'items/item', :collection => current_group.items, :locals => {:context => 'group'} %>
-<span id="group_empty_<%= current_group.id %>" class="drop_to_add">
+<span id="group_empty_<%= current_group.id %>" class="group_drop_to_add">
   <%= render :partial => 'groups/group_drop', :locals => {:current_group => current_group} %>
 </span>
-
+</span>
