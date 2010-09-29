@@ -3,8 +3,9 @@ RRetro::Application.routes.draw do
   resources :retrospectives  do
     post :refresh, :on => :member
     post :update_title, :on => :member
-    
+
     resources :sections do
+      post :add, :on => :collection
       post :update_title, :on => :member
       post :move_item_to, :on => :member
 

@@ -1,5 +1,24 @@
 class SectionsController < ApplicationController
 
+  def add
+      @retrospective = Retrospective.find(params[:retrospective_id].to_i)
+      @section = Section.new
+      @section.retrospective = @retrospective
+      @section.title = params[:title] == nil ?
+              "Section#{Section.where("retrospective_id = ?", @retrospective.id).size + 1}" :
+              params[:title]
+
+      respond_to do |format|
+        if @section.save
+          format.html { redirect_to(retrospective_path(@retrospective), :notice => 'added section!') }
+          format.xml { render :xml => @sections }
+        else
+          format.html { redirect_to(retrospective_path(@retrospective), :notice => 'failed to add section!') }
+        end
+      end
+
+  end
+
   # GET /sections
   # GET /sections.xml
   def index
