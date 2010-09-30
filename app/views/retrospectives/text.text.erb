@@ -1,9 +1,19 @@
 <%= @retrospective.title %>
 
+Sections:
+
 <% @retrospective.sections.each do |section| %>
-<%= "#{section.title}:" %>
-<% section.items.each do |item| %>
-<%= "* #{item.value}" %>
+    <%= "  #{section.title}:" %>
+    <% section.items.each do |item| %>
+        <%= "    * #{item.value}" %>
+    <% end %>
 <% end %>
 
+Groups:
+
+<% @retrospective.groups.each do |group| %>
+    <%= "  #{group.title}:" %>
+    <% group.items.each do |item| %>
+        <%= "    * #{item.value}" %>
+    <% end %>
 <% end %>
