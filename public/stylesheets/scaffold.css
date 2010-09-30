@@ -191,6 +191,7 @@ input:focus {
     border:black solid 1px;
     padding:1px;
     background-color: #f8f291;
+    margin-bottom:5px;
 }
 
 .item_actions {
