@@ -1,2 +1,5 @@
 page.replace_html("section_items_#{@section.id}", render('sections/section_items', :current_section => @section))
 page.replace_html("section_items_#{@from_section.id}", render('sections/section_items', :current_section => @from_section))
+
+page<<"$('section_item_#{@item.id}').style.background='\##{@section.color}'"
+page<<"$('group_item_#{@item.id}').style.background='\##{@section.color}'" if (@item.group)

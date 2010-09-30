@@ -13,7 +13,6 @@ class Section < ActiveRecord::Base
   def defaults
     num_of_sections = Section.where("retrospective_id = ?", retrospective.id).size
     self.color = DEFAULT_COLORS[num_of_sections % DEFAULT_COLORS.size] unless self.color
-    p "color is #{color}"
   end
 
 end
