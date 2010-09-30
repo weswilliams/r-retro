@@ -176,7 +176,7 @@ input:focus {
 
 .section_item {
     border:black solid 1px;
-    background-color: #f8f291;
+    /*background-color: #f8f291;*/
     float:left;
     width:47%;
     height:120px;
