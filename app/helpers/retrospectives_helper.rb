@@ -13,7 +13,6 @@ module RetrospectivesHelper
         #{element_id}_window.getContent().innerHTML = "<p class='popup_text'>#{value}</p>";
         #{element_id}_window.showCenter();
       }
-      #{element_id}_window.dispose();
     eos
     javascript_tag(code)
   end
