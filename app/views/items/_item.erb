@@ -1,5 +1,6 @@
 <div id="<%= context %>_item_<%= item.id %>" class="<%= context %>_item" style="background-color:<%= "\##{item.section.color}" %>;">
   <div class="item_actions">
+    <%= link_to image_tag("maximize.png", :class => 'nav_image', :alt => "(show)"), '', :href => "javascript:void(0);", :id => "show_#{context}_item_value_#{item.id}", :class => 'inline_link', :title => 'show item' %>
     <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(edit)"), '', :href => 'javascript:void(0);', :id => "#{context}_item_value_#{item.id}", :class => 'inline_link', :title => 'edit item' %>
     <%= render :partial => "#{context}s/#{context}_item_actions", :locals => {:item => item} %>
   </div>
@@ -11,6 +12,7 @@
 
 </div>
 
+<%= popup_window item.value, "show_#{context}_item_value_#{item.id}" %>
 <%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "#{context}_item_value", :rows => 2,
                                         :url => update_value_retrospective_section_item_url(item.section.retrospective, item.section, item),
                                         :refresh_url => refresh_value_retrospective_section_item_url(item.section.retrospective, item.section, item)) %>
