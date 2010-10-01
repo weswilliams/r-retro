@@ -84,6 +84,14 @@ a.retro_list {
     text-decoration: none;
 }
 
+.popup_text {
+    font-style:normal;
+    font-size: 24px;
+    font-family:sans-serif;
+    word-wrap:normal;
+    line-height:150%;
+}
+
 .refresh {
     display: inline;
     font-size: x-small;
