@@ -12,177 +12,177 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
-        <dependency name="abstract" version="0" bound="GREATER_OR_EQUAL" git="false" />
+        <dependency name="abstract" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="actionmailer" version="3.0.0" bound="EQUAL" git="false" />
+        <dependency name="actionmailer" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="actionpack" version="3.0.0" bound="EQUAL" git="false" />
+        <dependency name="actionpack" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="activemodel" version="3.0.0" bound="EQUAL" git="false" />
+        <dependency name="activemodel" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="activerecord" version="3.0.0" bound="EQUAL" git="false" />
+        <dependency name="activerecord" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="activerecord-jdbc-adapter" version="0" bound="GREATER_OR_EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="activerecord-jdbcsqlite3-adapter" version="0" bound="GREATER_OR_EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="activeresource" version="3.0.0" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="activesupport" version="3.0.0" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="arel" version="1.0.1" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="builder" version="2.1.2" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="bundler" version="0" bound="GREATER_OR_EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="erubis" version="2.6.6" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="i18n" version="0.4.1" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" lib="false" git="false" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="mail" version="2.2.5" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="mime-types" version="0" bound="GREATER_OR_EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="polyglot" version="0" bound="GREATER_OR_EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="rack" version="1.2.1" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="rack-mount" version="0.6.13" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="rack-test" version="0.5.4" bound="EQUAL" git="false" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
-        <dependency name="rails" version="3.0.0" bound="EQUAL" git="false" />
+        <dependency name="activerecord-jdbc-adapter" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="railties" version="3.0.0" bound="EQUAL" git="false" />
+        <dependency name="activerecord-jdbcsqlite3-adapter" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rake" version="0.8.7" bound="EQUAL" git="false" />
+        <dependency name="activeresource" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" lib="sqlite3" git="false" />
+        <dependency name="activesupport" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="arel" version="1.0.1" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="builder" version="2.1.2" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="bundler" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="erubis" version="2.6.6" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="i18n" version="0.4.1" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="false" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="thor" version="0.14.0" bound="EQUAL" git="false" />
+        <dependency name="mail" version="2.2.5" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="treetop" version="0" bound="GREATER_OR_EQUAL" git="false" />
+        <dependency name="mime-types" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="tzinfo" version="0.3.23" bound="EQUAL" git="false" />
+        <dependency name="polyglot" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack" version="1.2.1" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack-mount" version="0.6.13" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack-test" version="0.5.4" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rails" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="railties" version="3.0.0" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rake" version="0.8.7" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" lib="sqlite3" git="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="thor" version="0.14.0" bound="EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="treetop" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="tzinfo" version="0.3.23" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source manual="true" />
     </requirement>
