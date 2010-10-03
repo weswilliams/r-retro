@@ -6,17 +6,19 @@ module RetrospectivesHelper
     rows
   end
 
-  def popup_window(value, element_id)
+  def popup_window(value, element_id, color = '8b008b')
     code = <<-eos
-      var #{element_id}_window = new Window({className: "alphacube",  width:350, height:400, zIndex: 100, resizable: true, title: "r-retro", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:true, wiredDrag: true})
+      var #{element_id}_window = new Window("window_#{element_id}", {className: "alphacube",  width:350, height:400, zIndex: 100, resizable: true, title: "r-retro", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:true, wiredDrag: true})
       $("#{element_id}").onclick = function() {
         #{element_id}_window.getContent().innerHTML = "<p class='popup_text'>#{value}</p>";
+        $("window_#{element_id}_content").style.background="##{color}";
         #{element_id}_window.showCenter();
       }
     eos
     javascript_tag(code)
   end
-
+# $("window_#{element_id}").style.background = "##{color}";
+  
   def inline_edit_item_with_remote_update(options = [])
     id = options[:id]
     url = options[:url]

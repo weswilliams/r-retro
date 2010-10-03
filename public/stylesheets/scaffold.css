@@ -232,6 +232,10 @@ input:focus {
     font-family:cursive;
 }
 
+/*.alphacube_content {*/
+    /*background-color: #f0fff0;*/
+/*}*/
+
 #error_explanation {
     width: 450px;
     border: 2px solid red;
