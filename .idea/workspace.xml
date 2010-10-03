@@ -41,25 +41,25 @@
       <file leaf-file-name="scaffold.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="23" selection-start="2686" selection-end="2692" vertical-scroll-proportion="0.0">
+            <state line="233" column="0" selection-start="3656" selection-end="3656" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="31" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.20501138">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_item.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_item.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="93" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.43373495">
+            <state line="6" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -117,9 +117,9 @@
         <option value="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
       </list>
     </option>
   </component>
@@ -652,28 +652,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="23" selection-start="2686" selection-end="2692" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="91" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="31" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+        <state line="233" column="0" selection-start="3656" selection-end="3656" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="93" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.43373495">
+        <state line="6" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.20501138">
           <folding />
         </state>
       </provider>
