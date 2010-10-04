@@ -110,7 +110,7 @@ class SectionsController < ApplicationController
 
   def move_item_to
     @section = Section.find(params[:id])
-    @item = Item.find(/^.*_item.*_(\d+)/.match(params[:item_id])[1].to_i)
+    @item = Item.find(/\A.*_item.*_(\d+)\z/.match(params[:item_id])[1].to_i)
     @from_section = @item.section
     @section.items << @item
     respond_to do |format|
@@ -139,7 +139,6 @@ class SectionsController < ApplicationController
 
   def is_request_for_valid_retrospective(options = {})
 
-    puts "redirect to #{options[:redirect_url]}"
     redirect_url = options[:redirect_url] || retrospectives_url
 
     begin
