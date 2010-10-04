@@ -4,9 +4,8 @@ class SectionsController < ApplicationController
       @retrospective = Retrospective.find(params[:retrospective_id].to_i)
       @section = Section.new
       @section.retrospective = @retrospective
-      @section.title = params[:title] == nil ?
-              "Section#{Section.where("retrospective_id = ?", @retrospective.id).size + 1}" :
-              params[:title]
+      default_title = "Section#{Section.where("retrospective_id = ?", @retrospective.id).size + 1}"
+      @section.title = params[:title] || default_title
 
       respond_to do |format|
         if @section.save
