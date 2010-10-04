@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/r_retro.iml" afterPath="$PROJECT_DIR$/.idea/r_retro.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/retrospectives_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/retrospectives_controller.rb" />
     </list>
@@ -30,7 +29,7 @@
       <file leaf-file-name="retrospectives_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/retrospectives_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="494" selection-end="494" vertical-scroll-proportion="0.4783599">
+            <state line="25" column="7" selection-start="764" selection-end="764" vertical-scroll-proportion="0.85421413">
               <folding />
             </state>
           </provider>
@@ -640,7 +639,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/retrospectives_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="494" selection-end="494" vertical-scroll-proportion="0.4783599">
+        <state line="25" column="7" selection-start="764" selection-end="764" vertical-scroll-proportion="0.85421413">
           <folding />
         </state>
       </provider>

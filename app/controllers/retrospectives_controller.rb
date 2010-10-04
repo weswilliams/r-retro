@@ -17,10 +17,12 @@ class RetrospectivesController < ApplicationController
 
   # GET /retrospectives/1/refresh
   def refresh
-    @retrospective = Retrospective.find(params[:id])
-    @section = Section.find(params[:section_id])
-    respond_to do |format|
-      format.js
+    if is_request_for_valid_retrospective()
+      @retrospective = Retrospective.find(params[:id])
+      @section = Section.find(params[:section_id])
+      respond_to do |format|
+        format.js
+      end
     end
   end
 
