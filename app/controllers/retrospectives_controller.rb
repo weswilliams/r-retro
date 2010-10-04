@@ -1,13 +1,15 @@
 class RetrospectivesController < ApplicationController
 
   def update_title
-    @retrospective = Retrospective.find(params[:id])
-    @retrospective.title = params[:value]
-    respond_to do |format|
-      if @retrospective.save
-        format.js { render :inline => @retrospective.title }
-      else
-        format.js { redirect_to(retrospective_path(@retrospective), :notice => 'failed to update title!') }
+    if is_request_for_valid_retrospective()
+      @retrospective = Retrospective.find(params[:id])
+      @retrospective.title = params[:value]
+      respond_to do |format|
+        if @retrospective.save
+          format.js { render :inline => @retrospective.title }
+        else
+          format.js { redirect_to(retrospective_path(@retrospective), :notice => 'failed to update title!') }
+        end
       end
     end
 
