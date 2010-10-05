@@ -4,7 +4,7 @@
   <div class="title">
     <span id="inline_section_title_<%= section.id %>"><%= section.title %></span>
     <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(rename)"), '', :href => 'javascript:void(0);', :id => "section_title_#{section.id}", :class => 'inline_link', :title => 'rename' %>
-    <%= link_to image_tag("new-item.png", :class => 'nav_image', :alt => "(new item)"), '', :href => 'javascript:void(0);', :id => "add_item_#{section.id}", :class => 'inline_link', :title => 'new item' %>
+    <%= link_to image_tag("new-item2.png", :class => 'nav_image', :alt => "(new item)"), '', :href => 'javascript:void(0);', :id => "add_item_#{section.id}", :class => 'inline_link', :title => 'new item' %>
     <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)"), visual_effect(:toggle_blind, "collapse_section_#{section.id}") %>
     <span id="inline_add_item_<%= section.id %>"></span>
     <%= inline_edit_item_with_remote_update(:id => section.id, :element_id => "section_title", :url => update_title_retrospective_section_url(section.retrospective, section), :on_complete => '') %>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/r_retro.iml" afterPath="$PROJECT_DIR$/.idea/r_retro.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/_section.erb" afterPath="$PROJECT_DIR$/app/views/sections/_section.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/_section_drop.erb" afterPath="$PROJECT_DIR$/app/views/sections/_section_drop.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
     </list>
@@ -28,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_section.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_section.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sections/_section.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="132" selection-start="463" selection-end="472" vertical-scroll-proportion="-3.75">
+            <state line="6" column="36" selection-start="367" selection-end="367" vertical-scroll-proportion="0.21686748">
               <folding />
             </state>
           </provider>
@@ -46,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_section_drop.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_section_drop.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sections/_section_drop.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="108" selection-start="316" selection-end="316" vertical-scroll-proportion="0.06833713">
+            <state line="1" column="32" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/section.rb" />
         <option value="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/text.text.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/themes/default.css" />
@@ -119,6 +118,7 @@
         <option value="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/sections/_section_drop.erb" />
+        <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
       </list>
     </option>
   </component>
@@ -658,9 +658,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_drop.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="132" selection-start="463" selection-end="472" vertical-scroll-proportion="-3.75">
+        <state line="1" column="32" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -672,9 +672,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_drop.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="108" selection-start="316" selection-end="316" vertical-scroll-proportion="0.06833713">
+        <state line="6" column="36" selection-start="367" selection-end="367" vertical-scroll-proportion="0.21686748">
           <folding />
         </state>
       </provider>
