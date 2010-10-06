@@ -101,14 +101,15 @@ class ItemsController < ApplicationController
   end
 
   def update_value
-    @item = Item.find(params[:id])
-    @item.value = params[:value]
+    if is_request_for_valid_item
+      @item.value = params[:value]
 
-    respond_to do |format|
-      if @item.save
-        format.js { render :inline => @item.value }
-      else
-        format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to update value!') }
+      respond_to do |format|
+        if @item.save
+          format.js { render :inline => @item.value }
+        else
+          format.js { redirect_to(retrospective_path(@item.section.retrospective), :notice => 'failed to update value!') }
+        end
       end
     end
   end
@@ -162,4 +163,23 @@ class ItemsController < ApplicationController
       format.xml { head :ok }
     end
   end
+
+  private
+
+  def is_request_for_valid_item()
+
+    begin
+      @item = Item.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      logger.error "attempt to access invalid item #{params[:id]}"
+      @bad_item_id = params[:id]
+      respond_to do |format|
+        format.js { render :action => :update_value_error }
+      end
+      false
+    else
+      true
+    end
+  end
+
 end

@@ -97,15 +97,15 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
-      </requirement>
-      <source manual="true" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="false" />
       </requirement>
       <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jdbc-sqlite3" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
