@@ -1,2 +1,3 @@
-page.replace_html("section_items_#{@section.id}",
-  render('sections/section_items', :current_section => @section))
+page.select("#section_items_#{@section.id}").each do
+  page.replace_html("section_items_#{@section.id}", render('sections/section_items', :current_section => @section))
+end
