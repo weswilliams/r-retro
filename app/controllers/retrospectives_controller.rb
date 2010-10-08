@@ -26,6 +26,16 @@ class RetrospectivesController < ApplicationController
     end
   end
 
+  # GET /retrospectives/1/refresh_groups
+  def refresh_groups
+    if is_request_for_valid_retrospective()
+      @retrospective = Retrospective.find(params[:id])
+      respond_to do |format|
+        format.js
+      end
+    end
+  end
+
   # GET /retrospectives
   # GET /retrospectives.xml
   def index

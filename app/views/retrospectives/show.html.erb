@@ -17,6 +17,7 @@
   <span id="groups">
     <%= render @retrospective.groups %>
   </span>
+  <%= periodically_call_remote(:url => refresh_groups_retrospective_url(@retrospective), :frequency => 30, :condition => "$('enable_auto_refresh').checked") %>
 </div>
 <%= render :partial => "sections/section_row", :collection => section_rows, :as => :row %>
 <br/>
