@@ -4,7 +4,7 @@
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" afterPath="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs" afterPath="$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs" />
     </list>
     <ignored path="r_retro.iws" />
@@ -28,15 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="add_item.js.rjs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/add_item.js.rjs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="refresh.js.rjs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refresh_groups.js.rjs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs">
+      <file leaf-file-name="refresh_value.js.rjs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/items/refresh_value.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
+            <state line="5" column="40" selection-start="203" selection-end="203" vertical-scroll-proportion="0.10623229">
               <folding />
             </state>
           </provider>
@@ -94,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/sections/_section_drop.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
@@ -110,6 +100,7 @@
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" />
       </list>
     </option>
   </component>
@@ -616,11 +607,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="37" selection-end="55" vertical-scroll-proportion="0.032822758" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="7" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.0">
@@ -712,6 +698,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="49" vertical-scroll-proportion="0.0">
@@ -719,9 +712,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs">
+    <entry file="file://$PROJECT_DIR$/app/views/items/refresh_value.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
+        <state line="5" column="40" selection-start="203" selection-end="203" vertical-scroll-proportion="0.10623229">
           <folding />
         </state>
       </provider>

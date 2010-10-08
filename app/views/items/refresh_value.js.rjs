@@ -1,4 +1,9 @@
-page.replace_html("inline_section_item_value_#{@item.id}", "#{@item.value}")
+page.select("#inline_section_item_value_#{@item.id}").each do
+  page.replace_html("inline_section_item_value_#{@item.id}", "#{@item.value}")
+end
+
 if (@item.group)
-  page.replace_html("inline_group_item_value_#{@item.id}", "#{@item.value}")
+  page.select("#inline_group_item_value_#{@item.id}").each do
+    page.replace_html("inline_group_item_value_#{@item.id}", "#{@item.value}")
+  end
 end
