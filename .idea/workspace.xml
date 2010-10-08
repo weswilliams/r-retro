@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" afterPath="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
     </list>
     <ignored path="r_retro.iws" />
@@ -26,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="move_item_to.js.rjs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs">
+      <file leaf-file-name="destroy.js.rjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/items/destroy.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="52" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="destroy.js.rjs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/items/destroy.js.rjs">
+        <entry file="file://$PROJECT_DIR$/app/views/groups/destroy.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="236" selection-end="236" vertical-scroll-proportion="0.16997167">
+            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sections_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/application.js" />
@@ -99,6 +99,7 @@
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" />
       </list>
     </option>
   </component>
@@ -605,11 +606,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/url_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="10" selection-start="10536" selection-end="10536" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="-5.4583335" />
@@ -704,7 +700,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/destroy.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="236" selection-end="236" vertical-scroll-proportion="0.16997167">
+        <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/destroy.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
