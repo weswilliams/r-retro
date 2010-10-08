@@ -1,6 +1,9 @@
-
-page.replace_html("group_items_#{@group.id}", render('groups/group_items', :current_group => @group))
+page.select("#group_items_#{@group.id}").each do
+  page.replace_html("group_items_#{@group.id}", render('groups/group_items', :current_group => @group))
+end
 
 if @original_item_group
-  page.replace_html("group_items_#{@original_item_group.id}", render('groups/group_items', :current_group => @original_item_group))
+  page.select("#group_items_#{@original_item_group.id}").each do
+    page.replace_html("group_items_#{@original_item_group.id}", render('groups/group_items', :current_group => @original_item_group))
+  end
 end
