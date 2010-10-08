@@ -168,11 +168,12 @@ class ItemsController < ApplicationController
 
   def is_request_for_valid_item()
 
+    item_id = params[:id]
     begin
-      @item = Item.find(params[:id])
+      @item = Item.find(item_id)
     rescue ActiveRecord::RecordNotFound
-      logger.error "attempt to access invalid item #{params[:id]}"
-      @bad_item_id = params[:id]
+      logger.error "attempt to access invalid item #{item_id}"
+      @bad_item_id = item_id
       respond_to do |format|
         format.js { render :action => :update_value_error }
       end
