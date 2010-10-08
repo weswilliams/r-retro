@@ -1,2 +1,2 @@
-page.remove "group_item_#{@item.id}"
+page.select("#group_item_#{@item.id}").each { page.remove "group_item_#{@item.id}" }
 page.replace_html("group_empty_#{@group.id}", render(:partial => 'groups/group_drop', :locals => {:current_group => @group}))
