@@ -33,73 +33,73 @@ div.field, div.actions {
 }
 
 #notice {
-    color: #F7F6F2;
+    color: #FFCC33;
     font-size: small;
     font-weight: bold;
     float: right;
 }
 
 .site_header {
-    background-color: #C73B0B;
-    color: #F7F6F2;
+    background-color: #FF6600;
+    color: #FFCC33;
     font-weight: normal;
     font-size: small;
     height: 20px;
     width: 100%;
     padding-top: 2px;
     padding-left: 5px;
-    border-left: #350608 solid 1px;
+    border-left: #FFCC33 solid 1px;
 }
 
 .site_footer {
-    background-color: #C73B0B;
-    color: #F7F6F2;
+    background-color: #FF6600;
+    color: #FFCC33;
     font-weight: normal;
     font-size: small;
     height: 20px;
     width: 100%;
     padding-top: 2px;
     padding-left: 5px;
-    border-left: #350608 solid 1px;
-    border-top: #350608 solid 1px;
+    border-left: #FFCC33 solid 1px;
+    border-top: #FFCC33 solid 1px;
 }
 
 .retro_title {
-    background-color: #F2C545;
-    color: #F7F6F2;
+    background-color: #A45209;
+    color: #FFCC33;
     font-size: 24px;
     font-weight: bold;
     height: 50px;
     width: 100%;
     padding-top: 10px;
     padding-left: 5px;
-    border-top: #350608 solid 1px;
-    border-bottom: #350608 solid 1px;
-    border-left: #350608 solid 1px;
+    border-top: #FFCC33 solid 1px;
+    border-bottom: #FFCC33 solid 1px;
+    border-left: #FFCC33 solid 1px;
 }
 
 .editor_field {
-    border: #350608 solid 1px;
+    border: #FFCC33 solid 1px;
     background-color: inherit;
     cursor: auto;
     outline: none;
 }
 
 input:focus {
-    border-color: #350608;
+    border-color: #FFCC33;
 }
 
 .title, .group_title {
     vertical-align: top;
-    background-color: #978E43;
-    color: #F7F6F2;
+    background-color: #533419;
+    color: #FFCC33;
     text-align: left;
     text-indent: 2px;
     font-size: 14px;
     font-weight: bold;
-    border-top: #350608 solid 1px;
-    border-left: #350608 solid 1px;
-    border-left: #350608 solid 1px;
+    FFCC33border-top: #FFCC33 solid 1px;
+    border-left: #FFCC33 solid 1px;
+    border-left: #FFCC33 solid 1px;
     margin-bottom: 5px;
 }
 

@@ -40,7 +40,7 @@ div.field, div.actions {
 }
 
 .site_header {
-    background-color: #C73B0B;
+    background-color: #747533;
     color: #F7F6F2;
     font-weight: normal;
     font-size: small;
@@ -48,11 +48,11 @@ div.field, div.actions {
     width: 100%;
     padding-top: 2px;
     padding-left: 5px;
-    border-left: #350608 solid 1px;
+    border-left: #CAE001 solid 1px;
 }
 
 .site_footer {
-    background-color: #C73B0B;
+    background-color: #747533;
     color: #F7F6F2;
     font-weight: normal;
     font-size: small;
@@ -60,12 +60,12 @@ div.field, div.actions {
     width: 100%;
     padding-top: 2px;
     padding-left: 5px;
-    border-left: #350608 solid 1px;
-    border-top: #350608 solid 1px;
+    border-left: #CAE001 solid 1px;
+    border-top: #CAE001 solid 1px;
 }
 
 .retro_title {
-    background-color: #F2C545;
+    background-color: #B9BA6B;
     color: #F7F6F2;
     font-size: 24px;
     font-weight: bold;
@@ -73,34 +73,9 @@ div.field, div.actions {
     width: 100%;
     padding-top: 10px;
     padding-left: 5px;
-    border-top: #350608 solid 1px;
-    border-bottom: #350608 solid 1px;
-    border-left: #350608 solid 1px;
-}
-
-.editor_field {
-    border: #350608 solid 1px;
-    background-color: inherit;
-    cursor: auto;
-    outline: none;
-}
-
-input:focus {
-    border-color: #350608;
-}
-
-.title, .group_title {
-    vertical-align: top;
-    background-color: #978E43;
-    color: #F7F6F2;
-    text-align: left;
-    text-indent: 2px;
-    font-size: 14px;
-    font-weight: bold;
-    border-top: #350608 solid 1px;
-    border-left: #350608 solid 1px;
-    border-left: #350608 solid 1px;
-    margin-bottom: 5px;
+    border-top: #CAE001 solid 1px;
+    border-bottom: #CAE001 solid 1px;
+    border-left: #CAE001 solid 1px;
 }
 
 .retro_list {
@@ -157,6 +132,17 @@ a.retro_list {
     cursor: pointer;
 }
 
+.editor_field {
+    border: #CAE001 solid 1px;
+    background-color: inherit;
+    cursor: auto;
+    outline: none;
+}
+
+input:focus {
+    border-color: #CAE001;
+}
+
 .field_with_errors {
     padding: 2px;
     background-color: red;
@@ -178,6 +164,19 @@ a.retro_list {
     top: inherit;
     float: right;
     width: 20%;
+}
+
+.title, .group_title {
+    vertical-align: top;
+    background-color: #B9BA80;
+    color: #F7F6F2;
+    text-align: left;
+    text-indent: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: #CAE001 solid 1px;
+    border-left: #CAE001 solid 1px;
+    margin-bottom: 5px;
 }
 
 .section_items, .group_items {

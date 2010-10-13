@@ -33,15 +33,15 @@ div.field, div.actions {
 }
 
 #notice {
-    color: #F7F6F2;
+    color: #001500;
     font-size: small;
     font-weight: bold;
     float: right;
 }
 
 .site_header {
-    background-color: #C73B0B;
-    color: #F7F6F2;
+    background-color: #024769;
+    color: #001500;
     font-weight: normal;
     font-size: small;
     height: 20px;
@@ -52,8 +52,8 @@ div.field, div.actions {
 }
 
 .site_footer {
-    background-color: #C73B0B;
-    color: #F7F6F2;
+    background-color: #024769;
+    color: #001500;
     font-weight: normal;
     font-size: small;
     height: 20px;
@@ -65,8 +65,8 @@ div.field, div.actions {
 }
 
 .retro_title {
-    background-color: #F2C545;
-    color: #F7F6F2;
+    background-color: #95CBE9;
+    color: #001500;
     font-size: 24px;
     font-weight: bold;
     height: 50px;
@@ -79,27 +79,27 @@ div.field, div.actions {
 }
 
 .editor_field {
-    border: #350608 solid 1px;
+    border: #2C5700 solid 1px;
     background-color: inherit;
     cursor: auto;
     outline: none;
 }
 
 input:focus {
-    border-color: #350608;
+    border-color: #2C5700;
 }
 
 .title, .group_title {
     vertical-align: top;
-    background-color: #978E43;
-    color: #F7F6F2;
+    background-color: #AFD775;
+    color: #001500;
     text-align: left;
     text-indent: 2px;
     font-size: 14px;
     font-weight: bold;
-    border-top: #350608 solid 1px;
-    border-left: #350608 solid 1px;
-    border-left: #350608 solid 1px;
+    border-top: #2C5700 solid 1px;
+    border-left: #2C5700 solid 1px;
+    border-left: #2C5700 solid 1px;
     margin-bottom: 5px;
 }
 
@@ -261,4 +261,3 @@ a.retro_list {
     font-size: 12px;
     list-style: square;
 }
-
