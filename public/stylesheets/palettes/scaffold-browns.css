@@ -3,16 +3,8 @@ body {
     color: #333;
 }
 
-body, p, ol, ul, td {
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-}
-
 pre {
     background-color: #eee;
-    padding: 10px;
-    font-size: 11px;
 }
 
 a {
@@ -28,38 +20,19 @@ a:hover {
     background-color: #000;
 }
 
-div.field, div.actions {
-    margin-bottom: 10px;
-}
-
 #notice {
     color: #FFCC33;
-    font-size: small;
-    font-weight: bold;
-    float: right;
 }
 
 .site_header {
     background-color: #FF6600;
     color: #FFCC33;
-    font-weight: normal;
-    font-size: small;
-    height: 20px;
-    width: 100%;
-    padding-top: 2px;
-    padding-left: 5px;
     border-left: #FFCC33 solid 1px;
 }
 
 .site_footer {
     background-color: #FF6600;
     color: #FFCC33;
-    font-weight: normal;
-    font-size: small;
-    height: 20px;
-    width: 100%;
-    padding-top: 2px;
-    padding-left: 5px;
     border-left: #FFCC33 solid 1px;
     border-top: #FFCC33 solid 1px;
 }
@@ -67,12 +40,6 @@ div.field, div.actions {
 .retro_title {
     background-color: #A45209;
     color: #FFCC33;
-    font-size: 24px;
-    font-weight: bold;
-    height: 50px;
-    width: 100%;
-    padding-top: 10px;
-    padding-left: 5px;
     border-top: #FFCC33 solid 1px;
     border-bottom: #FFCC33 solid 1px;
     border-left: #FFCC33 solid 1px;
@@ -80,9 +47,6 @@ div.field, div.actions {
 
 .editor_field {
     border: #FFCC33 solid 1px;
-    background-color: inherit;
-    cursor: auto;
-    outline: none;
 }
 
 input:focus {
@@ -90,175 +54,35 @@ input:focus {
 }
 
 .title, .group_title {
-    vertical-align: top;
     background-color: #533419;
     color: #FFCC33;
-    text-align: left;
-    text-indent: 2px;
-    font-size: 14px;
-    font-weight: bold;
     FFCC33border-top: #FFCC33 solid 1px;
     border-left: #FFCC33 solid 1px;
     border-left: #FFCC33 solid 1px;
-    margin-bottom: 5px;
-}
-
-.retro_list {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-a.retro_list {
-    text-decoration: none;
-}
-
-.popup_text {
-    font-style:normal;
-    font-size: 24px;
-    font-family:sans-serif;
-    word-wrap:normal;
-    line-height:150%;
-}
-
-.refresh {
-    display: inline;
-    font-size: x-small;
-    font-weight: normal;
-    float: right;
-}
-
-.inline_link {
-    display: inline;
-    font-size: x-small;
-    font-weight: normal;
-    border: none;
-}
-
-.nav_image {
-    width: 18px;
-    height: 18px;
-    border: none;
-}
-
-.editor_cancel_link {
-    display: inline;
-    font-size: x-small;
-    font-weight: normal;
-}
-
-.editor_ok_button {
-    font-size: x-small;
-    font-weight: normal;
-    padding: 5px;
-    background: none;
-    border: none;
-    display: inline;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.field_with_errors {
-    padding: 2px;
-    background-color: red;
-    display: table;
-}
-
-.section_row {
-    overflow: hidden;
-    width: 80%;
-}
-
-.section {
-    top: inherit;
-    float: left;
-    width: 50%;
-}
-
-.groups {
-    top: inherit;
-    float: right;
-    width: 20%;
 }
 
 .section_items, .group_items {
-    text-indent: 7px;
-    font-size: 12px;
-    vertical-align: top;
     border:#a9a9a9 dashed 1px;
 }
 
-.section_item {
-    border:black solid 1px;
-    /*background-color: #f8f291;*/
-    float:left;
-    width:47%;
-    height:120px;
-    margin-right:5px;
-    margin-bottom:5px;
-    vertical-align: top;
-    overflow: hidden;
-}
-
-
 .group_item {
-    border:black solid 1px;
-    padding:1px;
     background-color: #f8f291;
-    margin-bottom:5px;
-}
-
-.item_actions {
-    text-align:right;
 }
 
 .section_drop_to_add {
     color:#a9a9a9;
-    vertical-align:bottom;
-    min-height:20px;
-    width:100%;
-    /*float:left;*/
 }
 
 .group_drop_to_add {
     color:#a9a9a9;
-    vertical-align:bottom;
-    min-height:20px;
-    width:100%;
-}
-
-.item_vote {
-    font-style: normal;
-    font-size:10px;
-}
-
-.item {
-    font-style:italic;
-    font-size: 12px;
-    font-family:cursive;
 }
 
 #error_explanation {
-    width: 450px;
-    border: 2px solid red;
-    padding: 7px;
-    padding-bottom: 0;
-    margin-bottom: 20px;
     background-color: #f0f0f0;
 }
 
 #error_explanation h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0px;
     background-color: #c00;
     color: #fff;
-}
-
-#error_explanation ul li {
-    font-size: 12px;
-    list-style: square;
 }
 

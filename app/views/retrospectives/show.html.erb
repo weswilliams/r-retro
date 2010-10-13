@@ -4,6 +4,9 @@
   <%= link_to image_tag("text.png", :class => 'nav_image', :alt => "(text)"), retrospective_path(@retrospective, :format => :text), :class => 'inline_link', :title => 'text version' %>
   <%= link_to image_tag("new-section.png", :class => 'nav_image', :alt => "(add section)"), add_retrospective_sections_url(@retrospective), :method => :post, :class => 'inline_link', :title => 'add section' %>
   <%= link_to image_tag("home.png", :class => 'nav_image', :alt => "(home)"), retrospectives_path, :class => 'inline_link', :title => 'home' %>
+  <%= form_for @retrospective, :url => change_theme_retrospective_path(@retrospective), :html => { :method => :post, :class => 'inline_form' } do %>
+  <%= select_tag(:theme, options_for_select(['default','blue-green', 'browns', 'gold-blue', 'green', 'orange-gold-green'], @theme), :onchange=>"this.form.submit()") %>
+  <% end %>
   <%= check_box_tag 'enable_auto_refresh', 'auto refresh', false, :class => 'refresh' %>
   <%= inline_edit_item_with_remote_update(:id => @retrospective.id, :element_id => "retrospective_title", :url => update_title_retrospective_url(@retrospective), :on_complete => '') %>
   <span class="refresh">auto refresh</span>

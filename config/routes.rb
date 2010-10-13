@@ -4,6 +4,7 @@ RRetro::Application.routes.draw do
     post :refresh, :on => :member
     post :refresh_groups, :on => :member
     post :update_title, :on => :member
+    post :change_theme, :on => :member
 
     resources :sections do
       post :add, :on => :collection

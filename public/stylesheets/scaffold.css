@@ -237,6 +237,11 @@ a.retro_list {
     font-family:cursive;
 }
 
+.inline_form {
+    display: inline;
+    padding: 20px;
+}
+
 #error_explanation {
     width: 450px;
     border: 2px solid red;

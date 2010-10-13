@@ -1,5 +1,11 @@
 class RetrospectivesController < ApplicationController
 
+  def change_theme
+    respond_to do |format|
+      format.html { redirect_to({:action => 'show', :id => params[:id], :theme => params[:theme]}, :notice => 'theme changed') }
+    end
+  end
+
   def update_title
     if is_request_for_valid_retrospective()
       @retrospective = Retrospective.find(params[:id])
@@ -51,6 +57,7 @@ class RetrospectivesController < ApplicationController
   # GET /retrospectives/1.xml
   def show
     if is_request_for_valid_retrospective
+      @theme = params[:theme]
       respond_to do |format|
         format.html # show.html.erb
         format.text { render :content_type => 'text/plain', :action => 'text' }
