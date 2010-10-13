@@ -2,7 +2,7 @@ module RetrospectivesHelper
 
   def theme_options
     @files = Dir.glob("public/stylesheets/palettes/*")
-    theme_name = []
+    theme_name = ['default']
     @files.each do |f|
       theme_name << /\A.*scaffold-(.*).css\z/.match(f)[1]
     end
