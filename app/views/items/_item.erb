@@ -1,20 +1,20 @@
-<div id="<%= context %>_item_<%= item.id %>" class="<%= context %>_item" style="background-color:<%= "\##{item.section.color}" %>;">
+<div id="<%= context %>_<%= context_id %>_item_<%= item.id %>" class="<%= context %>_item" style="background-color:<%= "\##{item.section.color}" %>;">
   <div class="item_actions">
-    <%= link_to image_tag("maximize.png", :class => 'nav_image', :alt => "(show)"), '', :href => "javascript:void(0);", :id => "show_#{context}_item_value_#{item.id}", :class => 'inline_link', :title => 'show item' %>
-    <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(edit)"), '', :href => 'javascript:void(0);', :id => "#{context}_item_value_#{item.id}", :class => 'inline_link', :title => 'edit item' %>
+    <%= link_to image_tag("maximize.png", :class => 'nav_image', :alt => "(show)"), '', :href => "javascript:void(0);", :id => "show_#{context}_#{context_id}_item_value_#{item.id}", :class => 'inline_link', :title => 'show item' %>
+    <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(edit)"), '', :href => 'javascript:void(0);', :id => "#{context}_#{context_id}_item_value_#{item.id}", :class => 'inline_link', :title => 'edit item' %>
     <%= render :partial => "#{context}s/#{context}_item_actions", :locals => {:item => item} %>
   </div>
 
-<span id="<%= context %>_li_item_<%= item.id %>" class="item">
-  <span class="item_vote">(<span id="<%= context %>_item_votes_<%= item.id %>" class="item_vote"><%= item.item_votes.size %></span>)</span>
-  <span id="inline_<%= context %>_item_value_<%= item.id %>" class="item_value"><%= item.value %></span>
+<span id="<%= context %>_<%= context_id %>_li_item_<%= item.id %>" class="item">
+  <span class="item_vote">(<span id="<%= context %>_<%= context_id %>_item_votes_<%= item.id %>" class="item_vote"><%= item.item_votes.size %></span>)</span>
+  <span id="inline_<%= context %>_<%= context_id %>_item_value_<%= item.id %>" class="item_value"><%= item.value %></span>
 </span>
 
-  <%= popup_window item.value, "show_#{context}_item_value_#{item.id}", item.section.color %>
+  <%= popup_window item.value, "show_#{context}_#{context_id}_item_value_#{item.id}", item.section.color %>
 
-  <%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "#{context}_item_value", :rows => 2,
+  <%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "#{context}_#{context_id}_item_value", :rows => 2,
                                           :url => update_value_retrospective_section_item_url(item.section.retrospective, item.section, item),
                                           :refresh_url => refresh_value_retrospective_section_item_url(item.section.retrospective, item.section, item)) %>
-  <%= draggable_element("#{context}_item_#{item.id}", :revert => true) %>
+  <%= draggable_element("#{context}_#{context_id}_item_#{item.id}", :revert => true) %>
 
 </div>

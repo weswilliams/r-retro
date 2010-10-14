@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/r_retro.iml" afterPath="$PROJECT_DIR$/.idea/r_retro.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/items_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" afterPath="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/_item.erb" afterPath="$PROJECT_DIR$/app/views/items/_item.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/update_value_error.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/update_value_error.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/_section_items.erb" afterPath="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" afterPath="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/items_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/items_controller_test.rb" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +37,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scaffold-orange-gold-green.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-orange-gold-green.css">
+      <file leaf-file-name="_item.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="19" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
+            <state line="8" column="69" selection-start="891" selection-end="903" vertical-scroll-proportion="-2.4489796">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+      <file leaf-file-name="update_value_error.js.rjs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/items/update_value_error.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="130" selection-end="130" vertical-scroll-proportion="0.06928407">
+            <state line="3" column="94" selection-start="181" selection-end="181" vertical-scroll-proportion="0.07666099">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="178" column="68" selection-start="4573" selection-end="4573" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,22 +103,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/items/update_value_error.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
-        <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-blue-geen.css" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/retrospectives_controller.rb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-blue-green.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-browns.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-gold-blue.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-green.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-orange-gold-green.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-dark.css" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-orange-gold-green.css" />
+        <option value="$PROJECT_DIR$/app/controllers/sections_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
+        <option value="$PROJECT_DIR$/app/views/groups/_group_items.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
+        <option value="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" />
+        <option value="$PROJECT_DIR$/test/functional/items_controller_test.rb" />
+        <option value="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
+        <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/items/update_value_error.js.rjs" />
       </list>
     </option>
   </component>
@@ -135,8 +155,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,7 +183,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -179,11 +205,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -197,35 +223,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="palettes" />
+              <option name="myItemId" value="items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r_retro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r_retro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Favorites" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="120" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="147" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="142" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="142" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../temp" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="808" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="815" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="808" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="137" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="140" />
@@ -535,16 +577,16 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23646496" sideWeight="0.31973538" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32194045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23646496" sideWeight="0.32524806" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23646496" sideWeight="0.67254686" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23646496" sideWeight="0.6780595" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33923706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32194045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697546" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -608,114 +650,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/retrospectives_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="96" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+        <state line="17" column="6" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/form_tag_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_items.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="10" selection-start="5005" selection-end="5005" vertical-scroll-proportion="0.33256352">
+        <state line="4" column="7" selection-start="376" selection-end="376" vertical-scroll-proportion="0.106571935">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/form_options_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_items.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="296" column="10" selection-start="16111" selection-end="16111" vertical-scroll-proportion="0.7482679">
+        <state line="2" column="145" selection-start="197" selection-end="232" vertical-scroll-proportion="0.053285968">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+    <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="18" selection-start="3839" selection-end="3839" vertical-scroll-proportion="0.0">
+        <state line="9" column="58" selection-start="513" selection-end="513" vertical-scroll-proportion="0.22998296">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-browns.css">
+    <entry file="file://$PROJECT_DIR$/app/views/items/destroy.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
+        <state line="5" column="32" selection-start="217" selection-end="217" vertical-scroll-proportion="0.12776831">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-gold-blue.css">
+    <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
+        <state line="1" column="68" selection-start="179" selection-end="179" vertical-scroll-proportion="0.025553662">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-green.css">
+    <entry file="file://$PROJECT_DIR$/app/views/items/refresh_value.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+        <state line="6" column="53" selection-start="336" selection-end="336" vertical-scroll-proportion="0.15332198">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-blue-green.css">
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="60" selection-end="60" vertical-scroll-proportion="0.085324235">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-dark.css">
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="17" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/asset_tag_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="489" column="29" selection-start="27724" selection-end="27724" vertical-scroll-proportion="0.48845264">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="15" selection-start="98" selection-end="98" vertical-scroll-proportion="0.07017544">
+        <state line="8" column="69" selection-start="891" selection-end="903" vertical-scroll-proportion="-2.4489796">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="159" selection-end="159" vertical-scroll-proportion="0.10221465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/functional/items_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="26" selection-start="115" selection-end="115" vertical-scroll-proportion="0.10221465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.0/lib/active_record/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="438" column="6" selection-start="21075" selection-end="21075" vertical-scroll-proportion="0.33275262">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.4157044">
+        <state line="178" column="68" selection-start="4573" selection-end="4573" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sections_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/items/update_value_error.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="67" selection-start="3185" selection-end="3230" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.14251782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-orange-gold-green.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="19" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="130" selection-end="130" vertical-scroll-proportion="0.06928407">
+        <state line="3" column="94" selection-start="181" selection-end="181" vertical-scroll-proportion="0.07666099">
           <folding />
         </state>
       </provider>

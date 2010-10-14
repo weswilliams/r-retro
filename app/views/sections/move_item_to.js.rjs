@@ -6,5 +6,5 @@ page.select("#section_items_#{@from_section.id}").each do
   page.replace_html("section_items_#{@from_section.id}", render('sections/section_items', :current_section => @from_section))
 end
 
-page<<"$('section_item_#{@item.id}').style.background='\##{@section.color}'"
-page<<"$('group_item_#{@item.id}').style.background='\##{@section.color}'" if (@item.group)
+page<<"$('section_#{@section.id}_item_#{@item.id}').style.background='\##{@section.color}'"
+page<<"$('group_#{@item.group.id}_item_#{@item.id}').style.background='\##{@section.color}'" if (@item.group)

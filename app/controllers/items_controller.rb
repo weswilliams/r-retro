@@ -154,8 +154,9 @@ class ItemsController < ApplicationController
   # DELETE /items/1.xml
   def destroy
     @item = Item.find(params[:id])
-    @section = @item.section
+    @section = Section.find(params[:section_id])
     @item.destroy
+    @group_id = @item.group ? @item.group.id : 'x'
 
     respond_to do |format|
       format.html { redirect_to(retrospective_url(@item.section.retrospective)) }
@@ -174,6 +175,9 @@ class ItemsController < ApplicationController
     rescue ActiveRecord::RecordNotFound
       logger.error "attempt to access invalid item #{item_id}"
       @bad_item_id = item_id
+      @bad_section_id = params[:section_id]
+      @groups = Retrospective.find(params[:retrospective_id]).groups
+      
       respond_to do |format|
         format.js { render :action => :update_value_error }
       end

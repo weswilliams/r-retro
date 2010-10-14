@@ -1,4 +1,7 @@
-page.remove "section_item_#{@bad_item_id}"
-page.select("#group_item_#{@bad_item_id}").each { page.remove "group_item_#{@bad_item_id}" }
+page.remove "section_#{@bad_section_id}_item_#{@bad_item_id}"
+
+@groups.each do |group|
+  page.select("#group_#{group.id}_item_#{@bad_item_id}").each { page.remove "group_#{group.id}_item_#{@bad_item_id}" }
+end
 page.visual_effect(:fade, "notice", :duration => 2)
 page.replace_html('notice', 'item no longer exists')
