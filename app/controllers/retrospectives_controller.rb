@@ -1,8 +1,12 @@
 class RetrospectivesController < ApplicationController
 
+  before_filter :init_cookies
+
   def change_theme
+    theme = params[:theme]
+    cookies[:theme] = theme
     respond_to do |format|
-      format.html { redirect_to({:action => 'show', :id => params[:id], :theme => params[:theme]}, :notice => 'theme changed') }
+      format.html { redirect_to({:action => 'show', :id => params[:id], :theme => theme}, :notice => 'theme changed') }
     end
   end
 
@@ -57,7 +61,6 @@ class RetrospectivesController < ApplicationController
   # GET /retrospectives/1.xml
   def show
     if is_request_for_valid_retrospective
-      @theme = params[:theme]
       respond_to do |format|
         format.html # show.html.erb
         format.text { render :content_type => 'text/plain', :action => 'text' }
@@ -142,4 +145,8 @@ class RetrospectivesController < ApplicationController
     end
   end
 
+  def init_cookies
+    cookies[:theme] = 'default' if !cookies[:theme]
+    @theme = cookies[:theme]
+  end
 end
