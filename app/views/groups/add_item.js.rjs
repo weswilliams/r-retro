@@ -7,3 +7,7 @@ if @original_item_group
     page.replace_html("group_items_#{@original_item_group.id}", render('groups/group_items', :current_group => @original_item_group))
   end
 end
+
+page.visual_effect(:appear, "notice")
+page.visual_effect(:fade, "notice", :duration => 2)
+page.replace_html('notice', "added item #{truncate @item.value, :length => 20} to #{truncate @group.title, :length => 10}")

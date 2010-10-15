@@ -1,1 +1,5 @@
 page.select("#group_#{@group.id}").each { page.remove "group_#{@group.id}" }
+
+page.visual_effect(:appear, "notice")
+page.visual_effect(:fade, "notice", :duration => 2)
+page.replace_html('notice', "removed group #{truncate @group.title, :length => 10}")
