@@ -2,6 +2,14 @@ class RetrospectivesController < ApplicationController
 
   before_filter :init_cookies
 
+  def auto_refresh
+    is_request_for_valid_retrospective
+    cookies[:auto_fresh] = toggle_auto_refresh_cookie
+    respond_to do |format|
+      format.html  { redirect_to(retrospective_path(@retrospective), :notice => 'auto refresh updated!') }
+    end
+  end
+
   def change_theme
     theme = params[:theme]
     cookies[:theme] = theme
@@ -145,8 +153,21 @@ class RetrospectivesController < ApplicationController
     end
   end
 
+  def toggle_auto_refresh_cookie
+    auto_refresh = cookies[:auto_fresh]
+    if TrueClass.to_s == auto_refresh
+      auto_refresh = FalseClass.to_s
+    else
+      auto_refresh = TrueClass.to_s
+    end
+    auto_refresh
+  end
+
   def init_cookies
     cookies[:theme] = 'default' if !cookies[:theme]
     @theme = cookies[:theme]
+
+    cookies[:auto_fresh] = TrueClass.to_s if cookies[:auto_fresh] == nil
+    @auto_fresh = true if FalseClass.to_s == cookies[:auto_fresh]
   end
 end
