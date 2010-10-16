@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/add.js.rjs" afterPath="$PROJECT_DIR$/app/views/groups/add.js.rjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" afterPath="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" afterPath="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/update_value_error.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/update_value_error.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" afterPath="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs" afterPath="$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs" afterPath="$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" afterPath="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +30,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="destroy.js.rjs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/destroy.js.rjs">
+      <file leaf-file-name="vote_for.js.rjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.rjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="210" selection-end="210" vertical-scroll-proportion="0.10135135">
+            <state line="10" column="0" selection-start="221" selection-end="401" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="refresh.js.rjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="37" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="move_item_to.js.rjs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="141" selection-start="797" selection-end="797" vertical-scroll-proportion="0.35198557">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="refresh_groups.js.rjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="44" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,12 +105,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/items/destroy.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/items/refresh_value.js.rjs" />
         <option value="$PROJECT_DIR$/test/functional/items_controller_test.rb" />
-        <option value="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
         <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/retrospectives_controller.rb" />
@@ -93,6 +116,11 @@
         <option value="$PROJECT_DIR$/app/views/groups/add.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs" />
+        <option value="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" />
       </list>
     </option>
   </component>
@@ -129,6 +157,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -166,6 +195,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -182,10 +215,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="items" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -205,21 +234,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="120" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="147" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="142" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="142" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../temp" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="145" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="808" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="815" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="808" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="137" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="140" />
@@ -524,21 +552,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1675" y="26" width="1290" height="1029" extended-state="6" />
-    <editor active="false" />
+    <frame x="11" y="25" width="727" height="766" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3164278" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23646496" sideWeight="0.32524806" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22691083" sideWeight="0.68357223" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35235378" sideWeight="0.68357223" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33923706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3164278" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697546" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -602,114 +630,94 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="302" selection-end="302" vertical-scroll-proportion="-2.4343677">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="38" selection-start="259" selection-end="259" vertical-scroll-proportion="0.12338425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/form_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="289" column="10" selection-start="12011" selection-end="12011" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/form_tag_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="319" column="10" selection-start="16286" selection-end="16286" vertical-scroll-proportion="-3.9224343">
-          <folding />
-        </state>
+        <state line="319" column="10" selection-start="16286" selection-end="16286" vertical-scroll-proportion="-3.9224343" />
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs18/falseclass.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="518" selection-end="518" vertical-scroll-proportion="0.22914219">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-dark.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="240" selection-end="240" vertical-scroll-proportion="0.3172738">
-          <folding />
-        </state>
+        <state line="13" column="6" selection-start="518" selection-end="518" vertical-scroll-proportion="0.22914219" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="140" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.16584766">
-          <folding />
-        </state>
+        <state line="9" column="140" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.16584766" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/retrospectives_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="105" selection-end="105" vertical-scroll-proportion="0.071599044">
-          <folding />
-        </state>
+        <state line="4" column="18" selection-start="105" selection-end="105" vertical-scroll-proportion="0.071599044" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="110" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.25798526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="14" column="110" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.25798526" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="9" selection-start="1359" selection-end="1364" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="48" column="9" selection-start="1359" selection-end="1364" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/scriptaculous_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="38" selection-start="901" selection-end="914" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="38" selection-start="901" selection-end="914" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/update_value_error.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="37" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="37" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/groups/add_item.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="391" selection-end="605" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="391" selection-end="605" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/groups/add.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="50" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+        <state line="4" column="50" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="3" selection-start="241" selection-end="241" vertical-scroll-proportion="0.07853403">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/groups/destroy.js.rjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="210" selection-end="210" vertical-scroll-proportion="0.10135135">
+        <state line="4" column="84" selection-start="252" selection-end="252" vertical-scroll-proportion="0.102389075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="221" selection-end="401" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="37" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="141" selection-start="797" selection-end="797" vertical-scroll-proportion="0.35198557">
           <folding />
         </state>
       </provider>

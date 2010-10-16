@@ -1,2 +1,6 @@
 page.select("#group_#{@group.id}_item_#{@item.id}").each { page.remove "group_#{@group.id}_item_#{@item.id}" }
 page.replace_html("group_empty_#{@group.id}", render(:partial => 'groups/group_drop', :locals => {:current_group => @group}))
+
+page.visual_effect(:appear, "notice")
+page.visual_effect(:fade, "notice", :duration => 2)
+page.replace_html('notice', "removed item #{truncate @item.value, :length => 10} from #{truncate @group.title, :length => 10}")

@@ -1,3 +1,7 @@
 page.select("#section_items_#{@section.id}").each do
   page.replace_html("section_items_#{@section.id}", render('sections/section_items', :current_section => @section))
 end
+
+page.visual_effect(:appear, "notice")
+page.visual_effect(:fade, "notice", :duration => 2)
+page.replace_html('notice', "sections updated!")
