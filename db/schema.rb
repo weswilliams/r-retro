@@ -20,14 +20,14 @@ ActiveRecord::Schema.define(:version => 20100930074829) do
   end
 
   create_table "item_votes", :force => true do |t|
-    t.integer  "item_id",    :limit => nil
+    t.integer  "item_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "items", :force => true do |t|
     t.text     "value"
-    t.integer  "section_id", :limit => nil
+    t.integer  "section_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "group_id"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(:version => 20100930074829) do
 
   create_table "sections", :force => true do |t|
     t.string   "title"
-    t.integer  "retrospective_id", :limit => nil
+    t.integer  "retrospective_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "color"

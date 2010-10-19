@@ -172,12 +172,14 @@ a.retro_list {
     top: inherit;
     float: left;
     width: 50%;
+    z-index: 0;
 }
 
 .groups {
     top: inherit;
     float: right;
     width: 20%;
+    z-index: 0;
 }
 
 .section_items, .group_items {
