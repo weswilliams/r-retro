@@ -111,6 +111,7 @@ class SectionsController < ApplicationController
     @section = Section.find(params[:id])
     @item = Item.find(/\A.*_item.*_(\d+)\z/.match(params[:item_id])[1].to_i)
     @from_section = @item.section
+    @item.section = @section
     @section.items << @item
     respond_to do |format|
       if @section.save

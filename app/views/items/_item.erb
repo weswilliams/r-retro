@@ -1,6 +1,5 @@
 <div id="<%= context %>_<%= context_id %>_item_<%= item.id %>" class="<%= context %>_item" style="background-color:<%= "\##{item.section.color}" %>;">
   <div class="item_actions">
-    <%= link_to image_tag("maximize.png", :class => 'nav_image', :alt => "(show)"), '', :href => "javascript:void(0);", :id => "show_#{context}_#{context_id}_item_value_#{item.id}", :class => 'inline_link', :title => 'show item' %>
     <%= render :partial => "#{context}s/#{context}_item_actions", :locals => {:item => item} %>
   </div>
 

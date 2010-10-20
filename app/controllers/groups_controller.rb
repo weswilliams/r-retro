@@ -48,6 +48,7 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id].to_i)
     @item = Item.find(/\A.*_item.*_(\d+)\z/.match(params[:item_id])[1].to_i)
     @original_item_group = @item.group
+    @item.group = @group
     @group.items << @item
 
     respond_to do |format|
