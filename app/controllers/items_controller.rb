@@ -48,11 +48,11 @@ class ItemsController < ApplicationController
     @section = Section.find(params[:section_id])
     @item = Item.new
     @item.section = @section
-    @item.value = params[:value]
+    @item.value = get_non_null_value_param()
 
     respond_to do |format|
       if @item.save
-        format.js { render :inline => '' }
+        format.js
       else
         format.js { redirect_to(retrospective_path(@section.retrospective), :notice => 'failed to add item!') }
       end
@@ -102,7 +102,7 @@ class ItemsController < ApplicationController
 
   def update_value
     if is_request_for_valid_item
-      @item.value = params[:value]
+      @item.value = get_non_null_value_param()
 
       respond_to do |format|
         if @item.save
@@ -185,6 +185,12 @@ class ItemsController < ApplicationController
     else
       true
     end
+  end
+
+  def get_non_null_value_param
+    value = params[:value]
+    value = 'double click to edit' if !value || value.strip.length == 0
+    value
   end
 
 end
