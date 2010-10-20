@@ -25,7 +25,7 @@
 </head>
 <body>
   <div class="site_header">
-    <%= image_tag("retro.png", :class => 'nav_image') %>
+    <%= link_to image_tag("retro.png", :class => 'nav_image', :alt => "(home)"), retrospectives_path, :class => 'inline_link', :title => 'home' %>
     <span id="site_title">R-Retro - The Distributed Retrospective Tool</span>
     <span id="notice"><%= notice %></span></div>
   <%= yield %>
