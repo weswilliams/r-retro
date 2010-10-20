@@ -40,14 +40,14 @@ module RetrospectivesHelper
     code = <<-eos
     var #{element_id}_editor#{id} = new Ajax.InPlaceEditor('inline_#{element_id}_#{id}',
             '#{url}', {
-      externalControl:"#{element_id}_#{id}",
+      externalControl:"inline_#{element_id}_#{id}",
       highlightcolor: 'transparent',
       rows: #{rows},
       cancelText: '(cancel)',
       okText: '(ok)',
-      clickToEditText: ''#{on_complete}
+      clickToEditText: 'double click to edit'#{on_complete}
     });
-    $("#{element_id}_#{id}").onclick = function() {
+    $("inline_#{element_id}_#{id}").ondblclick = function() {
       #{element_id}_editor#{id}.enterEditMode();
     }
     #{element_id}_editor#{id}.dispose();

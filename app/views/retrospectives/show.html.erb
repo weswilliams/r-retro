@@ -1,6 +1,5 @@
 <div class="retro_title">
   <span id="inline_retrospective_title_<%= @retrospective.id %>"><%= @retrospective.title %></span>
-  <%= link_to image_tag("edit.png", :class => 'nav_image', :alt => "(rename)"), '', :href => 'javascript:void(0);', :id => "retrospective_title_#{@retrospective.id}", :class => 'inline_link', :title => 'rename' %>
   <%= link_to image_tag("text.png", :class => 'nav_image', :alt => "(text)"), retrospective_path(@retrospective, :format => :text), :class => 'inline_link', :title => 'text version' %>
   <%= link_to image_tag("new-section.png", :class => 'nav_image', :alt => "(add section)"), add_retrospective_sections_url(@retrospective), :method => :post, :class => 'inline_link', :title => 'add section' %>
   <%= link_to image_tag("home.png", :class => 'nav_image', :alt => "(home)"), retrospectives_path, :class => 'inline_link', :title => 'home' %>
