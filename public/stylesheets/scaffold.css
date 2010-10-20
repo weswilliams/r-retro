@@ -69,13 +69,28 @@ div.field, div.actions {
     color: #F7F6F2;
     font-size: 24px;
     font-weight: bold;
-    height: 50px;
+    height: 30px;
     width: 100%;
     padding-top: 10px;
     padding-left: 5px;
     border-top: #350608 solid 1px;
     border-bottom: #350608 solid 1px;
     border-left: #350608 solid 1px;
+}
+
+.retro_sub_title {
+    background-color: #F2C545;
+    color: #F7F6F2;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 5px;
+    border-top: #350608 solid 1px;
+    border-bottom: #350608 solid 1px;
+    border-left: #350608 solid 1px;
+    vertical-align: middle;
 }
 
 .editor_field {

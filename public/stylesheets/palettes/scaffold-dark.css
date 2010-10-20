@@ -45,6 +45,14 @@ a:hover {
     border-left: #9e9a80 solid 1px;
 }
 
+.retro_sub_title {
+    background-color: #2e2c2b;
+    color: #9e9a97;
+    border-top: #9e9a80 solid 1px;
+    border-bottom: #9e9a80 solid 1px;
+    border-left: #9e9a80 solid 1px;
+}
+
 .editor_field {
     border: #2C5700 solid 1px;
 }

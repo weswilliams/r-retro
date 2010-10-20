@@ -21,25 +21,33 @@ a:hover {
 }
 
 #notice {
-    color: #F7F6F2;
+    color: #FFCC00;
 }
 
 .site_header {
-    background-color: #C73B0B;
-    color: #F7F6F2;
+    background-color: #FF6600;
+    color: #FFCC00;
     border-left: #350608 solid 1px;
 }
 
 .site_footer {
-    background-color: #C73B0B;
-    color: #F7F6F2;
+    background-color: #FF6600;
+    color: #FFCC00;
     border-left: #350608 solid 1px;
     border-top: #350608 solid 1px;
 }
 
 .retro_title {
     background-color: #F2C545;
-    color: #F7F6F2;
+    color: #FFCC00;
+    border-top: #350608 solid 1px;
+    border-bottom: #350608 solid 1px;
+    border-left: #350608 solid 1px;
+}
+
+.retro_sub_title {
+    background-color: #F2C545;
+    color: #FFCC00;
     border-top: #350608 solid 1px;
     border-bottom: #350608 solid 1px;
     border-left: #350608 solid 1px;
@@ -55,7 +63,7 @@ input:focus {
 
 .title, .group_title {
     background-color: #978E43;
-    color: #F7F6F2;
+    color: #FFCC00;
     border-top: #350608 solid 1px;
     border-left: #350608 solid 1px;
     border-left: #350608 solid 1px;
