@@ -164,7 +164,7 @@ a.retro_list {
 }
 
 .section_row {
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 80%;
 }
 
@@ -191,7 +191,6 @@ a.retro_list {
 
 .section_item {
     border:black solid 1px;
-    /*background-color: #f8f291;*/
     float:left;
     width:47%;
     height:120px;
@@ -218,7 +217,6 @@ a.retro_list {
     vertical-align:bottom;
     min-height:20px;
     width:100%;
-    /*float:left;*/
 }
 
 .group_drop_to_add {
