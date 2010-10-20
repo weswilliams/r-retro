@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="" />
+    <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/_item.erb" afterPath="$PROJECT_DIR$/app/views/items/_item.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" afterPath="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
+    </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +31,7 @@
       <file leaf-file-name="_item.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="-2.5">
+            <state line="6" column="0" selection-start="367" selection-end="367" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -35,16 +40,16 @@
       <file leaf-file-name="_section_item_actions.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_group_item_actions.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
+      <file leaf-file-name="scaffold.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="149" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+            <state line="230" column="23" selection-start="3696" selection-end="3696" vertical-scroll-proportion="0.95468277">
               <folding />
             </state>
           </provider>
@@ -91,7 +96,6 @@
       <list>
         <option value="$PROJECT_DIR$/public/javascripts/dragdrop.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-default.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/views/groups/_group.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -100,11 +104,12 @@
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
         <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/items/add.js.rjs" />
-        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
-        <option value="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sections_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/groups/_group_item_actions.erb" />
+        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
+        <option value="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
       </list>
     </option>
   </component>
@@ -592,13 +597,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.672">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/prototype_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="10" selection-start="5721" selection-end="5721" vertical-scroll-proportion="0.6904762">
@@ -676,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/groups/_group_items.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -690,16 +681,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0">
+        <state line="0" column="149" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="149" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+        <state line="6" column="0" selection-start="367" selection-end="367" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="230" column="23" selection-start="3696" selection-end="3696" vertical-scroll-proportion="0.95468277">
           <folding />
         </state>
       </provider>

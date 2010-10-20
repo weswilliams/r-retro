@@ -227,6 +227,8 @@ a.retro_list {
 .item_vote {
     font-style: normal;
     font-size:10px;
+    font-weight:bold;
+    vertical-align:top;
 }
 
 .item {
