@@ -1,10 +1,6 @@
 
 page.replace_html("section_#{@item.section.id}_item_votes_#{@item.id}", "#{@item.item_votes.size}")
 
-if (@item.group)
-  page.replace_html("group_#{@item.group.id}_item_votes_#{@item.id}", "#{@item.item_votes.size}")
-end
-
 page.visual_effect(:appear, "notice")
 page.visual_effect(:fade, "notice", :duration => 2)
 page.replace_html('notice', "votes for #{truncate @item.value, :length => 10} updated!")

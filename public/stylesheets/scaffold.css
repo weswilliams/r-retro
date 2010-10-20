@@ -229,6 +229,7 @@ a.retro_list {
     font-size:10px;
     font-weight:bold;
     vertical-align:top;
+    float:left;
 }
 
 .item {
