@@ -4,7 +4,7 @@
   </div>
 
 <span id="<%= context %>_<%= context_id %>_li_item_<%= item.id %>" class="item">
-  <span id="inline_<%= context %>_<%= context_id %>_item_value_<%= item.id %>" class="item_value"><%= item.value %></span>
+  <span id="inline_<%= context %>_<%= context_id %>_item_value_<%= item.id %>" class="item_value"><%= truncate item.value, :length => 75 %></span>
 </span>
 
   <%= popup_window item.value, "show_#{context}_#{context_id}_item_value_#{item.id}", item.section.color %>
