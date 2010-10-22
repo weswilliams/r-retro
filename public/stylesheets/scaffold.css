@@ -93,6 +93,19 @@ div.field, div.actions {
     vertical-align: middle;
 }
 
+.retro_sub_title_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited.retro_sub_title_link {
+    color: inherit;
+}
+
+a:hover.retro_sub_title_link {
+  background-color:inherit;
+}
+
 .editor_field {
     border: #350608 solid 1px;
     background-color: inherit;
@@ -149,10 +162,18 @@ a.retro_list {
     border: none;
 }
 
+a:hover.inline_link {
+  background-color:inherit;   
+}
+
 .nav_image {
     width: 18px;
     height: 18px;
     border: none;
+}
+
+a:hover.nav_image {
+  background-color:inherit;
 }
 
 .editor_cancel_link {
