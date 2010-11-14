@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/r_retro.iml" afterPath="$PROJECT_DIR$/.idea/r_retro.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/retrospectives_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/retrospectives_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" afterPath="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-default.css" afterPath="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/_item.erb" afterPath="$PROJECT_DIR$/app/views/items/_item.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +30,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="retrospectives_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/retrospectives_controller.rb">
+      <file leaf-file-name="20101114180850_change_retro_title_to_text.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="73" selection-start="4321" selection-end="4321" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retrospectives_controller_test.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb">
+      <file leaf-file-name="_item.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="705" selection-end="705" vertical-scroll-proportion="0.3401015">
+            <state line="9" column="32" selection-start="531" selection-end="582" vertical-scroll-proportion="0.24368231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="55" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-15.08">
               <folding />
             </state>
           </provider>
@@ -87,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" />
         <option value="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-blue-green.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-browns.css" />
@@ -97,12 +105,13 @@
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-orange-gold-green.css" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/text.text.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-default.css" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/retrospectives_controller.rb" />
         <option value="$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb" />
+        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
       </list>
     </option>
   </component>
@@ -141,6 +150,7 @@
     <panes>
       <pane id="Favorites" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -169,7 +179,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -183,31 +193,62 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r-retro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r-retro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r-retro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r-retro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="96" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="116" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="113" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$USER_HOME$/temp" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="115" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="629" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="623" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="629" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="109" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="111" />
@@ -563,7 +604,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="552" y="46" width="1024" height="746" extended-state="0" />
+    <frame x="573" y="40" width="1024" height="746" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -641,114 +682,106 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_controller/test_case.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="8" selection-start="284" selection-end="284" vertical-scroll-proportion="0.08122744">
-          <folding />
-        </state>
+        <state line="176" column="48" selection-start="5956" selection-end="5956" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/text.text.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.1/lib/rack/response.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="47" selection-start="87" selection-end="87" vertical-scroll-proportion="0.10152284">
-          <folding />
-        </state>
+        <state line="18" column="8" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.9895105" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_dispatch/http/response.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="104" selection-start="104" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="35" column="28" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.09615385" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-default.css">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_dispatch/testing/test_response.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="896" selection-end="896" vertical-scroll-proportion="0.11167513">
-          <folding />
-        </state>
+        <state line="7" column="27" selection-start="376" selection-end="376" vertical-scroll-proportion="0.1816609" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/palettes/scaffold-dark.css">
+    <entry file="file://$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="1" selection-start="0" selection-end="1387" vertical-scroll-proportion="0.49238577">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/retrospectives.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="261" selection-end="261" vertical-scroll-proportion="0.18953069">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/retrospective.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="177" selection-end="177" vertical-scroll-proportion="0.20304568">
+        <state line="22" column="42" selection-start="755" selection-end="755" vertical-scroll-proportion="0.026548672">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/retrospectives_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="73" selection-start="4321" selection-end="4321" vertical-scroll-proportion="0.0">
+        <state line="150" column="73" selection-start="4321" selection-end="4321" vertical-scroll-proportion="0.026548672">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20100930074829_add_color_to_section.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="39" selection-start="38" selection-end="65" vertical-scroll-proportion="-0.625">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/schema_statements.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="20" selection-start="1148" selection-end="1154" vertical-scroll-proportion="-16.833334">
+        <state line="267" column="24" selection-start="10378" selection-end="10378" vertical-scroll-proportion="0.33217993">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_controller/test_case.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20100727123919_create_retrospectives.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="48" selection-start="5956" selection-end="5956" vertical-scroll-proportion="0.0">
+        <state line="2" column="32" selection-start="85" selection-end="99" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.2.1/lib/rack/response.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/schema_definitions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="8" selection-start="615" selection-end="615" vertical-scroll-proportion="-1.9895105">
+        <state line="368" column="49" selection-start="12747" selection-end="12747" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_dispatch/http/response.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="28" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.09615385">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_dispatch/testing/test_response.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="376" selection-end="376" vertical-scroll-proportion="0.1816609">
+        <state line="13" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/window.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="705" selection-end="705" vertical-scroll-proportion="0.3401015">
+        <state line="0" column="53" selection-start="41" selection-end="59" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="55" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-15.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="531" selection-end="582" vertical-scroll-proportion="0.24368231">
           <folding />
         </state>
       </provider>

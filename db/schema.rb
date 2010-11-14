@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100930074829) do
+ActiveRecord::Schema.define(:version => 20101114180850) do
 
   create_table "groups", :force => true do |t|
     t.string   "title"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(:version => 20100930074829) do
   end
 
   create_table "retrospectives", :force => true do |t|
-    t.string   "title"
+    t.text     "title",      :limit => 1000
     t.datetime "created_at"
     t.datetime "updated_at"
   end
