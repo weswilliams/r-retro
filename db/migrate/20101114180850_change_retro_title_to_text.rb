@@ -1,13 +1,13 @@
 class ChangeRetroTitleToText < ActiveRecord::Migration
   def self.up
     change_table :retrospectives do |t|
-      t.change :title, :text, :limit => 1000
+      t.change :title, :text
     end
   end
 
   def self.down
     change_table :retrospectives do |t|
-      t.change :title, :string, :limit => 255
+      t.change :title, :string
     end
   end
 end
