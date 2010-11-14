@@ -242,6 +242,8 @@ a:hover.nav_image {
     padding:1px;
     background-color: #f8f291;
     margin-bottom:5px;
+    height:60px;
+    overflow: hidden;
 }
 
 .item_actions {
