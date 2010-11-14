@@ -61,14 +61,13 @@ class RetrospectivesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml { render :xml => @retrospectives }
     end
   end
 
   # GET /retrospectives/1
   # GET /retrospectives/1.xml
   def show
-    if is_request_for_valid_retrospective
+    if is_request_for_valid_retrospective(true)
       respond_to do |format|
         format.html # show.html.erb
         format.text { render :content_type => 'text/plain', :action => 'text' }
@@ -140,16 +139,26 @@ class RetrospectivesController < ApplicationController
 
   private
 
-  def is_request_for_valid_retrospective()
-
+  def is_request_for_valid_retrospective(require_title=false)
     begin
       @retrospective = Retrospective.find(params[:id])
+      is_request_for_valid_retrospective_with_title if require_title
     rescue ActiveRecord::RecordNotFound
       logger.error "attempt to access invalid retrospective #{params[:id]}"
       redirect_to retrospectives_url, :notice => 'The retrospective you requested in no longer available.'
       false
+    rescue RuntimeError
+      logger.error "attempt to access retrospective by id without a title"
+      redirect_to retrospectives_url, :notice => 'The retrospective you requested in no longer available.'
+      false
     else
       true
+    end
+  end
+
+  def is_request_for_valid_retrospective_with_title()
+    if params[:id] != @retrospective.to_param
+      raise "id is missing the title"
     end
   end
 

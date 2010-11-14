@@ -10,6 +10,16 @@ class RetrospectivesControllerTest < ActionController::TestCase
     super
   end
 
+  test "user should see the retrospective if the id and title are known" do
+    get :show, :id => @retrospective.to_param
+    assert_select "span#inline_retrospective_title_#{@retrospective.id}", @retrospective.title
+  end
+
+  test "user should see the home page if the id and title of the retrospective are not known" do
+    get :show, :id => @retrospective.id
+    assert_redirected_to retrospectives_path
+  end
+
   test "should display section 1 items" do
     show_with_1_section_and_expect_1_row
     assert_select 'div.section_items' do
