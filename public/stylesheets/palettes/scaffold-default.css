@@ -1,0 +1,91 @@
+body {
+    background-color: #9e9994;
+    color: #333;
+}
+
+pre {
+    background-color: #eee;
+}
+
+a {
+    color: #000;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+#notice {
+    color: #ffffff;
+}
+
+.site_header {
+    background-color: #271c12;
+    color: #9e9a97;
+    border-left: #9e9a80 solid 1px;
+}
+
+.site_footer {
+    background-color: #271c12;
+    color: #9e9a97;
+    border-left: #9e9a80 solid 1px;
+    border-top: #9e9a80 solid 1px;
+}
+
+.retro_title {
+    background-color: #2e2c2b;
+    color: #9e9a97;
+    border-top: #9e9a80 solid 1px;
+    border-bottom: #9e9a80 solid 1px;
+    border-left: #9e9a80 solid 1px;
+}
+
+.retro_sub_title {
+    background-color: #2e2c2b;
+    color: #9e9a97;
+    border-top: #9e9a80 solid 1px;
+    border-bottom: #9e9a80 solid 1px;
+    border-left: #9e9a80 solid 1px;
+}
+
+.editor_field {
+    border: #2C5700 solid 1px;
+}
+
+input:focus {
+    border-color: #2C5700;
+}
+
+.title, .group_title {
+    background-color: #3d3a38;
+    color: #9e9a97;
+    border-top: #9e9a80 solid 1px;
+    border-left: #9e9a80 solid 1px;
+    border-left: #9e9a80 solid 1px;
+}
+
+.group_item {
+    background-color: #f8f291;
+}
+
+.section_drop_to_add {
+    color:#271c12;
+}
+
+.group_drop_to_add {
+    color:#271c12;
+}
+
+#error_explanation {
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    background-color: #c00;
+    color: #fff;
+}
