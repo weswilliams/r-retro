@@ -5,7 +5,7 @@ Sections:
 <% @retrospective.sections.each do |section| %>
     <%= "  #{section.title}:" %>
     <% section.items.each do |item| %>
-        <%= "    * #{item.value}" %>
+        <%= "    * (#{item.item_votes.size}) #{item.value}" %>
     <% end %>
 <% end %>
 
