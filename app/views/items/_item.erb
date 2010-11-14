@@ -7,7 +7,7 @@
   <span id="inline_<%= context %>_<%= context_id %>_item_value_<%= item.id %>" class="item_value"><%= item.value %></span>
 </span>
 
-  <%= popup_window item.value, "show_#{context}_#{context_id}_item_value_#{item.id}", item.section.color %>
+  <%= popup_window "inline_#{context}_#{context_id}_item_value_#{item.id}", "show_#{context}_#{context_id}_item_value_#{item.id}", item.section.color %>
 
 
   <%= inline_edit_item_with_remote_update(:id => item.id, :element_id => "#{context}_#{context_id}_item_value",

@@ -20,7 +20,7 @@ module RetrospectivesHelper
       var #{element_id}_window = new Window({className: "alphacube",  width:350, height:400, zIndex: 100, resizable: true, title: "r-retro", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:true, wiredDrag: true})
       $("#{element_id}").onclick = function() {
         $(#{element_id}_window.getId() + "_content").style.background="##{color}";
-        #{element_id}_window.getContent().innerHTML = "<p class='popup_text'>#{value}</p>";
+        #{element_id}_window.getContent().innerHTML = "<p class='popup_text'>" + $("#{value}").innerHTML + "</p>";
         #{element_id}_window.showCenter();
       }
     eos

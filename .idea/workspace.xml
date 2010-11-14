@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/r_retro.iml" afterPath="$PROJECT_DIR$/.idea/r_retro.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/_item.erb" afterPath="$PROJECT_DIR$/app/views/items/_item.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +28,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20101114180850_change_retro_title_to_text.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_item.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="531" selection-end="582" vertical-scroll-proportion="0.24368231">
+            <state line="9" column="73" selection-start="572" selection-end="572" vertical-scroll-proportion="0.24368231">
               <folding />
             </state>
           </provider>
@@ -51,7 +40,7 @@
       <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="55" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-15.08">
+            <state line="12" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="-3.68">
               <folding />
             </state>
           </provider>
@@ -96,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-blue-green.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-browns.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/palettes/scaffold-dark.css" />
@@ -112,6 +100,7 @@
         <option value="$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb" />
         <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
       </list>
     </option>
   </component>
@@ -774,14 +763,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="55" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-15.08">
+        <state line="12" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="-3.68">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="531" selection-end="582" vertical-scroll-proportion="0.24368231">
+        <state line="9" column="73" selection-start="572" selection-end="572" vertical-scroll-proportion="0.24368231">
           <folding />
         </state>
       </provider>
