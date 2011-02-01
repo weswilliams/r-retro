@@ -3,11 +3,11 @@
   <div class="group_title">
     <span id="inline_group_title_<%= group.id %>"><%= group.title %></span>
     <%= link_to image_tag("delete.png", :class => 'nav_image', :alt => "(remove)"), [@retrospective, group], :remote => true, :class => 'inline_link', :method => :delete, :confirm => 'Remove group?', :title => 'remove group' %>
-    <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)"), visual_effect(:toggle_blind, "collapse_group_#{group.id}") %>
+    <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)"), :id => "collapse_group_#{group.id}", :class => 'collapse_link' %>
     <%= inline_edit_item_with_remote_update(:id => group.id, :element_id => "group_title", :url => update_title_retrospective_group_url(@retrospective, group), :on_complete => '') %>
   </div>
 
-<span id="collapse_group_<%= group.id %>">
+<span id="collapse_group_<%= group.id %>_span" class="collapsible">
 
   <div id="<%= "group_items_#{group.id}" %>" class="group_items">
     <%= render :partial => 'groups/group_items', :locals => {:current_group => group} %>

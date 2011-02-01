@@ -103,7 +103,7 @@ a:visited.retro_sub_title_link {
 }
 
 a:hover.retro_sub_title_link {
-  background-color:inherit;
+    background-color: inherit;
 }
 
 .editor_field {
@@ -141,11 +141,11 @@ a.retro_list {
 }
 
 .popup_text {
-    font-style:normal;
+    font-style: normal;
     font-size: 24px;
-    font-family:sans-serif;
-    word-wrap:normal;
-    line-height:150%;
+    font-family: sans-serif;
+    word-wrap: normal;
+    line-height: 150%;
 }
 
 .refresh {
@@ -163,7 +163,7 @@ a.retro_list {
 }
 
 a:hover.inline_link {
-  background-color:inherit;   
+    background-color: inherit;
 }
 
 .nav_image {
@@ -173,7 +173,7 @@ a:hover.inline_link {
 }
 
 a:hover.nav_image {
-  background-color:inherit;
+    background-color: inherit;
 }
 
 .editor_cancel_link {
@@ -200,7 +200,7 @@ a:hover.nav_image {
 }
 
 .section_row {
-    /*overflow: hidden;*/
+/*overflow: hidden;*/
     width: 80%;
 }
 
@@ -222,60 +222,63 @@ a:hover.nav_image {
     text-indent: 7px;
     font-size: 12px;
     vertical-align: top;
-    border:#a9a9a9 dashed 1px;
+    border: #a9a9a9 dashed 1px;
 }
 
 .section_item {
-    border:black solid 1px;
-    float:left;
-    width:47%;
-    height:120px;
-    margin-right:5px;
-    margin-bottom:5px;
+    border: black solid 1px;
+    float: left;
+    width: 47%;
+    height: 120px;
+    margin-right: 5px;
+    margin-bottom: 5px;
     vertical-align: top;
     overflow: hidden;
 }
 
-
 .group_item {
-    border:black solid 1px;
-    padding:1px;
+    border: black solid 1px;
+    padding: 1px;
     background-color: #f8f291;
-    margin-bottom:5px;
-    height:60px;
+    margin-bottom: 5px;
+    height: 60px;
     overflow: hidden;
 }
 
 .item_actions {
-    text-align:right;
+    text-align: right;
+}
+
+.collapsible {
+    display: inline-block;
 }
 
 .section_drop_to_add {
-    color:#a9a9a9;
-    vertical-align:bottom;
-    min-height:20px;
-    width:100%;
+    color: #a9a9a9;
+    vertical-align: bottom;
+    min-height: 20px;
+    width: 100%;
 }
 
 .group_drop_to_add {
-    color:#a9a9a9;
-    vertical-align:bottom;
-    min-height:20px;
-    width:100%;
+    color: #a9a9a9;
+    vertical-align: bottom;
+    min-height: 20px;
+    width: 100%;
 }
 
 .item_vote {
     font-style: normal;
-    font-size:10px;
-    font-weight:bold;
-    vertical-align:top;
-    float:left;
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    float: left;
 }
 
 .item {
-    font-style:italic;
+    font-style: italic;
     font-size: 12px;
-    font-family:cursive;
+    font-family: cursive;
 }
 
 .inline_form {
