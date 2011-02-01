@@ -1,4 +1,4 @@
-  <%= link_to image_tag("maximize.png", :class => 'nav_image', :alt => "(show)"), '', :href => "javascript:void(0);", :id => "show_group_#{item.group.id}_item_value_#{item.id}", :class => 'inline_link', :title => 'show item' %>
+  <%= link_to image_tag("maximize.png", :class => 'nav_image', :alt => "(show)"), '', :href => "javascript:void(0);", :id => "max_inline_group_#{item.group.id}_item_value_#{item.id}", :class => 'inline_link', :title => 'show item' %>
   <%= link_to image_tag("delete.png", :class => 'nav_image', :alt => "(remove)"),
               remove_from_group_retrospective_section_item_url(item.section.retrospective, item.section, item),
               :remote => true, :class => 'inline_link', :method => :post, :confirm => 'Remove item from group?', :title => 'remove item' %>
