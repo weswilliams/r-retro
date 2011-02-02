@@ -14,7 +14,20 @@ function fireOnclick(objID) {
 }
 
 jQuery(document).ready(function($) {
+
     $("a.collapse_link").click(function() {
         $("#" + this.id + "_span").slideToggle();
     });
+
+    $("span.item_value").each(function() {
+        var element_id = this.id;
+        var window = new Window({className: "alphacube",  width:350, height:400, zIndex: 100, resizable: true, title: "r-retro", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:true, wiredDrag: true});
+        $("#max_" + element_id).click(function() {
+            var bg_color = $("#" + element_id).css('background-color');
+            window.getContent().style.background = bg_color;
+            window.getContent().innerHTML = "<p class='popup_text'>" + $("#" + element_id).html() + "</p>";
+            window.showCenter();
+        });
+    });
+
 });

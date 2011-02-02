@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/groups/_group_item_actions.erb" afterPath="$PROJECT_DIR$/app/views/groups/_group_item_actions.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/items/_item.erb" afterPath="$PROJECT_DIR$/app/views/items/_item.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" afterPath="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,19 +29,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scaffold.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="251" column="12" selection-start="4111" selection-end="4111" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="0.5104895">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="17" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+            <state line="12" column="5" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,7 +50,7 @@
       <file leaf-file-name="_item.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="-6.875">
+            <state line="8" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -60,15 +60,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/sections/_section_item_actions.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="136" selection-start="925" selection-end="925" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_group_item_actions.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="137" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +105,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/test/functional/retrospectives_controller_test.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20101114180850_change_retro_title_to_text.rb" />
         <option value="$PROJECT_DIR$/public/rally-iter-dash.html" />
         <option value="$PROJECT_DIR$/public/rally-story-board.html" />
@@ -124,11 +114,12 @@
         <option value="$PROJECT_DIR$/app/views/groups/_group.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section_item_actions.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/_group_item_actions.erb" />
+        <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
+        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
       </list>
     </option>
   </component>
@@ -641,19 +632,19 @@
     <frame x="0" y="32" width="963" height="764" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697546" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31298906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31298906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23646496" sideWeight="0.32524806" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.73552424" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26447573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26447573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5056543" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32697546" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -673,7 +664,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="-more layout tweaks&#10;- removed borders from images when displaying in IE&#10;- removed underline links when displaying retro list" />
+    <option name="LAST_COMMIT_MESSAGE" value="-renamed show to max_inline links to be more consistent for unobtrusive javascript" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -686,7 +677,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="- renamed add_url optioin to url" />
     <MESSAGE value="- when last section row has 1 column set colspan to number of columns/row" />
     <MESSAGE value="- converted edit and add item &lt;a&gt; to use link_to" />
     <MESSAGE value="- added confirm to ajax remove item link" />
@@ -711,16 +701,12 @@
     <MESSAGE value="- addition formatting of retrospective index page" />
     <MESSAGE value="- some tweaking of layout" />
     <MESSAGE value="-more layout tweaks&#10;- removed borders from images when displaying in IE&#10;- removed underline links when displaying retro list" />
+    <MESSAGE value="-renamed show to max_inline links to be more consistent for unobtrusive javascript" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../rally/standup-dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="4027" selection-end="4027" vertical-scroll-proportion="0.27820712" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/scriptaculous_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="10" selection-start="1846" selection-end="1846" vertical-scroll-proportion="0.33246073">
@@ -731,13 +717,6 @@
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-1.5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7540" column="26" selection-start="194629" selection-end="194633" vertical-scroll-proportion="0.33174226">
           <folding />
         </state>
       </provider>
@@ -763,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="158" selection-end="169" vertical-scroll-proportion="0.06787331">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/sections_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -791,23 +763,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="12" selection-start="4111" selection-end="4111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="659" selection-end="659" vertical-scroll-proportion="-6.875">
+        <state line="0" column="137" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -819,9 +777,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/_group_item_actions.erb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-1.5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="137" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+        <state line="5164" column="24" selection-start="131436" selection-end="131436" vertical-scroll-proportion="0.7529138">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="22" selection-start="3981" selection-end="3988" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/window.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="0.5104895">
           <folding />
         </state>
       </provider>
