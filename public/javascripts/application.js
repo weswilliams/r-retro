@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $('#theme,#enable_auto_refresh').change(function() {
+    $("[data-submit='true']").change(function() {
        this.form.submit();
     });
 
