@@ -30,4 +30,8 @@ jQuery(document).ready(function($) {
         });
     });
 
+    $('#theme').change(function() {
+       this.form.submit();
+    });
+    
 });
