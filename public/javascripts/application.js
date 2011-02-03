@@ -30,8 +30,8 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $('#theme').change(function() {
+    $('#theme,#enable_auto_refresh').change(function() {
        this.form.submit();
     });
-    
+
 });
