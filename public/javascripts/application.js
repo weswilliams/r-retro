@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
     $("#enable_auto_refresh:checked").each(function() {
         $("[data-refresh]").each(function() {
             var refresh_url = $(this).attr('data-refresh');
-            var refresh_interval = $(this).attr('data-refresh-interval') * 1000;
+            var refresh_interval = ($(this).attr('data-refresh-interval') || 20) * 1000;
             setInterval(function() {
                 $.post(refresh_url);
             }, refresh_interval);
