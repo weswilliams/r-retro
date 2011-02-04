@@ -31,7 +31,17 @@ jQuery(document).ready(function($) {
     });
 
     $("[data-submit='true']").change(function() {
-       this.form.submit();
+        this.form.submit();
+    });
+
+    $("#enable_auto_refresh:checked").each(function() {
+        $("[data-refresh]").each(function() {
+            var refresh_url = $(this).attr('data-refresh');
+            var refresh_interval = $(this).attr('data-refresh-interval') * 1000;
+            setInterval(function() {
+                $.post(refresh_url);
+            }, refresh_interval);
+        });
     });
 
 });
