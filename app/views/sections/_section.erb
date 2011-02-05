@@ -1,11 +1,12 @@
 <div class="section" data-refresh="<%= refresh_retrospective_url(:section_id => section) %>">
 
-  <div class="title">
+  <div class="title"
+     data-inline-edit="inline_section_title_<%= section.id %>"
+     data-inline-edit-url='<%= update_title_retrospective_section_url(section.retrospective, section) %>'>
     <span id="inline_section_title_<%= section.id %>"><%= section.title %></span>
     <%= link_to_function image_tag("new-item2.png", :class => 'nav_image', :alt => "(new item)"), remote_function(:url => add_retrospective_section_items_url(section.retrospective, section)), :id => "add_item_#{section.id}", :class => 'inline_link', :title => 'new item' %>
     <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)", :title => 'expand/collapse'), :id => "collapse_section_#{section.id}", :class => 'collapse_link' %>
     <span id="inline_add_item_<%= section.id %>"></span>
-    <%= inline_edit_item_with_remote_update(:id => section.id, :element_id => "section_title", :url => update_title_retrospective_section_url(section.retrospective, section), :on_complete => '') %>
     <%= inline_edit_item_with_remote_update(:id => section.id, :url => add_retrospective_section_items_url(section.retrospective, section), :refresh_url => refresh_retrospective_url(:section_id => section)) %>
   </div>
 
