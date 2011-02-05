@@ -48,14 +48,19 @@ jQuery(document).ready(function($) {
         var editor_control_id = $(this).attr('data-inline-edit');
         var editor_url = $(this).attr('data-inline-edit-url');
         var editor_rows = $(this).attr('data-inline-edit-row') || 1;
-        var editor = new Ajax.InPlaceEditor(editor_control_id, editor_url, {
+        var editor_refresh_url = $(this).attr('data-inline-edit-refresh-url');
+        var options = {
             externalControl: editor_control_id,
             highlightcolor: 'transparent',
             rows: editor_rows,
             cancelText: '(cancel)',
             okText: '(ok)',
             clickToEditText: 'double click to edit'
-        });
+        };
+        if (editor_refresh_url) options['onComplete'] = function(transport, element) {
+            $.get(editor_refresh_url);
+        };
+        var editor = new Ajax.InPlaceEditor(editor_control_id, editor_url, options);
         $("#"+editor_control_id).dblclick(function() {
             editor.enterEditMode();
         });
