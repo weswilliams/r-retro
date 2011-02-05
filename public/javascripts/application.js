@@ -44,13 +44,10 @@ jQuery(document).ready(function($) {
         });
     });
 
-});
-
-jQuery(document).ready(function($j) {
-    $j("[data-inline-edit]").each(function() {
-        var editor_control_id = $j(this).attr('data-inline-edit');
-        var editor_url = $j(this).attr('data-inline-edit-url');
-        var editor_rows = $j(this).attr('data-inline-edit-row') || 1;
+    $("[data-inline-edit]").each(function() {
+        var editor_control_id = $(this).attr('data-inline-edit');
+        var editor_url = $(this).attr('data-inline-edit-url');
+        var editor_rows = $(this).attr('data-inline-edit-row') || 1;
         var editor = new Ajax.InPlaceEditor(editor_control_id, editor_url, {
             externalControl: editor_control_id,
             highlightcolor: 'transparent',
@@ -59,9 +56,10 @@ jQuery(document).ready(function($j) {
             okText: '(ok)',
             clickToEditText: 'double click to edit'
         });
-        $j("#"+editor_control_id).dblclick(function() {
+        $("#"+editor_control_id).dblclick(function() {
             editor.enterEditMode();
         });
         editor.dispose();
     });
-})
+
+});
