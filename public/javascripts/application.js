@@ -13,6 +13,34 @@ function fireOnclick(objID) {
     }
 }
 
+var init_inline_edit = function initInlineEdit($) {
+    $("[data-inline-edit]").each(function() {
+        var editor_control_id = $(this).attr('data-inline-edit');
+        var editor_url = $(this).attr('data-inline-edit-url');
+        var editor_rows = $(this).attr('data-inline-edit-row') || 1;
+        var editor_refresh_url = $(this).attr('data-inline-edit-refresh-url');
+        var on_complete = function(transport) {
+            if (editor_refresh_url) $.post(editor_refresh_url, function(data) {
+                initInlineEdit($);
+            });
+        };
+        var options = {
+            externalControl: editor_control_id,
+            highlightcolor: 'transparent',
+            rows: editor_rows,
+            cancelText: '(cancel)',
+            okText: '(ok)',
+            clickToEditText: 'double click to edit',
+            onComplete: on_complete
+        };
+        var editor = new Ajax.InPlaceEditor(editor_control_id, editor_url, options);
+        $("#" + editor_control_id).unbind('dblclick').dblclick(function() {
+            editor.enterEditMode();
+        });
+        editor.dispose();
+    });
+};
+
 jQuery(document).ready(function($) {
 
     $("a.collapse_link").click(function() {
@@ -44,27 +72,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $("[data-inline-edit]").each(function() {
-        var editor_control_id = $(this).attr('data-inline-edit');
-        var editor_url = $(this).attr('data-inline-edit-url');
-        var editor_rows = $(this).attr('data-inline-edit-row') || 1;
-        var editor_refresh_url = $(this).attr('data-inline-edit-refresh-url');
-        var options = {
-            externalControl: editor_control_id,
-            highlightcolor: 'transparent',
-            rows: editor_rows,
-            cancelText: '(cancel)',
-            okText: '(ok)',
-            clickToEditText: 'double click to edit'
-        };
-        if (editor_refresh_url) options['onComplete'] = function(transport, element) {
-            $.get(editor_refresh_url);
-        };
-        var editor = new Ajax.InPlaceEditor(editor_control_id, editor_url, options);
-        $("#"+editor_control_id).dblclick(function() {
-            editor.enterEditMode();
-        });
-        editor.dispose();
-    });
+    init_inline_edit($);
 
 });

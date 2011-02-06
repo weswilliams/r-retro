@@ -1,5 +1,9 @@
-jQuery(function($){
+jQuery(function($) {
     $("#section_items_<%= @section.id %>").html("<%= escape_javascript(render('sections/section_items', :current_section => @section)) %>");
     $('#notice').html("<%= @section.title %> updated").show().fadeOut(2000);
     init_inline_edit($);
 });
+
+//page.select("#section_items_#{@section.id}").each do
+//  page.replace_html("section_items_#{@section.id}", render('sections/section_items', :current_section => @section))
+//end
