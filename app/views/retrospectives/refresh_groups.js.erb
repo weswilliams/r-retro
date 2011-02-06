@@ -1,4 +1,5 @@
 jQuery(function($){
     $('#groups').html("<%= escape_javascript(render(@retrospective.groups)) %>");
     $('#notice').html("Groups updated").show().fadeOut(2000);
+    init_inline_edit($);
 });
