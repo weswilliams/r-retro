@@ -1,0 +1,7 @@
+jQuery(function($) {
+    $('#section_<%= @bad_section_id %>_item_<%= @bad_item_id %>').remove();
+    <% @groups.each do |group| %>
+      $('#group_<%= group.id %>_item_<%= @bad_item_id %>').remove();
+    <% end %>
+    $('#notice').html('Item no longer exists').show().fadeOut(2000);
+});

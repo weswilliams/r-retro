@@ -3,9 +3,9 @@ class ItemsController < ApplicationController
   # GET /items.xml
   def index
     section_id = params[:section_id]
-    @items = Item.find_all_by_section_id(section_id)
+    @items     = Item.find_all_by_section_id(section_id)
 
-    @section = Section.find section_id
+    @section   = Section.find section_id
 
     respond_to do |format|
       format.html
@@ -29,7 +29,7 @@ class ItemsController < ApplicationController
   # GET /items/new
   # GET /items/new.xml
   def new
-    @item = Item.new
+    @item         = Item.new
     @item.section = Section.find(params[:section_id])
 
     respond_to do |format|
@@ -45,10 +45,10 @@ class ItemsController < ApplicationController
   end
 
   def add
-    @section = Section.find(params[:section_id])
-    @item = Item.new
+    @section      = Section.find(params[:section_id])
+    @item         = Item.new
     @item.section = @section
-    @item.value = get_non_null_value_param()
+    @item.value   = get_non_null_value_param()
 
     respond_to do |format|
       if @item.save
@@ -72,7 +72,7 @@ class ItemsController < ApplicationController
   end
 
   def remove_vote
-    @item = Item.find(params[:id])
+    @item     = Item.find(params[:id])
     item_vote = @item.item_votes.pop
     respond_to do |format|
       if item_vote != nil && item_vote.destroy
@@ -86,7 +86,7 @@ class ItemsController < ApplicationController
   # POST /items
   # POST /items.xml
   def create
-    @item = Item.new(params[:item])
+    @item         = Item.new(params[:item])
     @item.section = Section.find(params[:section_id])
 
     respond_to do |format|
@@ -115,16 +115,18 @@ class ItemsController < ApplicationController
   end
 
   def refresh_value
-    @item = Item.find(params[:id])
-    @retrospective = @item.section.retrospective
-    respond_to do |format|
-      format.js
+    if is_request_for_valid_item
+      @item          = Item.find(params[:id])
+      @retrospective = @item.section.retrospective
+      respond_to do |format|
+        format.js
+      end
     end
   end
 
   def remove_from_group
-    @item = Item.find(params[:id])
-    @group = @item.group
+    @item       = Item.find(params[:id])
+    @group      = @item.group
     @item.group = nil
     respond_to do |format|
       if @item.save
@@ -154,7 +156,7 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.xml
   def destroy
-    @item = Item.find(params[:id])
+    @item    = Item.find(params[:id])
     @section = Section.find(params[:section_id])
     @item.destroy
     @group_id = @item.group ? @item.group.id : 'x'
@@ -175,10 +177,10 @@ class ItemsController < ApplicationController
       @item = Item.find(item_id)
     rescue ActiveRecord::RecordNotFound
       logger.error "attempt to access invalid item #{item_id}"
-      @bad_item_id = item_id
+      @bad_item_id    = item_id
       @bad_section_id = params[:section_id]
-      @groups = Retrospective.find(params[:retrospective_id]).groups
-      
+      @groups         = Retrospective.find(params[:retrospective_id]).groups
+
       respond_to do |format|
         format.js { render :action => :update_value_error }
       end
