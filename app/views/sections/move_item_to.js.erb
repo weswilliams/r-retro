@@ -1,0 +1,10 @@
+jQuery(function($) {
+    $('#section_items_<%= @section.id %>').html('<%= escape_javascript(render('sections/section_items', :current_section => @section)) %>');
+    $('#section_items_<%= @from_section.id %>').html('<%= escape_javascript(render('sections/section_items', :current_section => @from_section)) %>');
+    $('#section_<%= @section.id %>_item_<%= @item.id %>').css('background', '#<%= @section.color %>');
+    <% if @item.group %>
+      $('#group_<%= @item.group.id %>_item_<%= @item.id %>').css('background', '#<%= @section.color %>');
+    <% end %>
+    $('#notice').html('moved <%= truncate @item.value, :length => 10 %> from <%= truncate @from_section.title, :length => 10 %> to <%= truncate @section.title, :length => 10 %>!')
+            .show().fadeOut(2000);
+});

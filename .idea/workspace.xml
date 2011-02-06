@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/vote_for.js.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/items/vote_for.js.rjs" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sections/move_item_to.js.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sections/move_item_to.js.rjs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="r_retro.iws" />
@@ -49,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vote_for.js.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.erb">
+      <file leaf-file-name="move_item_to.js.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.14184397">
+            <state line="10" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="0.36585367">
               <folding />
             </state>
           </provider>
@@ -97,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/groups/add.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/groups/add.js.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.erb" />
@@ -113,6 +112,7 @@
         <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/items/update_value_error.js.erb" />
         <option value="$PROJECT_DIR$/app/views/items/vote_for.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/sections/move_item_to.js.erb" />
       </list>
     </option>
   </component>
@@ -186,6 +186,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -202,10 +206,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="items" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -647,7 +647,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- moved items/update_value_error.js.rjs to ujs items/update_value_error.js.erb&#10;-- added same error checking around refresh_value as well&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="- moved items/vote_for.js.rjs to ujs items/vote_for.js.erb&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -660,7 +660,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="-renamed show to max_inline links to be more consistent for unobtrusive javascript" />
     <MESSAGE value="- changed windows maximize to use unobtrusize javascript" />
     <MESSAGE value="- changed the theme changer to use unobtrusive javascript style" />
     <MESSAGE value="- changed the auto update toggle to use unobtrusive javascript style" />
@@ -685,18 +684,12 @@
     <MESSAGE value="- moved items/refresh_value.js.rjs to ujs items/refresh_value.js.erb&#10;" />
     <MESSAGE value="- moved items/remove_from_group.js.rjs to ujs items/remove_from_group.js.erb&#10;" />
     <MESSAGE value="- moved items/update_value_error.js.rjs to ujs items/update_value_error.js.erb&#10;-- added same error checking around refresh_value as well&#10;" />
+    <MESSAGE value="- moved items/vote_for.js.rjs to ujs items/vote_for.js.erb&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/group.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
@@ -788,6 +781,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.14184397">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="157" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
@@ -795,9 +795,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/vote_for.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/sections/move_item_to.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.14184397">
+        <state line="10" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="0.36585367">
           <folding />
         </state>
       </provider>
