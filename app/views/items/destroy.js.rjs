@@ -1,9 +1,0 @@
-page.select("#section_#{@section.id}_item_#{@item.id}").each do
-  page.remove "section_#{@section.id}_item_#{@item.id}"
-end
-
-page.select("#group_#{@group_id}_item_#{@item.id}").each do
-  page.remove "group_#{@group_id}_item_#{@item.id}" if (@item.group)
-end
-
-page.replace_html("section_empty_#{@section.id}", render(:partial => 'sections/section_drop', :locals => {:current_section => @section}))

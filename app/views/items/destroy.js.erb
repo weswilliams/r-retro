@@ -1,0 +1,7 @@
+jQuery(function($){
+    $('#section_<%= @section.id %>_item_<%= @item.id %>').remove();
+    $('#group_<%= @group_id %>_item_<%= @item.id %>').remove();
+    $('#section_empty_<%= @section.id %>').html("<%= escape_javascript(render(:partial => 'sections/section_drop', :locals => {:current_section => @section})) %>");
+    $('#notice').html("Removed item <%= truncate @item.value, :length => 10 %>").show().fadeOut(2000);
+    init_inline_edit($);
+});

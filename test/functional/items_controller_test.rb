@@ -10,7 +10,7 @@ class ItemsControllerTest < ActionController::TestCase
       xhr :post, :destroy, :method => :delete, :retrospective_id => @item.section.retrospective.id, :section_id => @item.section.id, :id => @item.to_param
     end
     assert_response :success
-    assert_select_rjs :remove, "section_#{@item.section.id}_item_#{@item.id}"
+    assert_select "section_#{@item.section.id}_item_#{@item.id}", false
   end
 
   test "ajax add should create item" do
