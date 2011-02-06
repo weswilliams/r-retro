@@ -1,9 +1,0 @@
-page.select("#inline_section_#{@item.section.id}_item_value_#{@item.id}").each do
-  page.replace_html("inline_section_#{@item.section.id}_item_value_#{@item.id}", "#{@item.value}")
-end
-
-if (@item.group)
-  page.select("#inline_group_#{@item.group.id}_item_value_#{@item.id}").each do
-    page.replace_html("inline_group_#{@item.group.id}_item_value_#{@item.id}", "#{@item.value}")
-  end
-end

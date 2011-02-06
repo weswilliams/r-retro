@@ -116,6 +116,7 @@ class ItemsController < ApplicationController
 
   def refresh_value
     @item = Item.find(params[:id])
+    @retrospective = @item.section.retrospective
     respond_to do |format|
       format.js
     end
