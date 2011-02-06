@@ -1,6 +1,7 @@
 class GroupsController < ApplicationController
 
   def destroy
+    @retrospective = Retrospective.find(params[:retrospective_id].to_i)
     @group = Group.find(params[:id])
     @group.destroy
 

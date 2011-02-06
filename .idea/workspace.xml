@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/groups/add_item.js.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/groups/destroy.js.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/groups_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,10 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_item.js.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/groups/add_item.js.erb">
+      <file leaf-file-name="destroy.js.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/groups/destroy.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.29268292">
+            <state line="5" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.17730497">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groups_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="18" selection-start="66" selection-end="80" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,9 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/groups/_group_item_actions.erb" />
-        <option value="$PROJECT_DIR$/public/javascripts/rails.js" />
-        <option value="$PROJECT_DIR$/app/views/groups/_group.html.erb" />
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/items/_item.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
@@ -113,6 +120,9 @@
         <option value="$PROJECT_DIR$/app/views/groups/add.js.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.rjs" />
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/groups/destroy.js.rjs" />
+        <option value="$PROJECT_DIR$/app/controllers/groups_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/groups/destroy.js.erb" />
       </list>
     </option>
   </component>
@@ -647,7 +657,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="5" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- renamed add.js.rjs to add.js.erb in move to ujs" />
+    <option name="LAST_COMMIT_MESSAGE" value="- renamed groups/add_item.js.rjs to groups/add_item.js.erb in move to ujs" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -660,7 +670,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="- add images for item action links" />
     <MESSAGE value="- add images for section action links" />
     <MESSAGE value="- add images for retrospective action links&#10;- added title text for all images" />
     <MESSAGE value="- addition formatting of retrospective index page" />
@@ -685,32 +694,12 @@
     <MESSAGE value="- changed add.js.rjs to ujs add.js.erb&#10;- fixed a couple of issues with items not be editiable after refresh, add&#10;-- still need to fix drag and drop but may have to wait until full moved to ujs&#10;-- need to check if titles are editable after refreshes" />
     <MESSAGE value="- fixed group title not be editable after group refresh" />
     <MESSAGE value="- renamed add.js.rjs to add.js.erb in move to ujs" />
+    <MESSAGE value="- renamed groups/add_item.js.rjs to groups/add_item.js.erb in move to ujs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/retrospective.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-3.0.0/lib/action_view/helpers/prototype_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="10" selection-start="5721" selection-end="5721" vertical-scroll-proportion="0.33254716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/_item.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="585" selection-end="585" vertical-scroll-proportion="0.3">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.61085975">
@@ -788,6 +777,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/groups/add_item.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.29268292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/groups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="18" selection-start="66" selection-end="80" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh_groups.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="0" selection-end="193" vertical-scroll-proportion="0.0">
@@ -795,9 +805,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/groups/add_item.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/groups/destroy.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.29268292">
+        <state line="5" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.17730497">
           <folding />
         </state>
       </provider>
