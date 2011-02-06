@@ -1,3 +1,5 @@
 
 <%= link_to image_tag("new-item2.png", :class => 'nav_image', :alt => "(new item)"), '', :href => "javascript:fireOnclick('add_item_#{current_section.id}');", :class => 'inline_link', :title => 'new item' %>
-<%= link_to "Add item", '', :href => "javascript:fireOnclick('add_item_#{current_section.id}');", :class => "section_drop_to_add" %> or drop item from a different section.
+<%= link_to "Add item", '', "data-href-click" => "add_item_#{current_section.id}", :href => "", :class => "section_drop_to_add" %> or drop item from a different section.
+
+<!--javascript:fireOnclick('add_item_#{current_section.id}');-->

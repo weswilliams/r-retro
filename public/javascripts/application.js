@@ -72,6 +72,11 @@ jQuery(document).ready(function($) {
         });
     });
 
+    $("[data-href-click]").each(function() {
+        var id_to_click = $(this).attr('data-href-click');
+        $(this).attr('href', 'javascript:fireOnclick(\'' + id_to_click + '\');');
+    });
+    
     init_inline_edit($);
 
 });
