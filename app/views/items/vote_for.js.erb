@@ -1,0 +1,4 @@
+jQuery(function($) {
+    $('#section_<%= @item.section.id %>_item_votes_<%= @item.id %>').html('<%= @item.item_votes.size %>');
+    $('#notice').html('Update votes for <%= truncate @item.value, :length => 10 %>!').show().fadeOut(2000);
+});
