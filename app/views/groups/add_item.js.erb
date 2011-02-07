@@ -4,5 +4,5 @@ jQuery(function($){
             .html("Added item <%= truncate @item.value, :length => 20 %> to <%= truncate @group.title, :length => 10 %>")
             .show()
             .fadeOut(2000);
-    init_inline_edit($);
+    initJSActions($);
 });

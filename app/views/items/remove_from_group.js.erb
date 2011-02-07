@@ -2,5 +2,5 @@ jQuery(function($){
     $('#group_<%= @group.id %>_item_<%= @item.id %>').remove();
     $('#group_empty_<%= @group.id %>').html("<%= escape_javascript(render(:partial => 'groups/group_drop', :locals => {:current_group => @group})) %>");
     $('#notice').html("Removed item <%= truncate @item.value, :length => 10 %> from group <%= truncate @group.title, :length => 10 %>").show().fadeOut(2000);
-    init_inline_edit($);
+    initJSActions($);
 });
