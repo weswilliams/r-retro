@@ -7,4 +7,5 @@ jQuery(function($) {
     <% end %>
     $('#notice').html('moved <%= truncate @item.value, :length => 10 %> from <%= truncate @from_section.title, :length => 10 %> to <%= truncate @section.title, :length => 10 %>!')
             .show().fadeOut(2000);
+    initJSActions($);
 });

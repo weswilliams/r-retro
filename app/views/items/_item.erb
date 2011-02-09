@@ -1,12 +1,15 @@
-<div id="<%= context %>_<%= context_id %>_item_<%= item.id %>" class="<%= context %>_item" style="background-color:<%= "\##{item.section.color}" %>;">
+<div id="<%= context %>_<%= context_id %>_item_<%= item.id %>"
+     class="<%= context %>_item"
+     style="background-color:<%= "\##{item.section.color}" %>;"
+     data-draggable>
   <div class="item_actions">
     <%= render :partial => "#{context}s/#{context}_item_actions", :locals => {:item => item} %>
   </div>
 
 <span id="<%= context %>_<%= context_id %>_li_item_<%= item.id %>" class="item"
-    data-inline-edit='inline_<%= context %>_<%= context_id %>_item_value_<%= item.id %>'
-    data-inline-edit-url='<%= update_value_retrospective_section_item_url(item.section.retrospective, item.section, item) %>'
-    data-inline-edit-refresh-url='<%= refresh_value_retrospective_section_item_url(item.section.retrospective, item.section, item) %>'>
+      data-inline-edit='inline_<%= context %>_<%= context_id %>_item_value_<%= item.id %>'
+      data-inline-edit-url='<%= update_value_retrospective_section_item_url(item.section.retrospective, item.section, item) %>'
+      data-inline-edit-refresh-url='<%= refresh_value_retrospective_section_item_url(item.section.retrospective, item.section, item) %>'>
   <span id="inline_<%= context %>_<%= context_id %>_item_value_<%= item.id %>" class="item_value" style="background-color:<%= "\##{item.section.color}" %>;"><%= item.value %></span>
 </span>
 

@@ -87,6 +87,10 @@ jQuery(document).ready(function($) {
         });
     });
 
+    $("[data-draggable]").each(function($){
+        new Draggable(this.id, {revert:true});
+    });
+    
     initJSActions($);
 
 });
