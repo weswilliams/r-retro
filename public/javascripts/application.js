@@ -46,6 +46,7 @@ var init_href_click = function($) {
         var id_to_click = $(this).attr('data-href-click');
         $(this).unbind('click').click(function() {
             $('#' + id_to_click).click();
+            return false;
         })
     });
 };
@@ -59,6 +60,7 @@ var init_value_max_button = function($) {
             window.getContent().style.background = bg_color;
             window.getContent().innerHTML = "<p class='popup_text'>" + $("#" + element_id).html() + "</p>";
             window.showCenter();
+            return false;
         });
     });
 };
@@ -66,6 +68,7 @@ var init_value_max_button = function($) {
 var init_collapsable = function($) {
     $("a.collapse_link").unbind('click').click(function() {
         $("#" + this.id + "_span").slideToggle();
+        return false;
     });
 };
 
