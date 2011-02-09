@@ -71,16 +71,18 @@ var init_collapsable = function($) {
 
 var init_draggable = function($) {
     $("[data-draggable]").each(function() {
-        new Draggable(this.id, {revert:true});
+        $("#" + this.id).draggable({revert:true, revertDuration: 5, zIndex: 2700});
     });
 };
 
 var init_droppable = function($) {
     $("[data-droppable]").each(function() {
         var drop_url = $(this).attr('data-droppable');
-        Droppables.add(this.id, {onDrop:function(element) {
-            $.post(drop_url, {"item_id": element.id });
-        }});
+        $("#" + this.id).droppable({
+            drop: function(event, ui) {
+                 $.post(drop_url, {"item_id": ui.draggable.attr('id') });
+            }
+        });
     });
 };
 
@@ -94,7 +96,6 @@ var initJSActions = function($) {
 };
 
 jQuery(document).ready(function($) {
-
 
     $("[data-submit='true']").change(function() {
         this.form.submit();
