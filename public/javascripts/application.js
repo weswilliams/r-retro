@@ -44,7 +44,9 @@ var init_inline_edit = function initInlineEdit($) {
 var init_href_click = function($) {
     $("[data-href-click]").each(function() {
         var id_to_click = $(this).attr('data-href-click');
-        $(this).unbind('click').click(function(){ $('#' + id_to_click).click(); })
+        $(this).unbind('click').click(function() {
+            $('#' + id_to_click).click();
+        })
     });
 };
 
@@ -61,24 +63,38 @@ var init_value_max_button = function($) {
     });
 };
 
+var init_collapsable = function($) {
+    $("a.collapse_link").unbind('click').click(function() {
+        $("#" + this.id + "_span").slideToggle();
+    });
+};
+
 var init_draggable = function($) {
-    $("[data-draggable]").each(function($){
+    $("[data-draggable]").each(function() {
         new Draggable(this.id, {revert:true});
+    });
+};
+
+var init_droppable = function($) {
+    $("[data-droppable]").each(function() {
+        var drop_url = $(this).attr('data-droppable');
+        Droppables.add(this.id, {onDrop:function(element) {
+            $.post(drop_url, {"item_id": element.id });
+        }});
     });
 };
 
 var initJSActions = function($) {
     init_href_click($);
     init_inline_edit($);
+    init_collapsable($);
     init_value_max_button($);
     init_draggable($);
+    init_droppable($);
 };
 
 jQuery(document).ready(function($) {
 
-    $("a.collapse_link").click(function() {
-        $("#" + this.id + "_span").slideToggle();
-    });
 
     $("[data-submit='true']").change(function() {
         this.form.submit();
