@@ -14,11 +14,10 @@
 
 <span id="collapse_section_<%= section.id %>_span" class="collapsible">
 
-  <div id="<%= "section_items_#{section.id}" %>" class="section_items">
+  <div id="<%= "section_items_#{section.id}" %>" class="section_items"
+    data-droppable="<%= move_item_to_retrospective_section_path(section.retrospective, section) %>">
     <%= render :partial => 'sections/section_items', :locals => {:current_section => section} %>
   </div>
-
-  <%= drop_receiving_element("section_items_#{section.id}", :url => move_item_to_retrospective_section_path(section.retrospective, section), :with => "'item_id=' + encodeURIComponent(element.id)") %>
 
 </span>
 
