@@ -1,21 +1,25 @@
 <div class="section" data-refresh="<%= refresh_retrospective_url(:section_id => section) %>">
 
   <div class="title"
-     data-inline-edit="inline_section_title_<%= section.id %>"
-     data-inline-edit-url='<%= update_title_retrospective_section_url(section.retrospective, section) %>'>
+       data-inline-edit="inline_section_title_<%= section.id %>"
+       data-inline-edit-url='<%= update_title_retrospective_section_url(section.retrospective, section) %>'>
     <span id="inline_section_title_<%= section.id %>"><%= section.title %></span>
-    <%= link_to_function image_tag("new-item2.png", :class => 'nav_image', :alt => "(new item)"), remote_function(:url => add_retrospective_section_items_url(section.retrospective, section)), :id => "add_item_#{section.id}", :class => 'inline_link', :title => 'new item' %>
+
+    <%= link_to image_tag("new-item2.png", :class => 'nav_image', :alt => "(new item)"),
+                add_retrospective_section_items_url(section.retrospective, section),
+                :remote => true, :method => :post, :id => "add_item_#{section.id}", :class => 'inline_link',
+                :title  => 'new item' %>
     <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)", :title => 'expand/collapse'), :id => "collapse_section_#{section.id}", :class => 'collapse_link' %>
     <span id="inline_add_item_<%= section.id %>"
-    data-inline-edit='inline_add_item_<%= section.id %>'
-    data-inline-edit-url='<%= add_retrospective_section_items_url(section.retrospective, section) %>'
-    data-inline-edit-refresh-url='<%= refresh_retrospective_url(:section_id => section) %>'></span>
+          data-inline-edit='inline_add_item_<%= section.id %>'
+          data-inline-edit-url='<%= add_retrospective_section_items_url(section.retrospective, section) %>'
+          data-inline-edit-refresh-url='<%= refresh_retrospective_url(:section_id => section) %>'></span>
   </div>
 
 <span id="collapse_section_<%= section.id %>_span" class="collapsible">
 
   <div id="<%= "section_items_#{section.id}" %>" class="section_items"
-    data-droppable="<%= move_item_to_retrospective_section_path(section.retrospective, section) %>">
+       data-droppable="<%= move_item_to_retrospective_section_path(section.retrospective, section) %>">
     <%= render :partial => 'sections/section_items', :locals => {:current_section => section} %>
   </div>
 
