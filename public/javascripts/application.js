@@ -54,12 +54,13 @@ var init_href_click = function($) {
 var init_value_max_button = function($) {
     $("span.item_value").each(function() {
         var element_id = this.id;
-        var window = new Window({className: "alphacube",  width:350, height:400, zIndex: 100, resizable: true, title: "r-retro", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:true, wiredDrag: true});
         $("#max_" + element_id).unbind('click').click(function() {
             var bg_color = $("#" + element_id).css('background-color');
-            window.getContent().style.background = bg_color;
-            window.getContent().innerHTML = "<p class='popup_text'>" + $("#" + element_id).html() + "</p>";
-            window.showCenter();
+            var dialog = $('<div></div>')
+                    .dialog({ autoOpen: false, height:400, width:359, title: "r-retro", show: 'blind' });
+            dialog.html("<p class='popup_text'>" + $("#" + element_id).html() + "</p>")
+                    .css('background-color', bg_color)
+                    .dialog('open');
             return false;
         });
     });
@@ -83,7 +84,7 @@ var init_droppable = function($) {
         var drop_url = $(this).attr('data-droppable');
         $("#" + this.id).droppable({
             drop: function(event, ui) {
-                 $.post(drop_url, {"item_id": ui.draggable.attr('id') });
+                $.post(drop_url, {"item_id": ui.draggable.attr('id') });
             }
         });
     });
