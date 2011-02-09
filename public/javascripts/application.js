@@ -61,10 +61,17 @@ var init_value_max_button = function($) {
     });
 };
 
+var init_draggable = function($) {
+    $("[data-draggable]").each(function($){
+        new Draggable(this.id, {revert:true});
+    });
+};
+
 var initJSActions = function($) {
     init_href_click($);
     init_inline_edit($);
     init_value_max_button($);
+    init_draggable($);
 };
 
 jQuery(document).ready(function($) {
@@ -87,10 +94,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $("[data-draggable]").each(function($){
-        new Draggable(this.id, {revert:true});
-    });
-    
     initJSActions($);
 
 });
