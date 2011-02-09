@@ -9,7 +9,7 @@
                 add_retrospective_section_items_url(section.retrospective, section),
                 :remote => true, :method => :post, :id => "add_item_#{section.id}", :class => 'inline_link',
                 :title  => 'new item' %>
-    <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)", :title => 'expand/collapse'), :id => "collapse_section_#{section.id}", :class => 'collapse_link' %>
+    <%= link_to image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)", :title => 'expand/collapse'), "#", :id => "collapse_section_#{section.id}", :class => 'collapse_link' %>
     <span id="inline_add_item_<%= section.id %>"
           data-inline-edit='inline_add_item_<%= section.id %>'
           data-inline-edit-url='<%= add_retrospective_section_items_url(section.retrospective, section) %>'

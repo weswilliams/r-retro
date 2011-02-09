@@ -5,7 +5,7 @@
        data-inline-edit-url='<%= update_title_retrospective_group_url(@retrospective, group)  %>'>
     <span id="inline_group_title_<%= group.id %>"><%= group.title %></span>
     <%= link_to image_tag("delete.png", :class => 'nav_image', :alt => "(remove)"), [@retrospective, group], :remote => true, :class => 'inline_link', :method => :delete, :confirm => 'Remove group?', :title => 'remove group' %>
-    <%= link_to_function image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)"), :id => "collapse_group_#{group.id}", :class => 'collapse_link' %>
+    <%= link_to image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)"), "#", :id => "collapse_group_#{group.id}", :class => 'collapse_link' %>
   </div>
 
 <span id="collapse_group_<%= group.id %>_span" class="collapsible">
