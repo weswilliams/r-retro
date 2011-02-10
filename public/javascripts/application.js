@@ -15,29 +15,30 @@ function fireOnclick(objID) {
 
 var init_inline_edit = function initInlineEdit($) {
     $("[data-inline-edit]").each(function() {
+        var height = $(this).css('height');
+        var width = $(this).css('width');
+//        alert(height+':'+width);
         var editor_control_id = $(this).attr('data-inline-edit');
         var editor_url = $(this).attr('data-inline-edit-url');
         var editor_rows = $(this).attr('data-inline-edit-row') || 1;
         var editor_refresh_url = $(this).attr('data-inline-edit-refresh-url');
-        var on_complete = function(transport) {
+        var on_complete = function(value, settings) {
             if (editor_refresh_url) $.post(editor_refresh_url, function(data) {
                 initInlineEdit($);
             });
         };
-        var options = {
-            externalControl: editor_control_id,
-            highlightcolor: 'transparent',
+        $("#" + editor_control_id).editable(editor_url, {
+            indicator : "<img src='img/indicator.gif'>",
+            submit    : "OK",
+            cancel    : "Cancel",
+            tooltip   : "Doubleclick to edit...",
+            event     : "dblclick",
+            style  : "inherit",
             rows: editor_rows,
-            cancelText: '(cancel)',
-            okText: '(ok)',
-            clickToEditText: 'double click to edit',
-            onComplete: on_complete
-        };
-        var editor = new Ajax.InPlaceEditor(editor_control_id, editor_url, options);
-        $("#" + editor_control_id).unbind('dblclick').dblclick(function() {
-            editor.enterEditMode();
+            callback: on_complete,
+            cssclass: 'editor',
+            height:'none'
         });
-        editor.dispose();
     });
 };
 

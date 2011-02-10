@@ -106,13 +106,6 @@ a:hover.retro_sub_title_link {
     background-color: inherit;
 }
 
-.editor_field {
-    border: #350608 solid 1px;
-    background-color: inherit;
-    cursor: auto;
-    outline: none;
-}
-
 input:focus {
     border-color: #350608;
 }
@@ -176,13 +169,16 @@ a:hover.nav_image {
     background-color: inherit;
 }
 
-.editor_cancel_link {
-    display: inline;
-    font-size: x-small;
-    font-weight: normal;
+.editor input {
+    border: #350608 solid 1px;
+    background-color: inherit;
+    cursor: auto;
+    outline: none;
+    min-width: 90%;
+    max-width: 90%;
 }
 
-.editor_ok_button {
+.editor button[type=cancel],button[type=submit] {
     font-size: x-small;
     font-weight: normal;
     padding: 5px;
