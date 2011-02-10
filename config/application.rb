@@ -38,5 +38,7 @@ module RRetro
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    config.action_view.javascript_expansions[:defaults] = ['jquery-1.5', 'rails', 'jquery-ui-1.8.9.custom.min']
   end
 end
