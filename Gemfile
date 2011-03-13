@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,7 +9,7 @@ if defined?(JRUBY_VERSION)
   gem 'activerecord-jdbc-adapter'
   gem 'jdbc-sqlite3', :require => false
 else
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'sqlite3', :require => 'sqlite3'
 end
 
 # Use unicorn as the web server
