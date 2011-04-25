@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/r_retro.iml" afterPath="$PROJECT_DIR$/.idea/r_retro.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
     </list>
@@ -30,7 +31,7 @@
       <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="22" selection-start="1757" selection-end="1772" vertical-scroll-proportion="0.37696335">
+            <state line="53" column="28" selection-start="1858" selection-end="1879" vertical-scroll-proportion="0.33246073">
               <folding />
             </state>
           </provider>
@@ -161,7 +162,7 @@
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: r_retro">
+  <component name="RunManager" selected="Rake.test">
     <configuration default="false" name="standup-dashboard.html" type="JavascriptDebugSession" factoryName="Remote" temporary="true">
       <JSRemoteDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -551,7 +552,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created global rretro name space&#10;- moved init_inline_edit to rretro name space" />
+    <option name="LAST_COMMIT_MESSAGE" value="- moved init_href_click to rretro name space" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -564,7 +565,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="- renamed groups/add_item.js.rjs to groups/add_item.js.erb in move to ujs" />
     <MESSAGE value="- renamed groups/destroy.js.rjs to groups/destroy.js.erb in move to ujs&#10;-- added retrieve of retrospective in the controller for destroying groups to make js easier" />
     <MESSAGE value="- moved items/destroy.js.rjs to ujs items/destroy.js.erb&#10;-- fixed test to use assert_select instead of assert_select_rjs" />
     <MESSAGE value="- moved items/refresh_value.js.rjs to ujs items/refresh_value.js.erb&#10;" />
@@ -589,6 +589,7 @@
     <MESSAGE value="- removed prototype and scriptaculous&#10;- changed defaults for javascript" />
     <MESSAGE value="- made the drop section larger when no items are in the section or group to improve drop effectiveness" />
     <MESSAGE value="- created global rretro name space&#10;- moved init_inline_edit to rretro name space" />
+    <MESSAGE value="- moved init_href_click to rretro name space" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -675,7 +676,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1757" selection-end="1772" vertical-scroll-proportion="0.37696335">
+        <state line="53" column="28" selection-start="1858" selection-end="1879" vertical-scroll-proportion="0.33246073">
           <folding />
         </state>
       </provider>

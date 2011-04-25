@@ -1,6 +1,3 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
-
 //global name space
 var rretro = {};
 
@@ -20,7 +17,6 @@ rretro.init_inline_edit = function initInlineEdit($) {
     $("[data-inline-edit]").each(function() {
         var height = $(this).css('height');
         var width = $(this).css('width');
-//        alert(height+':'+width);
         var editor_control_id = $(this).attr('data-inline-edit');
         var editor_url = $(this).attr('data-inline-edit-url');
         var editor_rows = $(this).attr('data-inline-edit-row') || 1;
@@ -55,7 +51,7 @@ rretro.init_href_click = function($) {
     });
 };
 
-var init_value_max_button = function($) {
+rretro.init_value_max_button = function($) {
     $("span.item_value").each(function() {
         var element_id = this.id;
         $("#max_" + element_id).unbind('click').click(function() {
@@ -98,7 +94,7 @@ var initJSActions = function($) {
     rretro.init_href_click($);
     rretro.init_inline_edit($);
     init_collapsable($);
-    init_value_max_button($);
+    rretro.init_value_max_button($);
     init_draggable($);
     init_droppable($);
 };
