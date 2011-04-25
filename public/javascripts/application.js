@@ -90,7 +90,7 @@ rretro.init_droppable = function($) {
     });
 };
 
-var initJSActions = function($) {
+rretro.initJSActions = function($) {
     rretro.init_href_click($);
     rretro.init_inline_edit($);
     rretro.init_collapsable($);
@@ -115,6 +115,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-    initJSActions($);
+    rretro.initJSActions($);
 
 });

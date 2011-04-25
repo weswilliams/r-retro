@@ -1,5 +1,5 @@
 jQuery(function($){
     $('#groups').html("<%= escape_javascript(render(@retrospective.groups)) %>");
     $('#notice').html("Added group<%= @group.title %>").show().fadeOut(2000);
-    initJSActions($);
+    rretro.initJSActions($);
 });

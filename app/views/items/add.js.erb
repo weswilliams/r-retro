@@ -1,7 +1,7 @@
 jQuery(function($) {
     $("#section_items_<%= @section.id %>").html("<%= escape_javascript(render('sections/section_items', :current_section => @section)) %>");
     $('#notice').html("<%= @section.title %> updated").show().fadeOut(2000);
-    initJSActions($);
+    rretro.initJSActions($);
 });
 
 //page.select("#section_items_#{@section.id}").each do

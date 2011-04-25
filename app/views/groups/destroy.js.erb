@@ -1,5 +1,5 @@
 jQuery(function($){
     $('#groups').html("<%= escape_javascript(render(@retrospective.groups)) %>");
     $('#notice').html("Removed group <%= truncate @group.title, :length => 10 %>").show().fadeOut(2000);
-    initJSActions($);
+    rretro.initJSActions($);
 });

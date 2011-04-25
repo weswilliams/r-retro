@@ -2,5 +2,5 @@ jQuery(function($){
     $('#inline_section_<%= @item.section.id %>_item_value_<%= @item.id %>').html("<%= escape_javascript(@item.value) %>");
     $('#groups').html("<%= escape_javascript(render(@retrospective.groups)) %>");
     $('#notice').html("Refreshed item value <%= truncate @item.value, :length => 10 %>").show().fadeOut(2000);
-    initJSActions($);
+    rretro.initJSActions($);
 });
