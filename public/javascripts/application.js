@@ -99,7 +99,7 @@ rretro.initJSActions = function($) {
     rretro.init_droppable($);
 };
 
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
 
     $("[data-submit='true']").change(function() {
         this.form.submit();
