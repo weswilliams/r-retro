@@ -30,7 +30,7 @@
       <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="65" selection-start="713" selection-end="713" vertical-scroll-proportion="0.3108108">
+            <state line="53" column="29" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.45405406">
               <folding />
             </state>
           </provider>
@@ -551,7 +551,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- moved initJSActions to rretro name space" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changed from jQuery to $" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -564,7 +564,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="- moved items/vote_for.js.rjs to ujs items/vote_for.js.erb&#10;" />
     <MESSAGE value="- moved items/move_item_to.js.rjs to ujs items/move_item_to.js.erb&#10;" />
     <MESSAGE value="- changed section drop link for adding an item  to ujs&#10;" />
     <MESSAGE value="removed comment" />
@@ -589,6 +588,7 @@
     <MESSAGE value="- moved init_draggable to rretro name space" />
     <MESSAGE value="- moved init_droppable to rretro name space" />
     <MESSAGE value="- moved initJSActions to rretro name space" />
+    <MESSAGE value="- changed from jQuery to $" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -695,7 +695,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="65" selection-start="713" selection-end="713" vertical-scroll-proportion="0.3108108">
+        <state line="53" column="29" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.45405406">
           <folding />
         </state>
       </provider>

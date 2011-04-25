@@ -47,7 +47,7 @@ rretro.init_href_click = function($) {
         $(this).unbind('click').click(function() {
             $('#' + id_to_click).click();
             return false;
-        })
+        });
     });
 };
 
