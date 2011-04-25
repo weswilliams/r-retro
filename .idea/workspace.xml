@@ -30,7 +30,7 @@
       <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="27" selection-start="3279" selection-end="3295" vertical-scroll-proportion="0.33246073">
+            <state line="97" column="25" selection-start="3351" selection-end="3365" vertical-scroll-proportion="0.33246073">
               <folding />
             </state>
           </provider>
@@ -551,7 +551,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- moved init_value_max_button to rretro name space" />
+    <option name="LAST_COMMIT_MESSAGE" value="- moved init_collapsable to rretro name space" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -564,7 +564,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="- moved items/destroy.js.rjs to ujs items/destroy.js.erb&#10;-- fixed test to use assert_select instead of assert_select_rjs" />
     <MESSAGE value="- moved items/refresh_value.js.rjs to ujs items/refresh_value.js.erb&#10;" />
     <MESSAGE value="- moved items/remove_from_group.js.rjs to ujs items/remove_from_group.js.erb&#10;" />
     <MESSAGE value="- moved items/update_value_error.js.rjs to ujs items/update_value_error.js.erb&#10;-- added same error checking around refresh_value as well&#10;" />
@@ -589,6 +588,7 @@
     <MESSAGE value="- created global rretro name space&#10;- moved init_inline_edit to rretro name space" />
     <MESSAGE value="- moved init_href_click to rretro name space" />
     <MESSAGE value="- moved init_value_max_button to rretro name space" />
+    <MESSAGE value="- moved init_collapsable to rretro name space" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -675,7 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="27" selection-start="3279" selection-end="3295" vertical-scroll-proportion="0.33246073">
+        <state line="97" column="25" selection-start="3351" selection-end="3365" vertical-scroll-proportion="0.33246073">
           <folding />
         </state>
       </provider>
