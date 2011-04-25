@@ -45,7 +45,7 @@ rretro.init_inline_edit = function initInlineEdit($) {
     });
 };
 
-var init_href_click = function($) {
+rretro.init_href_click = function($) {
     $("[data-href-click]").each(function() {
         var id_to_click = $(this).attr('data-href-click');
         $(this).unbind('click').click(function() {
@@ -95,7 +95,7 @@ var init_droppable = function($) {
 };
 
 var initJSActions = function($) {
-    init_href_click($);
+    rretro.init_href_click($);
     rretro.init_inline_edit($);
     init_collapsable($);
     init_value_max_button($);
