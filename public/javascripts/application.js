@@ -1,6 +1,9 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
+//global name space
+var rretro = {};
+
 function fireOnclick(objID) {
     var target = document.getElementById(objID);
     if (document.dispatchEvent) { // W3C
@@ -13,7 +16,7 @@ function fireOnclick(objID) {
     }
 }
 
-var init_inline_edit = function initInlineEdit($) {
+rretro.init_inline_edit = function initInlineEdit($) {
     $("[data-inline-edit]").each(function() {
         var height = $(this).css('height');
         var width = $(this).css('width');
@@ -93,7 +96,7 @@ var init_droppable = function($) {
 
 var initJSActions = function($) {
     init_href_click($);
-    init_inline_edit($);
+    rretro.init_inline_edit($);
     init_collapsable($);
     init_value_max_button($);
     init_draggable($);
