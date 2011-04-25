@@ -79,7 +79,7 @@ rretro.init_draggable = function($) {
     });
 };
 
-var init_droppable = function($) {
+rretro.init_droppable = function($) {
     $("[data-droppable]").each(function() {
         var drop_url = $(this).attr('data-droppable');
         $("#" + this.id).droppable({
@@ -96,7 +96,7 @@ var initJSActions = function($) {
     rretro.init_collapsable($);
     rretro.init_value_max_button($);
     rretro.init_draggable($);
-    init_droppable($);
+    rretro.init_droppable($);
 };
 
 jQuery(document).ready(function($) {
