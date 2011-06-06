@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sections/_section_items.erb" afterPath="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
+      <file leaf-file-name="_section_items.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sections/_section_items.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="53" selection-start="1245" selection-end="1245" vertical-scroll-proportion="-7.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="retrospectives_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.16216215">
+            <state line="7" column="5" selection-start="436" selection-end="436" vertical-scroll-proportion="0.3153153">
               <folding />
             </state>
           </provider>
@@ -82,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/views/groups/add.js.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/add_item.js.erb" />
         <option value="$PROJECT_DIR$/app/views/groups/destroy.js.erb" />
@@ -98,6 +88,7 @@
         <option value="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sections/_section.erb" />
         <option value="$PROJECT_DIR$/app/helpers/retrospectives_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/sections/_section_items.erb" />
       </list>
     </option>
   </component>
@@ -659,7 +650,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fixed illegal div within span tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed issue with default theme being in the list 2x and being selected 2x" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -672,7 +663,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="- fixed issues with value max and add item not working after refreshing items or sections.&#10;- made add item links and image use ujs &#10;-- refactored add item ujs to even less obtrusive" />
     <MESSAGE value="- moved the draggable creation to ujs" />
     <MESSAGE value="- forgot to remove old js code :(  and fixed an issue with draggable not working after updates" />
     <MESSAGE value="- moved droppable group area to ujs&#10;- fixed issue with group collapse/expand not working after drag and drop" />
@@ -697,16 +687,12 @@
     <MESSAGE value="- fixed wrong method name&#10;- fixed missing if {}&#10;" />
     <MESSAGE value="- fixed an html id conflict" />
     <MESSAGE value="- fixed illegal div within span tags" />
+    <MESSAGE value="- fixed issue with default theme being in the list 2x and being selected 2x" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/items/remove_from_group.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/refresh.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="11" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" />
@@ -784,16 +770,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="1245" selection-end="1245" vertical-scroll-proportion="-7.5">
+        <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.16216215">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/retrospectives_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.16216215">
+        <state line="12" column="53" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.5405405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sections/_section_items.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="436" selection-end="436" vertical-scroll-proportion="0.3153153">
           <folding />
         </state>
       </provider>
