@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6a5a410-81f7-485a-9296-dc9b9e3cef8e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" afterPath="$PROJECT_DIR$/app/views/retrospectives/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
     </list>
     <ignored path="r_retro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +38,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="1024" selection-end="1325" vertical-scroll-proportion="0.26686218">
+            <state line="9" column="11" selection-start="699" selection-end="699" vertical-scroll-proportion="0.39589444">
               <folding />
             </state>
           </provider>
@@ -790,7 +789,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/retrospectives/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="1024" selection-end="1325" vertical-scroll-proportion="0.26686218">
+        <state line="9" column="11" selection-start="699" selection-end="699" vertical-scroll-proportion="0.39589444">
           <folding />
         </state>
       </provider>
