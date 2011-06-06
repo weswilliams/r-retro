@@ -1,7 +1,7 @@
 <div id="<%= context %>_<%= context_id %>_item_<%= item.id %>"
      class="<%= context %>_item"
      style="background-color:<%= "\##{item.section.color}" %>;"
-     data-draggable>
+     data-draggable='data-draggable'>
   <div class="item_actions">
     <%= render :partial => "#{context}s/#{context}_item_actions", :locals => {:item => item} %>
   </div>
