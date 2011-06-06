@@ -3,6 +3,7 @@ require 'test_helper'
 class RetrospectivesControllerTest < ActionController::TestCase
   setup do
     @retrospective = retrospectives(:retrospective_1)
+    @sections = @retrospective.sections
   end
 
   def method_missing(id, *args, &block)
@@ -23,7 +24,7 @@ class RetrospectivesControllerTest < ActionController::TestCase
   test "should display section 1 items" do
     show_with_1_section_and_expect_1_row
     assert_select 'div.section_items' do
-      assert_select 'div#section_item', 1
+      assert_select "div#section_item_#{@sections[0].id}", 1
     end
   end
 
@@ -52,6 +53,7 @@ class RetrospectivesControllerTest < ActionController::TestCase
     section.title = "section#{title_appendix}"
     section.retrospective = @retrospective
     section.save
+    @sections.push(section)
   end
 
   test "should get index" do

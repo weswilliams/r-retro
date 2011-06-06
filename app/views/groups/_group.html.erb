@@ -8,13 +8,13 @@
     <%= link_to image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)"), "#", :id => "collapse_group_#{group.id}", :class => 'collapse_link' %>
   </div>
 
-<span id="collapse_group_<%= group.id %>_span" class="collapsible">
+<div id="collapse_group_<%= group.id %>_span" class="collapsible">
 
   <div id="<%= "group_items_#{group.id}" %>" class="group_items"
        data-droppable="<%= add_item_retrospective_group_path(@retrospective, group) %>">
     <%= render :partial => 'groups/group_items', :locals => {:current_group => group} %>
   </div>
 
-</span>
+</div>
 
 </div>

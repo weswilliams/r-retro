@@ -1,5 +1,5 @@
 <div id="section_item_drop_target_<%= current_section.id %>">
-<div id="section_item">
+<div id="section_item_<%= current_section.id %>">
   <%= render :partial => 'items/item', :collection => current_section.items, :locals => {:context => 'section', :context_id => current_section.id} %>
 </div>
 <div id="section_empty_<%= current_section.id %>" class="section_drop_to_add">
