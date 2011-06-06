@@ -178,9 +178,10 @@ a:hover.nav_image {
   max-width: 90%;
 }
 
-.editor button[type=cancel], button[type=submit] {
+/*.editor button[type=cancel], button[type=submit] {*/
+.editor button {
   font-size: x-small;
-  font-weight: normal;
+  font-weight: bold;
   padding: 5px;
   background: none;
   border: none;
