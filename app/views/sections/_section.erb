@@ -12,14 +12,14 @@
     <%= link_to image_tag("expand_collapse.png", :class => 'nav_image', :alt => "(exp/col)", :title => 'expand/collapse'), "#", :id => "collapse_section_#{section.id}", :class => 'collapse_link' %>
   </div>
 
-<span id="collapse_section_<%= section.id %>_span" class="collapsible">
+<div id="collapse_section_<%= section.id %>_span" class="collapsible">
 
   <div id="<%= "section_items_#{section.id}" %>" class="section_items"
        data-droppable="<%= move_item_to_retrospective_section_path(section.retrospective, section) %>">
     <%= render :partial => 'sections/section_items', :locals => {:current_section => section} %>
   </div>
 
-</span>
+</div>
 
 </div>
 
