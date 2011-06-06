@@ -14,8 +14,9 @@
   <% end %>
   <%= form_for @retrospective, :url => auto_refresh_retrospective_path(@retrospective), :html => {:id => 'auto_refresh_form', :method => :post, :class => 'inline_form'} do %>
       <%= check_box_tag 'enable_auto_refresh', 'auto refresh', @auto_fresh, :class => 'refresh', 'data-submit' => 'true' %>
+      <%= label_tag 'auto refresh' %>
   <% end %>
-  <span class="refresh">auto refresh</span>
+  <!--<span class="refresh">auto refresh</span>-->
 </div>
 
 <div class="groups">

@@ -142,10 +142,10 @@ a.retro_list {
 }
 
 .refresh {
-  display: inline;
-  font-size: x-small;
-  font-weight: normal;
-  float: right;
+  /*display: inline;*/
+  /*font-size: x-small;*/
+  /*font-weight: normal;*/
+  /*float: right;*/
 }
 
 .inline_link {
