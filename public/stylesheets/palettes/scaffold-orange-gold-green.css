@@ -26,7 +26,7 @@ a:hover {
 
 .site_header {
     background-color: #FF6600;
-    color: #FFCC00;
+    color: #978E43;
     border-left: #350608 solid 1px;
 }
 
@@ -39,7 +39,7 @@ a:hover {
 
 .retro_title {
     background-color: #F2C545;
-    color: #FFCC00;
+    color: #978E43;
     border-top: #350608 solid 1px;
     border-bottom: #350608 solid 1px;
     border-left: #350608 solid 1px;
@@ -47,7 +47,7 @@ a:hover {
 
 .retro_sub_title {
     background-color: #F2C545;
-    color: #FFCC00;
+    color: #978E43;
     border-top: #350608 solid 1px;
     border-bottom: #350608 solid 1px;
     border-left: #350608 solid 1px;
@@ -55,6 +55,10 @@ a:hover {
 
 .editor_field {
     border: #350608 solid 1px;
+}
+
+.editor input {
+  color: #F2C545;
 }
 
 input:focus {

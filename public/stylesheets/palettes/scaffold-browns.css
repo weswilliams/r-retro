@@ -57,6 +57,10 @@ a:hover {
     border: #FFCC33 solid 1px;
 }
 
+.editor input {
+  color: #FFCC33;
+}
+
 input:focus {
     border-color: #FFCC33;
 }
