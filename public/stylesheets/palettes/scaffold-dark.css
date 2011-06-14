@@ -58,7 +58,8 @@ a:hover {
 }
 
 .editor input {
-  color: #ffffff;
+  color: black;
+  background-color: white;
 }
 
 input:focus {
